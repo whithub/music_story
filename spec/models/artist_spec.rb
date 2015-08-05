@@ -2,7 +2,7 @@ require 'rails_helper'
 
 RSpec.describe Artist, :type => :model do
 
-  let(:artist) do
+  let(:artists) do
     artist = Artist.create(name: "Whitney Houston")
   end
 
