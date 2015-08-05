@@ -2,7 +2,7 @@ source 'https://rubygems.org'
 
 gem 'omniauth-twitter'
 gem 'figaro'
-gem 'pg'
+# gem 'pg'
 gem 'rails', '4.2.1'
 gem 'sass-rails', '~> 5.0'
 gem 'uglifier', '>= 1.3.0'
@@ -17,6 +17,7 @@ gem "twitter-bootstrap-rails"
 gem 'paperclip'
 
 group :development, :test do
+  gem 'sqlite3'
   gem 'byebug'
   gem 'web-console', '~> 2.0'
   gem 'capybara'
@@ -26,7 +27,7 @@ end
 
 group :production do
   gem 'rails_12factor'
-  # gem 'pg'
+  gem 'pg'
 end
 
 
