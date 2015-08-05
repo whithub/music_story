@@ -20,7 +20,7 @@
   outline: rgb(0, 0, 0) none 0px;
 }
 
-#A_6, #A_8 {
+.navbar-default .navbar-nav>li a {
   box-sizing: border-box;
   color: rgb(0, 0, 0);
   letter-spacing: 2.98665595054626px;
@@ -31,7 +31,15 @@
   font: normal normal 300 normal 14.9332799911499px/24.5332889556885px 'Gotham SSm A', 'Gotham SSm B', sans-serif;
   list-style: none outside none;
   outline: rgb(0, 0, 0) none 0px;
-}/*#A_6, #A_8*/
+  /* line-height: 54px; */
+  padding-top: 20px;
+  display: block;
+}
+
+.navbar-nav>li>a:hover {
+  border-bottom: 3px solid #333;
+  padding-bottom: 12px;
+}
 
 .nav-navbar-nav {
   background-position: 50% 50%;
