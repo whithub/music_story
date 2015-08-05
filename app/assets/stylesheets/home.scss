@@ -173,6 +173,7 @@
   color: rgb(0, 0, 0);
   display: inline-block;
   height: 40px;
+  float: right;
   text-decoration: none;
   text-indent: 100%;
   width: 40px;
@@ -182,7 +183,7 @@
   border: 2px solid rgb(0, 0, 0);
   border-radius: 100% 100% 100% 100%;
   font: normal normal normal normal 16px/normal 'Mercury SSm A', 'Mercury SSm B', sans-serif;
-  margin: 0px 8px;
+  margin: 7px 8px;
   outline: rgb(0, 0, 0) none 0px;
   overflow: hidden;
 }/*#A_10*/
@@ -193,6 +194,7 @@
   color: rgb(0, 0, 0);
   display: inline-block;
   height: 40px;
+  float: right;
   text-decoration: none;
   text-indent: 100%;
   width: 40px;
@@ -202,7 +204,7 @@
   border: 2px solid rgb(0, 0, 0);
   border-radius: 100% 100% 100% 100%;
   font: normal normal normal normal 16px/normal 'Mercury SSm A', 'Mercury SSm B', sans-serif;
-  margin: 0px 8px;
+  margin: 7px 8px;
   outline: rgb(0, 0, 0) none 0px;
   overflow: hidden;
 }/*#A_11*/
@@ -213,6 +215,7 @@
   color: rgb(0, 0, 0);
   display: inline-block;
   height: 40px;
+  float: right;
   text-decoration: none;
   text-indent: 100%;
   width: 40px;
@@ -222,71 +225,10 @@
   border: 2px solid rgb(0, 0, 0);
   border-radius: 100% 100% 100% 100%;
   font: normal normal normal normal 16px/normal 'Mercury SSm A', 'Mercury SSm B', sans-serif;
-  margin: 0px 8px;
+  margin: 7px 8px;
   outline: rgb(0, 0, 0) none 0px;
   overflow: hidden;
 }/*#A_12*/
-
-#A_13 {
-  background-position: 50% 50%;
-  box-sizing: border-box;
-  color: rgb(0, 0, 0);
-  display: none;
-  height: 40px;
-  text-decoration: none;
-  text-indent: 100%;
-  width: 40px;
-  perspective-origin: 50% 50%;
-  transform-origin: 50% 50%;
-  background: rgba(0, 0, 0, 0) url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyMSIgaGVpZ2h0PSIyMSI+PHBhdGggZmlsbD0iIzAwMDAwMCIgZD0iTTkuOTIyIDcuMDM2Yy0xLjc0Mi0zLjA5NC0zLjU5MS01LjYzNS0zLjg4My02LjAzMi0yLjkzMiAxLjM4Mi01LjEyNSA0LjA2OS01LjgwOSA3LjMyLjU2LjAwNiA0LjgxNS4wMDYgOS42OTItMS4yODh6bTcuNTIzLTQuNDA5Yy0xLjg1Mi0xLjYzMy00LjI3NS0yLjYzMS02LjkzOS0yLjYzMS0uODQ1IDAtMS42NjIuMTA5LTIuNDQ5LjI5OC4zMjEuNDI4IDIuMTkxIDIuOTU4IDMuOTA2IDYuMTAyIDMuNjkxLTEuMzgzIDUuMjU0LTMuNDQ2IDUuNDgyLTMuNzY5em0tMy45NjUgNi44NzVsLjIyNS41NDZjMy40NDktLjQzMiA2LjgzOC4yMzggNy4zMDEuMzM1LS4wMjctMi40ODMtLjkxMi00Ljc2LTIuMzc4LTYuNTQ1LS4yMzcuMzIyLTEuOTc0IDIuNTQ0LTUuODUzIDQuMTI5LjI0Ny41MDUuNDg1IDEuMDE4LjcwNSAxLjUzNXptLjg2OSAyLjIxYzEuMzUxIDMuNzExIDEuOTE5IDYuNzQ2IDIuMDQ2IDcuNDg0IDIuMzUyLTEuNTk0IDQuMDEtNC4xMiA0LjQ3NS03LjA0NC0uNDY2LS4xNDQtMy4yODQtLjk1Ny02LjUyMS0uNDR6bS0zLjExMi0xLjEzMmwuNDE1LS4xMjVjLS4yNjYtLjYwMi0uNTUzLTEuMjAyLS44NTUtMS43OTQtNS4xODEgMS41NDktMTAuMTYzIDEuNTE2LTEwLjc3OSAxLjUwNWwtLjAxNy4zMzJjMCAyLjY4OSAxLjAyIDUuMTM1IDIuNjgyIDYuOTkyLjMxNy0uNTM1IDMuMTktNS4xNzggOC41NTQtNi45MXptMS4wNjggMS42NDZjLTUuODcgMi4wNDQtOC4wMTUgNi4wNDctOC4yNjEgNi41NCAxLjc4MyAxLjM5NSA0LjAyMiAyLjIzNCA2LjQ2MiAyLjIzNCAxLjQ1OCAwIDIuODQ5LS4yOTggNC4xMTEtLjgzNi0uMTY4LS45NzgtLjc4My00LjE2My0yLjI0NS03Ljk2MWwtLjA2Ny4wMjN6Ii8+PC9zdmc+) no-repeat scroll 50% 50% / 58% padding-box border-box;
-  border: 2px solid rgb(0, 0, 0);
-  border-radius: 100% 100% 100% 100%;
-  font: normal normal normal normal 16px/normal 'Mercury SSm A', 'Mercury SSm B', sans-serif;
-  margin: 0px 8px;
-  outline: rgb(0, 0, 0) none 0px;
-  overflow: hidden;
-}/*#A_13*/
-
-#A_14 {
-  background-position: 100% 0px;
-  box-sizing: border-box;
-  color: rgb(0, 0, 0);
-  display: none;
-  height: 28px;
-  position: absolute;
-  right: 32px;
-  text-align: right;
-  text-decoration: none;
-  text-indent: 100%;
-  top: 25.6000003814697px;
-  width: 105px;
-  align-self: stretch;
-  perspective-origin: 50% 50%;
-  transform-origin: 50% 50%;
-  background: rgba(0, 0, 0, 0) url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyMiIgaGVpZ2h0PSIxOCI+PHBhdGggZmlsbD0iIzAwMDAwMCIgZD0iTTAgMHY0aDIydi00aC0yMnptMCAxMWgyMnYtNGgtMjJ2NHptMCA3aDIydi00aC0yMnY0eiIvPjwvc3ZnPg==) no-repeat scroll 100% 0px / auto padding-box border-box;
-  border: 0px none rgb(0, 0, 0);
-  font: normal normal normal normal 16px/normal 'Mercury SSm A', 'Mercury SSm B', sans-serif;
-  outline: rgb(0, 0, 0) none 0px;
-}/*#A_14*/
-
-#A_14:before {
-  color: rgb(0, 0, 0);
-  display: block;
-  left: -83px;
-  position: absolute;
-  text-align: right;
-  text-indent: 100%;
-  text-transform: uppercase;
-  top: -2px;
-  align-self: stretch;
-  perspective-origin: 50% 50%;
-  transform-origin: 50% 50%;
-  content: '"Menu"';
-  border: 0px none rgb(0, 0, 0);
-  font: normal normal normal normal 16px/normal 'Gotham SSm A', 'Gotham SSm B', sans-serif;
-  outline: rgb(0, 0, 0) none 0px;
-}/*#A_14:before*/
-
 
 #IMG_1 {
   box-sizing: border-box;
@@ -303,185 +245,4 @@
 }/*#IMG_1*/
 
 
-#UL_1 {
-  box-shadow: rgba(0, 0, 0, 0.0196078) 0px 0px 0px 1px inset;
-  box-sizing: border-box;
-  height: 1315px;
-  text-align: center;
-  width: auto;
-  perspective-origin: 842px 657.5px;
-  transform-origin: 842px 657.5px;
-  background: rgb(239, 239, 239) none repeat scroll 0% 0% / auto padding-box border-box;
-  font: normal normal normal normal 16px/normal 'Mercury SSm A', 'Mercury SSm B', sans-serif;
-  list-style: none outside none;
-  margin: 0px -2px;
-  overflow: hidden;
-  padding: 0px;
-}/*#UL_1*/
-
-#LI_2, #LI_8, #LI_14, #LI_20, #LI_26, #LI_32, #LI_38, #LI_44, #LI_50, #LI_56, #LI_62, #LI_68, #LI_74, #LI_80, #LI_86, #LI_92, #LI_98, #LI_104, #LI_110 {
-  box-sizing: border-box;
-  display: inline-block;
-  height: 263px;
-  max-width: 480px;
-  width: 421px;
-  perspective-origin: 210.5px 131.5px;
-  transform-origin: 210.5px 131.5px;
-  font: normal normal normal normal 16px/normal 'Mercury SSm A', 'Mercury SSm B', sans-serif;
-  list-style: none outside none;
-}/*#LI_2, #LI_8, #LI_14, #LI_20, #LI_26, #LI_32, #LI_38, #LI_44, #LI_50, #LI_56, #LI_62, #LI_68, #LI_74, #LI_80, #LI_86, #LI_92, #LI_98, #LI_104, #LI_110*/
-
-#A_9, #A_15, #A_21, #A_27, #A_33, #A_39, #A_45, #A_51, #A_57, #A_63, #A_69, #A_75, #A_81, #A_87, #A_93, #A_99, #A_105, #A_111 {
-  box-sizing: border-box;
-  color: rgb(0, 0, 0);
-  display: inline-block;
-  height: 263px;
-  position: relative;
-  text-align: left;
-  text-decoration: none;
-  width: 421px;
-  perspective-origin: 210.5px 131.5px;
-  transform-origin: 210.5px 131.5px;
-  border: 0px none rgb(0, 0, 0);
-  font: normal normal normal normal 16px/normal 'Mercury SSm A', 'Mercury SSm B', sans-serif;
-  list-style: none outside none;
-  outline: rgb(0, 0, 0) none 0px;
-}/*#A_3, #A_9, #A_15, #A_21, #A_27, #A_33, #A_39, #A_45, #A_51, #A_57, #A_63, #A_69, #A_75, #A_81, #A_87, #A_93, #A_99, #A_105, #A_111*/
-
-#IMG_4, #IMG_10, #IMG_16, #IMG_22, #IMG_28, #IMG_34, #IMG_40, #IMG_46, #IMG_52, #IMG_58, #IMG_64, #IMG_70, #IMG_76, #IMG_82, #IMG_88, #IMG_94, #IMG_100, #IMG_106, #IMG_112 {
-  box-sizing: border-box;
-  height: 263px;
-  max-width: 100%;
-  text-align: left;
-  vertical-align: middle;
-  width: 421px;
-  perspective-origin: 210.5px 131.5px;
-  transform-origin: 210.5px 131.5px;
-  font: italic normal normal normal 16px/normal 'Mercury SSm A', 'Mercury SSm B', sans-serif;
-  list-style: none outside none;
-  transition: opacity 0.2s ease-in 0s;
-}/*#IMG_4, #IMG_10, #IMG_16, #IMG_22, #IMG_28, #IMG_34, #IMG_40, #IMG_46, #IMG_52, #IMG_58, #IMG_64, #IMG_70, #IMG_76, #IMG_82, #IMG_88, #IMG_94, #IMG_100, #IMG_106, #IMG_112*/
-
-#DIV_5, #DIV_11, #DIV_17, #DIV_23, #DIV_29, #DIV_35, #DIV_41, #DIV_47, #DIV_53, #DIV_59, #DIV_65, #DIV_71, #DIV_77, #DIV_83, #DIV_89, #DIV_95, #DIV_101, #DIV_107, #DIV_113 {
-  background-position: 90% 85%;
-  bottom: 0px;
-  box-sizing: border-box;
-  display: none;
-  height: auto;
-  left: 0px;
-  position: absolute;
-  right: 0px;
-  text-align: left;
-  top: 0px;
-  width: auto;
-  align-self: stretch;
-  perspective-origin: 50% 50%;
-  transform-origin: 50% 50%;
-  background: rgba(0, 0, 0, 0.901961) url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMC4wNTgiIGhlaWdodD0iMTcuMTA5Ij48cGF0aCBmaWxsPSIjZmZmZmZmIiBkPSJNMS41MDQgMTcuMTA5Yy0uMzg1IDAtLjc3LS4xNDYtMS4wNjItLjQzOS0uNTg4LS41ODgtLjU4OC0xLjUzOSAwLTIuMTI3bDUuOTg4LTUuOTg5LTUuOTg5LTUuOTg4Yy0uNTg4LS41ODctLjU4OC0xLjUzOCAwLTIuMTI1LjU4Ni0uNTg4IDEuNTM3LS41ODggMi4xMjUgMGw3LjA1MyA3LjA1MWMuMjgxLjI4My40MzkuNjY0LjQzOSAxLjA2MiAwIC40LS4xNTguNzgxLS40MzkgMS4wNjNsLTcuMDUzIDcuMDUzYy0uMjkzLjI5My0uNjc3LjQzOS0xLjA2Mi40Mzl6Ii8+PC9zdmc+) no-repeat scroll 90% 85% / auto padding-box border-box;
-  font: normal normal normal normal 16px/normal 'Mercury SSm A', 'Mercury SSm B', sans-serif;
-  list-style: none outside none;
-  padding: 32px;
-}/*#DIV_5, #DIV_11, #DIV_17, #DIV_23, #DIV_29, #DIV_35, #DIV_41, #DIV_47, #DIV_53, #DIV_59, #DIV_65, #DIV_71, #DIV_77, #DIV_83, #DIV_89, #DIV_95, #DIV_101, #DIV_107, #DIV_113*/
-
-#H3_6, #H3_12, #H3_18, #H3_24, #H3_30, #H3_36, #H3_42, #H3_48, #H3_54, #H3_60, #H3_66, #H3_72, #H3_78, #H3_84, #H3_90, #H3_96, #H3_102, #H3_108, #H3_114 {
-  box-sizing: border-box;
-  color: rgb(255, 255, 255);
-  height: auto;
-  letter-spacing: 3.41334390640259px;
-  position: relative;
-  text-align: left;
-  text-transform: uppercase;
-  width: auto;
-  perspective-origin: 50% 50%;
-  transform-origin: 50% 50%;
-  border: 0px none rgb(255, 255, 255);
-  font: normal normal bold normal 17.0667190551758px/24.5334091186523px 'Gotham SSm A', 'Gotham SSm B', sans-serif;
-  list-style: none outside none;
-  margin: 0px;
-  outline: rgb(255, 255, 255) none 0px;
-}/*#H3_6, #H3_12, #H3_18, #H3_24, #H3_30, #H3_36, #H3_42, #H3_48, #H3_54, #H3_60, #H3_66, #H3_72, #H3_78, #H3_84, #H3_90, #H3_96, #H3_102, #H3_108, #H3_114*/
-
-#H3_6:after, #H3_12:after, #H3_18:after, #H3_24:after, #H3_30:after, #H3_36:after, #H3_42:after, #H3_48:after, #H3_54:after, #H3_60:after, #H3_66:after, #H3_72:after, #H3_78:after, #H3_84:after, #H3_90:after, #H3_96:after, #H3_102:after, #H3_108:after, #H3_114:after {
-  bottom: -17.0667190551758px;
-  color: rgb(255, 255, 255);
-  display: block;
-  height: auto;
-  letter-spacing: 3.41334390640259px;
-  position: absolute;
-  text-align: left;
-  text-transform: uppercase;
-  width: 51.2001571655273px;
-  align-self: stretch;
-  perspective-origin: 50% 50%;
-  transform-origin: 50% 50%;
-  content: '"' '"';
-  background: rgb(255, 255, 255) none repeat scroll 0% 0% / auto padding-box border-box;
-  border-top: 0px none rgb(255, 255, 255);
-  border-right: 0px none rgb(255, 255, 255);
-  border-bottom: 3px solid rgb(255, 255, 255);
-  border-left: 0px none rgb(255, 255, 255);
-  font: normal normal bold normal 17.0667190551758px/24.5334091186523px 'Gotham SSm A', 'Gotham SSm B', sans-serif;
-  list-style: none outside none;
-  outline: rgb(255, 255, 255) none 0px;
-}/*#H3_6:after, #H3_12:after, #H3_18:after, #H3_24:after, #H3_30:after, #H3_36:after, #H3_42:after, #H3_48:after, #H3_54:after, #H3_60:after, #H3_66:after, #H3_72:after, #H3_78:after, #H3_84:after, #H3_90:after, #H3_96:after, #H3_102:after, #H3_108:after, #H3_114:after*/
-
-#P_7, #P_13, #P_25, #P_37, #P_49, #P_61, #P_73, #P_85, #P_97, #P_109 {
-  box-sizing: border-box;
-  color: rgb(249, 249, 249);
-  height: auto;
-  text-align: left;
-  width: auto;
-  perspective-origin: 50% 50%;
-  transform-origin: 50% 50%;
-  border: 0px none rgb(249, 249, 249);
-  font: normal normal normal normal 13.866720199585px/20.8000793457031px 'Mercury SSm A', 'Mercury SSm B', sans-serif;
-  list-style: none outside none;
-  margin: 37.4401435852051px 0px 0px;
-  outline: rgb(249, 249, 249) none 0px;
-}/*#P_7, #P_13, #P_25, #P_37, #P_49, #P_61, #P_73, #P_85, #P_97, #P_109*/
-
-#P_19, #P_31, #P_55, #P_79, #P_103 {
-  box-sizing: border-box;
-  color: rgb(249, 249, 249);
-  height: auto;
-  text-align: left;
-  width: auto;
-  perspective-origin: 50% 50%;
-  transform-origin: 50% 50%;
-  border: 0px none rgb(249, 249, 249);
-  font: normal normal normal normal 13.866720199585px/20.8000793457031px 'Mercury SSm A', 'Mercury SSm B', sans-serif;
-  list-style: none outside none;
-  margin: 37.4401435852051px 0px 0px;
-  outline: rgb(249, 249, 249) none 0px;
-}/*#P_19, #P_31, #P_55, #P_79, #P_103*/
-
-#P_43, #P_67, #P_115 {
-  box-sizing: border-box;
-  color: rgb(249, 249, 249);
-  height: auto;
-  text-align: left;
-  width: auto;
-  perspective-origin: 50% 50%;
-  transform-origin: 50% 50%;
-  border: 0px none rgb(249, 249, 249);
-  font: normal normal normal normal 13.866720199585px/20.8000793457031px 'Mercury SSm A', 'Mercury SSm B', sans-serif;
-  list-style: none outside none;
-  margin: 37.4401435852051px 0px 0px;
-  outline: rgb(249, 249, 249) none 0px;
-}/*#P_43, #P_67, #P_115*/
-
-#P_91 {
-  box-sizing: border-box;
-  color: rgb(249, 249, 249);
-  height: auto;
-  text-align: left;
-  width: auto;
-  perspective-origin: 50% 50%;
-  transform-origin: 50% 50%;
-  border: 0px none rgb(249, 249, 249);
-  font: normal normal normal normal 13.866720199585px/20.8000793457031px 'Mercury SSm A', 'Mercury SSm B', sans-serif;
-  list-style: none outside none;
-  margin: 37.4401435852051px 0px 0px;
-  outline: rgb(249, 249, 249) none 0px;
-}/*#P_91*/
 
