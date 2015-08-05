@@ -66,7 +66,19 @@
       <ul class="nav navbar-nav">
         <li><a href="/" id="A_6">Portfolio</a></li>
         <li><a href="/" id="A_8">About &amp; Contact</a></li>
-        <li class='icon'><a href="https://twitter.com/mikekus" id="A_10">Twitter</a></li>
+        <li class='icon'><a href="
+          <% if current_user %>
+            <%= logout_path %>
+          <% else %>
+            <%= login_path %>
+          <% end %>" id="A_10">Twitter</a>
+        </li>
+
+
+
+
+
+
         <%# <li class='icon'><a href="http://instagram.com/mikekus" id="A_11">Instagram</a></li> %>
         <%# <li class='icon'><a href="https://mikekus.exposure.so" id="A_12">Exposure</a></li> %>
       </ul>
