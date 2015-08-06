@@ -7,12 +7,9 @@ Rails.application.routes.draw do
   get 'auth/twitter/callback', to: 'sessions#create'
   get '/logout',               to: 'sessions#destroy'
 
-  resources :genres, only: [:index, :show]
-  # resources :artists, only: [:index, :show] do
-  #   resources :albums, only: [:index, :show]
-  #   resources :songs,  only: [:index, :show]
-  # end
+  resources :genres, only: [:index, :show] do
 
+  end
 
 end
 

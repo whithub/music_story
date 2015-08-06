@@ -2,6 +2,9 @@ source 'https://rubygems.org'
 
 gem 'echonest-ruby-api'
 gem 'echowrap'
+
+gem 'rspotify'
+
 gem 'omniauth-twitter'
 gem 'figaro'
 # gem 'pg'

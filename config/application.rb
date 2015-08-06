@@ -6,11 +6,14 @@ require 'rails/all'
 # you've limited to :test, :development, or :production.
 Bundler.require(*Rails.groups)
 
+
 module MusicStory
   class Application < Rails::Application
 
     config.serve_static_assets = true
 
     config.active_record.raise_in_transactional_callbacks = true
+
+    RSpotify::authenticate( ENV['SPOTIFY_KEY'], ENV['SPOTIFY_SECRET_KEY'] )
   end
 end
