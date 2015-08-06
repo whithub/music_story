@@ -1,5 +1,6 @@
 source 'https://rubygems.org'
 
+gem 'echonest-ruby-api'
 gem 'omniauth-twitter'
 gem 'figaro'
 # gem 'pg'
