@@ -14,6 +14,8 @@ module MusicStory
 
     config.active_record.raise_in_transactional_callbacks = true
 
-    RSpotify::authenticate( ENV['SPOTIFY_KEY'], ENV['SPOTIFY_SECRET_KEY'] )
+    def spotify
+      RSpotify::authenticate( ENV['SPOTIFY_KEY'], ENV['SPOTIFY_SECRET_KEY'] )
+    end
   end
 end
