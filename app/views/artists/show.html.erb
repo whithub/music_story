@@ -60,15 +60,16 @@
 <section class="waldo2" id="professional"></section>
 
 <section class="professional">
-  <h3>Albums</h3>
-  <h4>Artists Top x number of albums</h4>
+  <h3>Similar Artists</h3>
+  <h4>Fan of <%= @artist.name %>'s? You may also like:</h4>
   <div class="text">
     <ul>
       <% @related_artists.each do |artist| %>
         <li><%= link_to artist.name, artist_path(artist.name) %></li>
+        <li><%=  %></li>
       <% end %>
-     </ul>
-    </div>
+    </ul>
+  </div>
   <div class="arrow-contain">
     <a class="next-arrow" href="#business-solutions">
       <%= image_tag("arrow-white.png", :class => 'list_image', :size => '40x40') %>
@@ -93,6 +94,17 @@
 <section class="connect">
   <h3>Music Videos</h3>
   <h4>Songs with links to its' YouTube video...</h4>
+    <div class="text">
+      <ul>
+        <% @videos.each do |video| %>
+          <li>
+            <%= link_to image_tag(video.image_url, :class => 'list_image', :size => '60x60'), video.url %>
+            <%= video.title %>
+          </li>
+
+        <% end %>
+      </ul>
+    </div>
 </section>
 <section class="connect-icons">
   <div class="col-1-3">

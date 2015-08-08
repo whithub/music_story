@@ -11,9 +11,12 @@ class ArtistsController < ApplicationController
     # @artist_albums = Echowrap.artist_albums(name: @artist.name)     #user Spotify??
 
     @artist_news = Echowrap.artist_news(name: @artist.name).first
-
+    @videos = Echowrap.artist_video(name: @artist.name)
     @related_artists = Echowrap.artist_similar(name: @artist.name, results: 20)
+
   end
+
+
 
   private
 
