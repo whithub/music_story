@@ -1,8 +1,7 @@
 <html lang="en">
-
 <head>
   <meta charset="utf-8">
-  <title>Tom Petty</title>
+  <title><%= @artist.name %></title>
   <link rel="stylesheet" href="assets/stylesheets/artist.scss">
   <!--<link rel="stylesheet" href="Assets/Fonts/ProximaNovaSoft-Regular.otf">-->
 </head>
@@ -10,10 +9,10 @@
 <body cz-shortcut-listen="true">
 
 <section class="name-title">
-  <img class="headshot" <%= image_tag("billy_profile.jpg", :class => 'list_image', :size => '306x306') %>
+  <img class="img-circle" <%= image_tag(@artist_images.first.url, :class => 'list_image', :size => '306x306') %>
 
   <!--<img class="headshot" src="assets/images/billy_profile.jpg" alt="photo of artist">-->
-  <h1 class="container">Billy Joel</h1>
+  <h1 class="container"><%= @artist.name %></h1>
   <div class="arrow-contain">
     <a class="next-arrow" href="#about">
       <%= image_tag("arrow-white.png", :class => 'list_image', :size => '40x40') %>
@@ -22,10 +21,13 @@
     </a>
   </div>
 </section>
-<section class="waldo" id="about"></section>
+<section class="waldo" id="about">
+  <%#= image_tag(@artist_images.last.url) %>
+
+</section>
 <section class="about">
   <h3>BIO</h3>
-  <h4>Billy Joel is my hero</h4>
+  <h4><%= @artist_image %></h4>
   <div class="text">This is what the artist's bio/band history would go.
     <br>
     <br>I might have several paragraphs of info.
@@ -39,22 +41,33 @@
     </a>
   </div>
 </section>
+
 <section class="waldo2" id="professional"></section>
+
+<section class="news">
+  <h3>NEWS</h3>
+  <h4><%= @artist_news.date_found.to_time.strftime('%B %d, %Y') %></h4>
+  <div class="text">
+    <%= @artist_news.summary %>
+  </div>
+  <div class="arrow-contain">
+    <a class="next-arrow" href="#professional">
+      <%= image_tag("arrow-blue.png", :class => 'list_image', :size => '40x40') %>
+    </a>
+  </div>
+</section>
+
+<section class="waldo2" id="professional"></section>
+
 <section class="professional">
   <h3>Albums</h3>
   <h4>Artists Top x number of albums</h4>
   <div class="text">
-    <br>I'm thinking I would show rows of the album covers that users could click on.
-    <br>
-    <br>And be taken to a page with album info on album songs.
-    <br>
-    <br>
-    <br>
-    <br>
-    <!--<h4>Washington, DC (2011-present)</h4>Further inspired by my work with the-->
-    <br>
-    <br>
-    <br>
+    <ul>
+      <% @related_artists.each do |artist| %>
+        <li><%= link_to artist.name, artist_path(artist.name) %></li>
+      <% end %>
+     </ul>
     </div>
   <div class="arrow-contain">
     <a class="next-arrow" href="#business-solutions">
@@ -129,5 +142,4 @@
   });
 </script>
 </body>
-
 </html>
