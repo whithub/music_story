@@ -14,6 +14,7 @@ class ArtistsController < ApplicationController
     @videos = Echowrap.artist_video(name: @artist.name)
     @related_artists = Echowrap.artist_similar(name: @artist.name, results: 20)
 
+    @websites = Echowrap.artist_urls(name: @artist.name)
   end
 
 

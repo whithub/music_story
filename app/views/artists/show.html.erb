@@ -106,6 +106,31 @@
       </ul>
     </div>
 </section>
+
+<section class="waldo4" id="connect"></section>
+
+<section class="connect">
+  <h3>Stay Connected with <%= @artist.name %>!</h3>
+  <h4> </h4>
+    <div class="text">
+      <% if @websites.official_url != nil %>
+        <li><%= link_to "#{@artist.name}'s Website", @websites.official_url%></li>
+      <% end %>
+
+      <% if @websites.wikipedia_url != nil %>
+        <li><%= link_to "Learn more about #{@artist.name}", @websites.wikipedia_url%></li>
+      <% end %>
+
+      <% if @websites.itunes_url != nil %>
+        <li><%= link_to "Buy Music", @websites.itunes_url%></li>
+      <% end %>
+
+      <% if @websites.amazon_url != nil %>
+        <li><%= link_to "Purchase!", @websites.amazon_url%></li>
+      <% end %>
+    </div>
+</section>
+
 <section class="connect-icons">
   <div class="col-1-3">
     <!--<div class="github-icon">-->
