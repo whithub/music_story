@@ -5,47 +5,67 @@
     <!--</div>-->
   <!--<%# end %>-->
 <!--</div>-->
+<div>
+  <form class="form-search">
+    <input type="text" class="search-query" placeholder="  Search Artist">
+    <button type="submit" class="btn">Search</button>
+  </form>
+</div>
+
+
+<div class="all-artists">
+  <%= link_to 'All Artists', artists_path %>
+</div>
+
 
 <div id="grid">
   <%# @genres.each do |genre| %>
     <div class="row">
       <div class="col-lg-4">
-        <%#= link_to image_tag("cassette_tape.png", :class => 'list_image', :size => '300x180'), genre_artists_path(genre.id) %>
-        <%= image_tag("cassette_tape.png", :class => 'list_image', :size => '300x180') %>
-
-        <%= image_tag("blues_1.jpg", :class => 'list_image', :size => '300x180') %>
-
-        <%= image_tag("rock.jpg", :class => 'list_image', :size => '300x180') %>
+        <%= link_to image_tag("cassette_tape.png", :class => 'list_image', :size => '300x180'), genre_path('pop') %>
+        <%#= image_tag("cassette_tape.png", :class => 'list_image', :size => '390x270') %>
+      </div>
+      <div class="col-lg-4">
+        <%= link_to image_tag("blues_1.jpg", :class => 'list_image', :size => '390x270'), genre_path('blues') %>
+      </div>
+      <div class="col-lg-4">
+        <%= link_to image_tag("rock.jpg", :class => 'list_image', :size => '390x270'), genre_path('rock') %>
       </div>
     </div>
 
     <div class="row">
       <div class="col-lg-4">
-        <%= image_tag("country.jpg", :class => 'list_image', :size => '300x180') %>
-
-        <%= image_tag("jazz.jpg", :class => 'list_image', :size => '300x180') %>
-
-        <%= image_tag("punk_rock.jpg", :class => 'list_image', :size => '300x180') %>
+        <%= link_to image_tag("country.jpg", :class => 'list_image', :size => '390x270'), genre_path('country') %>
+      </div>
+      <div class="col-lg-4">
+        <%= link_to image_tag("jazz.jpg", :class => 'list_image', :size => '390x270'), genre_path('jazz') %>
+      </div>
+      <div class="col-lg-4">
+        <%= link_to image_tag("punk_rock.jpg", :class => 'list_image', :size => '390x270'), genre_path('hip hop') %>
       </div>
     </div>
 
     <div class="row">
       <div class="col-lg-4">
-        <%= image_tag("blues.jpg", :class => 'list_image', :size => '300x180') %>
-
-        <img src="http://placehold.it/300x180">
-
-        <%= image_tag("country_1.jpg", :class => 'list_image', :size => '300x180') %>
+        <%= link_to image_tag("blues.jpg", :class => 'list_image', :size => '390x270'), genre_path('reggae') %>
+      </div>
+      <div class="col-lg-4">
+        <img src="http://placehold.it/390x270">
+      </div>
+      <div class="col-lg-4">
+        <%= link_to image_tag("country_1.jpg", :class => 'list_image', :size => '390x270'), genre_path('electronic') %>
       </div>
     </div>
 
     <div class="row">
       <div class="col-lg-4">
-        <img src="http://placehold.it/300x180">
-
-        <img src="http://placehold.it/300x180">
-
-        <img src="http://placehold.it/300x180">
+        <img src="http://placehold.it/390x270">
+      </div>
+      <div class="col-lg-4">
+        <img src="http://placehold.it/390x270">
+      </div>
+      <div class="col-lg-4">
+        <img src="http://placehold.it/390x270">
       </div>
     </div>
     <%# end %>

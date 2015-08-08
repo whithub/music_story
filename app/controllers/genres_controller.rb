@@ -4,8 +4,12 @@ class GenresController < ApplicationController
   end
 
   def show
-    #what this genre is
-    #has a link to show all artists in that genre
+    @artists = Echowrap.artist_search(genre: params[:id])
+  end
+
+  private
+  def genres
+
   end
 
 end

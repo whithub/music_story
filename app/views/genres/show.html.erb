@@ -1,0 +1,4 @@
+<% @artists.each do |artist| %>
+  <li><%= link_to artist.name, artist_path(artist.id) %></li>
+  <li><%#= artist.artist_similar %></li>
+<% end %>
