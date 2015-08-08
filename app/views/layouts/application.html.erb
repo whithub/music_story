@@ -40,7 +40,12 @@
 
 <div class="navbar navbar-default navbar-static-top">
   <div class="container">
-    <a class="navbar-brand" href="/">Music Story</a>
+    <% if current_user %>
+      <a class="navbar-brand" href="/genres">Music Story</a>
+    <% else %>
+      <a class="navbar-brand">Music Story</a>
+    <% end %>
+
     <div class="navbar-collapse collapse navbar-responsive-collapse pull-right">
       <ul class="nav navbar-nav">
         <li><a href="/" id="A_6">Portfolio</a></li>
