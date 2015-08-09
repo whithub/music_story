@@ -9,7 +9,8 @@
 <body cz-shortcut-listen="true">
 
 <section class="name-title">
-  <img class="img-circle" <%= image_tag(@artist_images.first.url, :class => 'list_image', :size => '306x306') %>
+  <!--<img class="img-circle" <%#= image_tag(@profile_pic['url'], :class => 'list_image', :size => '306x306') %>-->
+  <img class="img-circle" <%= image_tag(@artist_images.first.url, :class => 'list_image', :size => '350x350') %>
 
   <!--<img class="headshot" src="assets/images/billy_profile.jpg" alt="photo of artist">-->
   <h1 class="container"><%= @artist.name %></h1>
@@ -21,7 +22,7 @@
     </a>
   </div>
 </section>
-<section class="waldo" id="about">
+<section class="background_image" id="about">
   <%#= image_tag(@artist_images.last.url) %>
 
 </section>
@@ -42,13 +43,13 @@
   </div>
 </section>
 
-<section class="waldo2" id="professional"></section>
+<section class="background_image" id="professional"></section>
 
 <section class="news">
   <h3>NEWS</h3>
-  <h4><%= @artist_news.date_found.to_time.strftime('%B %d, %Y') %></h4>
+  <h4><%#= @artist_news.date_found.to_time.strftime('%B %d, %Y') %></h4>
   <div class="text">
-    <%= @artist_news.summary %>
+    <%#= @artist_news.summary %>
   </div>
   <div class="arrow-contain">
     <a class="next-arrow" href="#professional">
@@ -57,7 +58,7 @@
   </div>
 </section>
 
-<section class="waldo2" id="professional"></section>
+<section class="background_image" id="professional"></section>
 
 <section class="professional">
   <h3>Similar Artists</h3>
@@ -65,8 +66,10 @@
   <div class="text">
     <ul>
       <% @related_artists.each do |artist| %>
-        <li><%= link_to artist.name, artist_path(artist.name) %></li>
-        <li><%=  %></li>
+        <li>
+          <%= link_to image_tag(artist.images.last['url'], :class => 'list_image'), artist_path(artist.name)%>
+          <%= link_to artist.name, artist_path(artist.name) %>
+        </li>
       <% end %>
     </ul>
   </div>
@@ -76,7 +79,7 @@
     </a>
   </div>
 </section>
-<section class="waldo3" id="business-solutions"></section>
+<section class="background_image" id="business-solutions"></section>
 <section class="business-solutions">
   <h3>Maybe have a section with the concert dates/tour info.</h3>
   <h4>I would have additional sections about latest news on the artists, blogs, music videos, ... </h4>
@@ -90,44 +93,48 @@
     </a>
   </div>
 </section>
-<section class="waldo4" id="connect"></section>
+<section class="background_image" id="connect"></section>
 <section class="connect">
   <h3>Music Videos</h3>
   <h4>Songs with links to its' YouTube video...</h4>
     <div class="text">
       <ul>
-        <% @videos.each do |video| %>
+        <%# @videos.each do |video| %>
           <li>
-            <%= link_to image_tag(video.image_url, :class => 'list_image', :size => '60x60'), video.url %>
-            <%= video.title %>
+            <%#= link_to image_tag(video.image_url, :class => 'list_image', :size => '60x60'), video.url %>
+            <%#= video.title %>
           </li>
 
-        <% end %>
+        <%# end %>
       </ul>
     </div>
 </section>
 
-<section class="waldo4" id="connect"></section>
+<section class="background_image" id="connect"></section>
 
 <section class="connect">
-  <h3>Stay Connected with <%= @artist.name %>!</h3>
+  <h3>Stay Connected with <%#= @artist.name %>!</h3>
   <h4> </h4>
     <div class="text">
-      <% if @websites.official_url != nil %>
-        <li><%= link_to "#{@artist.name}'s Website", @websites.official_url%></li>
-      <% end %>
+      <%# if @websites.official_url != nil %>
+        <li><%#= link_to "#{@artist.name}'s Website", @websites.official_url%></li>
+      <%# end %>
 
-      <% if @websites.wikipedia_url != nil %>
-        <li><%= link_to "Learn more about #{@artist.name}", @websites.wikipedia_url%></li>
-      <% end %>
+      <%# if @websites.wikipedia_url != nil %>
+        <li><%#= link_to "Learn more about #{@artist.name}", @websites.wikipedia_url%></li>
+      <%# end %>
 
-      <% if @websites.itunes_url != nil %>
-        <li><%= link_to "Buy Music", @websites.itunes_url%></li>
-      <% end %>
+      <%# if @websites.itunes_url != nil %>
+        <li><%#= link_to "Buy Music", @websites.itunes_url%></li>
+      <%# end %>
 
-      <% if @websites.amazon_url != nil %>
-        <li><%= link_to "Purchase!", @websites.amazon_url%></li>
-      <% end %>
+      <%# if @spotify_website != nil %>
+      <li><%= link_to "Spotify", @spotify_website%></li>
+      <%# end %>
+
+      <%# if @websites.amazon_url != nil %>
+        <li><%#= link_to "Purchase!", @websites.amazon_url%></li>
+      <%# end %>
     </div>
 </section>
 
