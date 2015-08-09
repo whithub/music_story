@@ -23,7 +23,7 @@ gem 'paperclip'
 
 group :development, :test do
   gem 'sqlite3'
-  gem 'byebug'
+  gem 'pry-rails'
   gem 'web-console', '~> 2.0'
   gem 'capybara'
   gem 'rspec-rails'

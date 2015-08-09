@@ -1,8 +1,13 @@
 class ArtistsController < ApplicationController
 
-  # def index
-  #   @artists = spotify_artists.artists
-  # end
+  def index
+    if params[:search] && (@artist = Echowrap.artist_search(name: params[:search]).first)
+      redirect_to artist_path(@artist.name)
+    else
+      redirect_to genres_path
+      flash[:notice] = "There is no artist by that name. Please try again."
+    end
+  end
 
   def show
     @artist = Echowrap.artist_search(name: params[:id]).first
