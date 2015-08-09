@@ -28,7 +28,7 @@
 </section>
 <section class="about">
   <h3>BIO</h3>
-  <h4><%= @artist_image %></h4>
+  <h4><%#= @artist_image %></h4>
   <div class="text">This is what the artist's bio/band history would go.
     <br>
     <br>I might have several paragraphs of info.
@@ -53,7 +53,7 @@
   </div>
   <div class="arrow-contain">
     <a class="next-arrow" href="#professional">
-      <%= image_tag("arrow-blue.png", :class => 'list_image', :size => '40x40') %>
+      <%= image_tag("arrow-white.png", :class => 'list_image', :size => '40x40') %>
     </a>
   </div>
 </section>
@@ -62,16 +62,20 @@
 
 <section class="professional">
   <h3>Similar Artists</h3>
-  <h4>Fan of <%= @artist.name %>'s? You may also like:</h4>
-  <div class="text">
-    <ul>
-      <% @related_artists.each do |artist| %>
-        <li>
-          <%= link_to image_tag(artist.images.last['url'], :class => 'list_image'), artist_path(artist.name)%>
-          <%= link_to artist.name, artist_path(artist.name) %>
-        </li>
-      <% end %>
-    </ul>
+  <h4>Fan of <%= @artist.name %>?   You may also like:</h4>
+  <div id="grid">
+    <div class="row">
+      <ul>
+        <% @related_artists.each do |artist| %>
+          <div class="col-lg-4" id="related_artists">
+            <li>
+              <%= link_to image_tag(artist.images.last['url'], :class => 'img-circle', :size => '80x80'), artist_path(artist.name) %>
+              <%= link_to artist.name, artist_path(artist.name), :style => 'color:white;' %>
+            </li>
+          </div>
+        <% end %>
+      </ul>
+    </div>
   </div>
   <div class="arrow-contain">
     <a class="next-arrow" href="#business-solutions">

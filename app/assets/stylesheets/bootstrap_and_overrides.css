@@ -14,6 +14,16 @@ h1 {
   margin: 0 0 23px 0;
 }
 
+h3, h4 {
+  font: normal normal 300 normal 28px 'Gotham SSm A', 'Gotham SSm B', sans-serif;
+}
+
+h4 {
+  font: normal normal 300 normal 20px 'Gotham SSm A', 'Gotham SSm B', sans-serif;
+
+}
+
+
 .navbar-brand {
   box-sizing: border-box;
   color: rgb(0, 0, 0);
