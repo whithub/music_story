@@ -39,6 +39,17 @@ ul {
   border-radius: 2px;
 }
 
+.col-lg-3 .list_image {
+  width: 560px;
+  height: 320px;
+}
+
+.col-lg-3 #music-videos {
+  width: 350px;
+  height: 300px;
+  border-radius: 20%;
+}
+
 .col-lg-4 {
   width: 33.33333333%;
   margin-bottom: 20px;
@@ -48,10 +59,14 @@ ul {
   font: normal normal 300 normal 16px 'Gotham SSm A', 'Gotham SSm B', sans-serif;
 }
 
+.form-search {
+  font-size: 28px;
+}
+
 .container .navbar-brand {
   margin-left: 15px;
   color: #4EA696;
-  font-size: 90px;
+  font-size: 100px;
   font-weight: 400;
 }
 

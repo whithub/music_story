@@ -14,3 +14,9 @@
  *= require_self
  */
 
+.container .navbar-brand {
+  margin-left: 15px;
+  color: #4EA696;
+  font-size: 90px;
+  font-weight: 400;
+}
