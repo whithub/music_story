@@ -16,6 +16,21 @@ li, ul {
   color: white;
 }
 
+#artist-bio {
+  color: black;
+  font: normal normal 300 normal 22px 'Gotham SSm A', 'Gotham SSm B', sans-serif;
+}
+
+#artist-reviews {
+  color: black;
+  font: normal normal 300 normal 22px 'Gotham SSm A', 'Gotham SSm B', sans-serif;
+}
+
+.col-lg-12 .name-title .img-circle {
+  image-size: '400x400';
+  border-radius: 30%;
+}
+
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -86,6 +101,7 @@ body {
   margin: 0 auto;
   padding-top: 50px;
   width: 100%;
+  font: normal normal 300 normal 50px 'Gotham SSm A', 'Gotham SSm B', sans-serif;
 }
 
 .primary-nav {
@@ -120,7 +136,7 @@ body {
 }
 
 div.text {
-  max-width: 960px;
+  max-width: 90%;
   padding-bottom: 20px;
   margin: 0 auto;
   text-align: left;
@@ -190,7 +206,7 @@ Backgrounds
 
 .background_image {
   margin: 0 auto;
-  padding: 150px 0;
+  padding: 300px 0;
   text-align: center;
   color: #000;
   background-image: url("music_1.jpg");
@@ -201,7 +217,7 @@ Backgrounds
 
 .background_image_1 {
   margin: 0 auto;
-  padding: 150px 0;
+  padding: 300px 0;
   text-align: center;
   color: #000;
   background-image: url("music_8.jpg");
@@ -222,7 +238,7 @@ Backgrounds
 
 .background_image_3 {
   margin: 0 auto;
-  padding: 200px 0;
+  padding: 300px 0;
   text-align: center;
   color: #000;
   background-image: url("music_4.jpg");
@@ -232,7 +248,7 @@ Backgrounds
 
 .background_image_4 {
   margin: 0 auto;
-  padding: 200px 0;
+  padding: 300px 0;
   text-align: center;
   color: #000;
   background-image: url("music_6.jpg");
@@ -243,7 +259,7 @@ Backgrounds
 
 .background_image_5 {
   margin: 0 auto;
-  padding: 200px 0;
+  padding: 300px 0;
   text-align: center;
   color: #000;
   background-image: url("music_8.jpg");

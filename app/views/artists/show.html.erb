@@ -29,13 +29,8 @@
 </section>
 <section class="about">
   <h3>BIO</h3>
-  <h4><%= @artist_image %></h4>
-  <div class="text">This is what the artist's bio/band history would go.
-    <br>
-    <br>I might have several paragraphs of info.
-    <br>
-    <br>Billy Joel is so awesome.
-    <br>
+  <div class="text" id="artist-bio">
+    <%= @artist_bio.text %>
   </div>
   <div class="arrow-contain">
     <a class="next-arrow" href="#professional">
@@ -48,7 +43,6 @@
 
 <section class="connect">
   <h3>Music Videos</h3>
-  <h4>Songs with links to its' YouTube video...</h4>
   <div id="grid">
     <div class="row">
       <ul>
@@ -63,20 +57,6 @@
       </ul>
     </div>
   </div>
-</section>
-
-
-<section class="background_image_2" id="professional"></section>
-
-<section class="about">
-  <h3>BLOGS</h3>
-  <h4><%#= @artist_news.date_found.to_time.strftime('%B %d, %Y') %></h4>
-  <h4><%= @artist_blog.date_posted.to_time.strftime('%B %d, %Y') %></h4>
-
-  <div class="text">
-    <%= @artist_blog.summary %>
-    <%#= @artist_news.summary %>
-  </div>
   <div class="arrow-contain">
     <a class="next-arrow" href="#professional">
       <%= image_tag("arrow-white.png", :class => 'list_image', :size => '40x40') %>
@@ -84,25 +64,46 @@
   </div>
 </section>
 
-<section class="background_image_3" id="business-solutions"></section>
-<section class="business-solutions">
-  <h3>Maybe have a section with the concert dates/tour info.</h3>
-  <h4>I would have additional sections about latest news on the artists, blogs, music videos, ... </h4>
-  <div class="text">
+<section class="background_image_2" id="professional"></section>
 
+<section class="about">
+  <h3>ARTIST REVIEWS</h3>
+  <% @reviews.each do |review| %>
+    <h4><%= review.date_found.to_time.strftime('%B %d, %Y') %></h4>
 
-  </div>
+    <div class="text" id="artist-reviews">
+      <%= review.summary %>
+      <%#= @artist_news.summary %>
+    </div>
+  <% end %>
   <div class="arrow-contain">
-    <a class="next-arrow" href="#connect">
+    <a class="next-arrow" href="#professional">
       <%= image_tag("arrow-blue.png", :class => 'list_image', :size => '40x40') %>
     </a>
   </div>
 </section>
-<section class="background_image_4" id="connect"></section>
 
+
+<!--<section class="about">-->
+  <!--<h3>BLOGS</h3>-->
+  <!--<h4><%#= @artist_news.date_found.to_time.strftime('%B %d, %Y') %></h4>-->
+  <!--<h4><%#= @artist_blog.date_posted.to_time.strftime('%B %d, %Y') %></h4>-->
+
+  <!--<div class="text">-->
+    <!--<%#= @artist_blog.summary %>-->
+    <!--<%#= @artist_news.summary %>-->
+  <!--</div>-->
+  <!--<div class="arrow-contain">-->
+    <!--<a class="next-arrow" href="#professional">-->
+      <!--<%#= image_tag("arrow-white.png", :class => 'list_image', :size => '40x40') %>-->
+    <!--</a>-->
+  <!--</div>-->
+<!--</section>-->
+
+<section class="background_image_3" id="business-solutions"></section>
 
 <section class="professional">
-  <h3>Similar Artists</h3>
+  <h3>SIMILAR ARTISTS</h3>
   <h4>Fan of <%= @artist.name %>?   You may also like:</h4>
   <div id="grid">
     <div class="row">
@@ -110,7 +111,7 @@
       <%# if @related_artists != nil %>
       <% @similar_artists.each do |artist| %>
         <div class="col-lg-4" id="related_artists">
-          <ul><%= link_to image_tag(Echowrap.artist_images(name: artist.name).first.url, :class => 'img-circle', :size => '80x80'), artist_path(artist.name) %></ul>
+          <ul><%= link_to image_tag(Echowrap.artist_images(name: artist.name).first.url, :class => 'img-circle', :size => '120x120'), artist_path(artist.name) %></ul>
           <ul><%= link_to artist.name, artist_path(artist.name), :style => 'color:white;' %></ul>
         </div>
       <% end %>
@@ -132,6 +133,21 @@
   </div>
 </section>
 
+<section class="background_image_4" id="connect"></section>
+
+<section class="business-solutions">
+  <h3>Maybe have a section with the concert dates/tour info.</h3>
+  <h4>I would have additional sections about latest news on the artists, blogs, music videos, ... </h4>
+  <div class="text">
+
+
+  </div>
+  <div class="arrow-contain">
+    <a class="next-arrow" href="#connect">
+      <%= image_tag("arrow-blue.png", :class => 'list_image', :size => '40x40') %>
+    </a>
+  </div>
+</section>
 
 <section class="background_image_5" id="connect"></section>
 
@@ -140,57 +156,75 @@
   <h4> </h4>
     <div class="stay-connected">
       <% if @twitter_handle != nil %>
-        <ul><%= link_to "Visit Twitter Page", "https://twitter.com/#{@twitter_handle}", :style => 'color:white;' %></ul>
+        <ul>
+          <%= image_tag("twitter-icon.png", :class => 'list_image', :size => '40x40') %>
+          <%= link_to "Visit Twitter Page", "https://twitter.com/#{@twitter_handle}", :style => 'color:white;' %>
+        </ul>
         <ul>Start Following: <%#= link_to "@#{@twitter_handle}", current_user.follow_artist(@twitter_handle), :style => 'color:white;' %></ul>
       <% end %>
 
       <% if @websites.official_url != nil %>
-        <ul><%= link_to "#{@artist.name}'s Website", @websites.official_url, :style => 'color:white;' %></ul>
+        <ul>
+          <%= image_tag("band-site-icon.png", :class => 'list_image', :size => '40x40') %>
+          <%= link_to "#{@artist.name}'s Website", @websites.official_url, :style => 'color:white;' %>
+        </ul>
       <% end %>
 
       <% if @websites.wikipedia_url != nil %>
-        <ul><%= link_to "Learn more about #{@artist.name}", @websites.wikipedia_url, :style => 'color:white;' %></ul>
+        <ul>
+          <%= image_tag("wiki-icon.png", :class => 'list_image', :size => '40x40') %>
+          <%= link_to "Learn more about #{@artist.name}", @websites.wikipedia_url, :style => 'color:white;' %>
+        </ul>
       <% end %>
 
       <% if @websites.itunes_url != nil %>
-        <ul><%= link_to "Buy Music", @websites.itunes_url, :style => 'color:white;' %></ul>
+        <ul>
+          <%= image_tag("itunes-icon.png", :class => 'list_image', :size => '40x40') %>
+          <%= link_to "Buy Music", @websites.itunes_url, :style => 'color:white;' %>
+        </ul>
       <% end %>
 
       <% if @spotify_artist != nil %>
-      <ul><%= link_to "Spotify", @spotify_website, :style => 'color:white;' %></ul>
+        <ul>
+          <%= image_tag("spotify-icon.png", :class => 'list_image', :size => '40x40') %>
+          <%= link_to "Spotify", @spotify_website, :style => 'color:white;' %>
+        </ul>
       <% end %>
 
       <% if @websites.amazon_url != nil %>
-        <ul><%= link_to "Purchase!", @websites.amazon_url, :style => 'color:white;' %></ul>
+        <ul>
+          <%= image_tag("amazon-icon.png", :class => 'list_image', :size => '40x40') %>
+          <%= link_to "Purchase!", @websites.amazon_url, :style => 'color:white;' %>
+        </ul>
       <% end %>
     </div>
 </section>
 
-<section class="connect-icons">
-  <div class="col-1-3">
-    <!--<div class="github-icon">-->
-      <a href="/">
-        <%= image_tag("billy_album_1.jpg", :class => 'list_image', :size => '100x100') %>
-        <!--<img src="assets/images/billy_album_1.jpg" alt="album_cover">-->
-      </a>
-    <!--</div>-->
-  </div>
-  <!-- -->
-  <div class="col-1-3">
-    <a href="/">
-    <!--<a href="https://www.facebook.com/max.tedford">-->
-      <%= image_tag("billy_album_2.jpg", :class => 'list_image', :size => '100x100') %>
-    </a>
-  </div>
-  <!-- -->
-  <div class="col-1-3">
-    <a href="/">
-    <!--<a href="https://www.linkedin.com/profile/view?id=25531971&amp;trk=nav_responsive_tab_profile">-->
-      <%= image_tag("billy_album_3.jpg", :class => 'list_image', :size => '100x100') %>
-      <!--<img src="assets/images/billy_album_3.jpg" alt="album_cover">-->
-    </a>
-  </div>
-</section>
+<!--<section class="connect-icons">-->
+  <!--<div class="col-1-3">-->
+    <!--&lt;!&ndash;<div class="github-icon">&ndash;&gt;-->
+      <!--<a href="/">-->
+        <!--<%#= image_tag("billy_album_1.jpg", :class => 'list_image', :size => '100x100') %>-->
+        <!--&lt;!&ndash;<img src="assets/images/billy_album_1.jpg" alt="album_cover">&ndash;&gt;-->
+      <!--</a>-->
+    <!--&lt;!&ndash;</div>&ndash;&gt;-->
+  <!--</div>-->
+  <!--&lt;!&ndash; &ndash;&gt;-->
+  <!--<div class="col-1-3">-->
+    <!--<a href="/">-->
+    <!--&lt;!&ndash;<a href="https://www.facebook.com/max.tedford">&ndash;&gt;-->
+      <!--<%#= image_tag("billy_album_2.jpg", :class => 'list_image', :size => '100x100') %>-->
+    <!--</a>-->
+  <!--</div>-->
+  <!--&lt;!&ndash; &ndash;&gt;-->
+  <!--<div class="col-1-3">-->
+    <!--<a href="/">-->
+    <!--&lt;!&ndash;<a href="https://www.linkedin.com/profile/view?id=25531971&amp;trk=nav_responsive_tab_profile">&ndash;&gt;-->
+      <!--<%#= image_tag("billy_album_3.jpg", :class => 'list_image', :size => '100x100') %>-->
+      <!--&lt;!&ndash;<img src="assets/images/billy_album_3.jpg" alt="album_cover">&ndash;&gt;-->
+    <!--</a>-->
+  <!--</div>-->
+<!--</section>-->
 <!--<footer class="copyright">-->
   <!--<small>© Whithub Company</small>-->
 <!--</footer>-->

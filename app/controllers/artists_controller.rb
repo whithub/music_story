@@ -22,6 +22,7 @@ class ArtistsController < ApplicationController
     # @similar_artist_images = @similar_artists.each do |artist|
     #   Echowrap.artist_images(name: artist.name)
     # end
+    @reviews = Echowrap.artist_reviews(name: @artist.name).first(1)
     @familiarity      = Echowrap.artist_familiarity(name: @artist.name)
     # @artist_albums = Echowrap.artist_albums(name: @artist.name)     #user Spotify??
     #@related_artists = Echowrap.artist_similar(name: @artist.name, results: 20)
