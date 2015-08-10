@@ -9,9 +9,11 @@
 <body cz-shortcut-listen="true">
 
 <section class="name-title">
-  <!--<img class="img-circle" <%#= image_tag(@profile_pic['url'], :class => 'list_image', :size => '306x306') %>-->
-  <img class="img-circle" <%= image_tag(@artist_images.first.url, :class => 'list_image', :size => '350x350') %>
-
+  <%# if @artist_images != nil %>
+    <img class="img-circle" <%= image_tag(@artist_images.first.url, :class => 'list_image', :size => '350x350') %>
+  <%# else %>
+    <!--<img class="img-circle" <%#= image_tag(@profile_pic['url'], :class => 'list_image', :size => '350x350') %>-->
+  <%# end %>
   <!--<img class="headshot" src="assets/images/billy_profile.jpg" alt="photo of artist">-->
   <h1 class="container"><%= @artist.name %></h1>
   <div class="arrow-contain">
@@ -24,7 +26,6 @@
 </section>
 <section class="background_image" id="about">
   <%#= image_tag(@artist_images.last.url) %>
-
 </section>
 <section class="about">
   <h3>BIO</h3>
@@ -47,9 +48,12 @@
 
 <section class="news">
   <h3>NEWS</h3>
-  <h4><%= @artist_news.date_found.to_time.strftime('%B %d, %Y') %></h4>
+  <h4><%#= @artist_news.date_found.to_time.strftime('%B %d, %Y') %></h4>
+  <h4><%= @artist_blog.date_posted.to_time.strftime('%B %d, %Y') %></h4>
+
   <div class="text">
-    <%= @artist_news.summary %>
+    <%= @artist_blog.summary %>
+    <%#= @artist_news.summary %>
   </div>
   <div class="arrow-contain">
     <a class="next-arrow" href="#professional">
@@ -66,12 +70,21 @@
   <div id="grid">
     <div class="row">
       <!--<ul>-->
-        <% @related_artists.each do |artist| %>
+      <%# if @related_artists != nil %>
+        <% @similar_artists.each do |artist| %>
           <div class="col-lg-4" id="related_artists">
-            <ul><%= link_to image_tag(artist.images.last['url'], :class => 'img-circle', :size => '80x80'), artist_path(artist.name) %></ul>
+            <ul><%= link_to image_tag(Echowrap.artist_images(name: artist.name).first.url, :class => 'img-circle', :size => '80x80'), artist_path(artist.name) %></ul>
             <ul><%= link_to artist.name, artist_path(artist.name), :style => 'color:white;' %></ul>
           </div>
         <% end %>
+      <%# else %>
+        <%# @related_artists.each do |artist| %>
+          <!--<div class="col-lg-4" id="related_artists">-->
+            <ul><%#= link_to image_tag(artist.images.last['url'], :class => 'img-circle', :size => '80x80'), artist_path(artist.name) %></ul>
+            <ul><%#= link_to artist.name, artist_path(artist.name), :style => 'color:white;' %></ul>
+          <!--</div>-->
+        <%# end %>
+      <%# end %>
       <!--</ul>-->
     </div>
   </div>
@@ -138,7 +151,7 @@
         <ul><%= link_to "Buy Music", @websites.itunes_url, :style => 'color:white;' %></ul>
       <% end %>
 
-      <% if @spotify_website != nil %>
+      <% if @spotify_artist != nil %>
       <ul><%= link_to "Spotify", @spotify_website, :style => 'color:white;' %></ul>
       <% end %>
 

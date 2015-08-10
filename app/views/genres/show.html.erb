@@ -10,6 +10,25 @@
           </li>
         </div>
       <% end %>
+      <!--<%# if @artists != nil %>-->
+        <!--<%# @artists.each do |artist| %>-->
+          <!--<div class="col-lg-4" id="related_artists">-->
+            <!--<li>-->
+              <!--<%#= link_to image_tag(Echowrap.artist_images(name: artist.name).last.url, :class => 'img-circle', :size => '120x120'), artist_path(artist.name) %>-->
+              <!--<%#= link_to artist.name, artist_path(artist.name), :style => 'color:white;' %>-->
+            <!--</li>-->
+          <!--</div>-->
+        <!--<%# end %>-->
+      <!--<%# else %>-->
+        <!--<%# @spotify_artists.each do |artist| %>-->
+          <!--<div class="col-lg-4" id="related_artists">-->
+            <!--<li>-->
+              <!--<%#= link_to image_tag(artist.images.last['url'], :class => 'img-circle', :size => '120x120'), artist_path(artist.name) %>-->
+              <!--<%#= link_to artist.name, artist_path(artist.name), :style => 'color:white;' %>-->
+            <!--</li>-->
+          <!--</div>-->
+        <!--<%# end %>-->
+      <!--<%# end %>-->
     </ul>
   </div>
 </div>
