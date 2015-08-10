@@ -11,4 +11,17 @@ class User < ActiveRecord::Base
         })
     end
   end
+
+  def twitter_client
+    @client ||= Twitter::REST::Client.new do |config|
+      config.consumer_key = ENV["TWITTER_KEY"]
+      config.consumer_secret = ENV["TWITTER_KEY_SECRET"]
+      config.access_token = self.oauth_token
+      config.access_token_secret = self.oauth_token_secret
+    end
+  end
+
+  def follow_artist(twitter_handle)
+    twitter_client.follow(twitter_handle)
+  end
 end
