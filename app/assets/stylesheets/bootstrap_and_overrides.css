@@ -20,7 +20,10 @@ h3, h4 {
 
 h4 {
   font: normal normal 300 normal 20px 'Gotham SSm A', 'Gotham SSm B', sans-serif;
+}
 
+ul {
+  color: white;
 }
 
 .col-lg-4 {

@@ -17,6 +17,7 @@ class ArtistsController < ApplicationController
     @artist_news = Echowrap.artist_news(name: @artist.name).first
     @videos = Echowrap.artist_video(name: @artist.name)
     @websites = Echowrap.artist_urls(name: @artist.name)
+    @twitter_handle = Echowrap.artist_twitter(name: @artist.name).twitter
 
     # @artist_albums = Echowrap.artist_albums(name: @artist.name)     #user Spotify??
     #@related_artists = Echowrap.artist_similar(name: @artist.name, results: 20)
@@ -25,7 +26,7 @@ class ArtistsController < ApplicationController
     @spotify_artist = RSpotify::Artist.search(params[:id]).first
     @profile_pic = @spotify_artist.images.third
 
-    @related_artists = @spotify_artist.related_artists.take(12)
+    @related_artists = @spotify_artist.related_artists.take(6)  #TODO change number to 12..24?
 
     @spotify_website = @spotify_artist.external_urls['spotify']
     @artist_thumbnail = @spotify_artist.images.last['url']

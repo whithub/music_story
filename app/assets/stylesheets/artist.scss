@@ -7,8 +7,13 @@
    License: none (public domain)
 */
 
-li {
+li, ul {
   font: normal normal 300 normal 18px 'Gotham SSm A', 'Gotham SSm B', sans-serif;
+}
+
+.connect .stay-connected ul{
+  font: normal normal 300 normal 20px 'Gotham SSm A', 'Gotham SSm B', sans-serif;
+  color: white;
 }
 
 html, body, div, span, applet, object, iframe,
@@ -17,7 +22,7 @@ a, abbr, acronym, address, big, cite, code,
 del, dfn, em, img, ins, kbd, q, s, samp,
 small, strike, strong, sub, sup, tt, var,
 b, u, i, center,
-dl, dt, dd, ol, ul,
+dl, dt, dd, ol,
 fieldset, form, label, legend,
 table, caption, tbody, tfoot, thead, tr, th, td,
 article, aside, canvas, details, embed,
@@ -174,7 +179,7 @@ h3, h4 {
 }
 
 #related_artists {
-  text-align: left;
+  text-align: center;
 }
 
 /*

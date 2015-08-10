@@ -28,7 +28,7 @@
 </section>
 <section class="about">
   <h3>BIO</h3>
-  <h4><%#= @artist_image %></h4>
+  <h4><%= @artist_image %></h4>
   <div class="text">This is what the artist's bio/band history would go.
     <br>
     <br>I might have several paragraphs of info.
@@ -47,9 +47,9 @@
 
 <section class="news">
   <h3>NEWS</h3>
-  <h4><%#= @artist_news.date_found.to_time.strftime('%B %d, %Y') %></h4>
+  <h4><%= @artist_news.date_found.to_time.strftime('%B %d, %Y') %></h4>
   <div class="text">
-    <%#= @artist_news.summary %>
+    <%= @artist_news.summary %>
   </div>
   <div class="arrow-contain">
     <a class="next-arrow" href="#professional">
@@ -65,16 +65,14 @@
   <h4>Fan of <%= @artist.name %>?   You may also like:</h4>
   <div id="grid">
     <div class="row">
-      <ul>
+      <!--<ul>-->
         <% @related_artists.each do |artist| %>
           <div class="col-lg-4" id="related_artists">
-            <li>
-              <%= link_to image_tag(artist.images.last['url'], :class => 'img-circle', :size => '80x80'), artist_path(artist.name) %>
-              <%= link_to artist.name, artist_path(artist.name), :style => 'color:white;' %>
-            </li>
+            <ul><%= link_to image_tag(artist.images.last['url'], :class => 'img-circle', :size => '80x80'), artist_path(artist.name) %></ul>
+            <ul><%= link_to artist.name, artist_path(artist.name), :style => 'color:white;' %></ul>
           </div>
         <% end %>
-      </ul>
+      <!--</ul>-->
     </div>
   </div>
   <div class="arrow-contain">
@@ -101,44 +99,49 @@
 <section class="connect">
   <h3>Music Videos</h3>
   <h4>Songs with links to its' YouTube video...</h4>
-    <div class="text">
-      <ul>
-        <%# @videos.each do |video| %>
-          <li>
-            <%#= link_to image_tag(video.image_url, :class => 'list_image', :size => '60x60'), video.url %>
-            <%#= video.title %>
-          </li>
-
-        <%# end %>
-      </ul>
+    <div id="grid">
+      <div class="row">
+        <ul>
+          <% @videos.each do |video| %>
+            <li>
+              <%= link_to image_tag(video.image_url, :class => 'img_circle', :size => '60x60'), video.url %>
+              <%= video.title %>
+            </li>
+          <% end %>
+       </ul>
+      </div>
     </div>
 </section>
 
 <section class="background_image" id="connect"></section>
 
 <section class="connect">
-  <h3>Stay Connected with <%#= @artist.name %>!</h3>
+  <h3>Stay Connected with <%= @artist.name %>!</h3>
   <h4> </h4>
-    <div class="text">
-      <%# if @websites.official_url != nil %>
-        <li><%#= link_to "#{@artist.name}'s Website", @websites.official_url%></li>
-      <%# end %>
+    <div class="stay-connected">
+      <% if @twitter_handle != nil %>
+        <ul><%= link_to "@#{@twitter_handle}", "https://twitter.com/#{@twitter_handle}", :style => 'color:white;' %></ul>
+      <% end %>
 
-      <%# if @websites.wikipedia_url != nil %>
-        <li><%#= link_to "Learn more about #{@artist.name}", @websites.wikipedia_url%></li>
-      <%# end %>
+      <% if @websites.official_url != nil %>
+        <ul><%= link_to "#{@artist.name}'s Website", @websites.official_url, :style => 'color:white;' %></ul>
+      <% end %>
 
-      <%# if @websites.itunes_url != nil %>
-        <li><%#= link_to "Buy Music", @websites.itunes_url%></li>
-      <%# end %>
+      <% if @websites.wikipedia_url != nil %>
+        <ul><%= link_to "Learn more about #{@artist.name}", @websites.wikipedia_url, :style => 'color:white;' %></ul>
+      <% end %>
 
-      <%# if @spotify_website != nil %>
-      <li><%= link_to "Spotify", @spotify_website%></li>
-      <%# end %>
+      <% if @websites.itunes_url != nil %>
+        <ul><%= link_to "Buy Music", @websites.itunes_url, :style => 'color:white;' %></ul>
+      <% end %>
 
-      <%# if @websites.amazon_url != nil %>
-        <li><%#= link_to "Purchase!", @websites.amazon_url%></li>
-      <%# end %>
+      <% if @spotify_website != nil %>
+      <ul><%= link_to "Spotify", @spotify_website, :style => 'color:white;' %></ul>
+      <% end %>
+
+      <% if @websites.amazon_url != nil %>
+        <ul><%= link_to "Purchase!", @websites.amazon_url, :style => 'color:white;' %></ul>
+      <% end %>
     </div>
 </section>
 
