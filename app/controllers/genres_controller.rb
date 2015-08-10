@@ -4,7 +4,7 @@ class GenresController < ApplicationController
   end
 
   def show
-    @artists = Echowrap.artist_search(genre: params[:id])
+    @artists = Echowrap.artist_search(genre: params[:id], results: 3)
   end
 
   private
