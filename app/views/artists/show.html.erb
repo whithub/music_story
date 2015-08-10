@@ -44,10 +44,32 @@
   </div>
 </section>
 
-<section class="background_image" id="professional"></section>
+<section class="background_image_1" id="professional"></section>
 
-<section class="news">
-  <h3>NEWS</h3>
+<section class="connect">
+  <h3>Music Videos</h3>
+  <h4>Songs with links to its' YouTube video...</h4>
+  <div id="grid">
+    <div class="row">
+      <ul>
+        <% @videos.each do |video| %>
+          <div class="col-lg-3" id="related_artists">
+            <li>
+              <%= link_to image_tag(video.image_url, :class => 'list_image', :title => video.title, :size => '150x150'), video.url %>
+              <%#= video.title %>
+            </li>
+          </div>
+        <% end %>
+      </ul>
+    </div>
+  </div>
+</section>
+
+
+<section class="background_image_2" id="professional"></section>
+
+<section class="about">
+  <h3>BLOGS</h3>
   <h4><%#= @artist_news.date_found.to_time.strftime('%B %d, %Y') %></h4>
   <h4><%= @artist_blog.date_posted.to_time.strftime('%B %d, %Y') %></h4>
 
@@ -62,39 +84,7 @@
   </div>
 </section>
 
-<section class="background_image" id="professional"></section>
-
-<section class="professional">
-  <h3>Similar Artists</h3>
-  <h4>Fan of <%= @artist.name %>?   You may also like:</h4>
-  <div id="grid">
-    <div class="row">
-      <!--<ul>-->
-      <%# if @related_artists != nil %>
-        <% @similar_artists.each do |artist| %>
-          <div class="col-lg-4" id="related_artists">
-            <ul><%= link_to image_tag(Echowrap.artist_images(name: artist.name).first.url, :class => 'img-circle', :size => '80x80'), artist_path(artist.name) %></ul>
-            <ul><%= link_to artist.name, artist_path(artist.name), :style => 'color:white;' %></ul>
-          </div>
-        <% end %>
-      <%# else %>
-        <%# @related_artists.each do |artist| %>
-          <!--<div class="col-lg-4" id="related_artists">-->
-            <ul><%#= link_to image_tag(artist.images.last['url'], :class => 'img-circle', :size => '80x80'), artist_path(artist.name) %></ul>
-            <ul><%#= link_to artist.name, artist_path(artist.name), :style => 'color:white;' %></ul>
-          <!--</div>-->
-        <%# end %>
-      <%# end %>
-      <!--</ul>-->
-    </div>
-  </div>
-  <div class="arrow-contain">
-    <a class="next-arrow" href="#business-solutions">
-      <%= image_tag("arrow-white.png", :class => 'list_image', :size => '40x40') %>
-    </a>
-  </div>
-</section>
-<section class="background_image" id="business-solutions"></section>
+<section class="background_image_3" id="business-solutions"></section>
 <section class="business-solutions">
   <h3>Maybe have a section with the concert dates/tour info.</h3>
   <h4>I would have additional sections about latest news on the artists, blogs, music videos, ... </h4>
@@ -108,27 +98,42 @@
     </a>
   </div>
 </section>
-<section class="background_image" id="connect"></section>
-<section class="connect">
-  <h3>Music Videos</h3>
-  <h4>Songs with links to its' YouTube video...</h4>
-    <div id="grid">
-      <div class="row">
-        <ul>
-          <% @videos.each do |video| %>
-            <div class="col-lg-3" id="related_artists">
-              <li>
-                <%= link_to image_tag(video.image_url, :class => 'list_image', :title => video.title, :size => '150x150'), video.url %>
-                <%#= video.title %>
-              </li>
-            </div>
-          <% end %>
-       </ul>
-      </div>
+<section class="background_image_4" id="connect"></section>
+
+
+<section class="professional">
+  <h3>Similar Artists</h3>
+  <h4>Fan of <%= @artist.name %>?   You may also like:</h4>
+  <div id="grid">
+    <div class="row">
+      <!--<ul>-->
+      <%# if @related_artists != nil %>
+      <% @similar_artists.each do |artist| %>
+        <div class="col-lg-4" id="related_artists">
+          <ul><%= link_to image_tag(Echowrap.artist_images(name: artist.name).first.url, :class => 'img-circle', :size => '80x80'), artist_path(artist.name) %></ul>
+          <ul><%= link_to artist.name, artist_path(artist.name), :style => 'color:white;' %></ul>
+        </div>
+      <% end %>
+      <%# else %>
+      <%# @related_artists.each do |artist| %>
+      <!--<div class="col-lg-4" id="related_artists">-->
+      <ul><%#= link_to image_tag(artist.images.last['url'], :class => 'img-circle', :size => '80x80'), artist_path(artist.name) %></ul>
+      <ul><%#= link_to artist.name, artist_path(artist.name), :style => 'color:white;' %></ul>
+      <!--</div>-->
+      <%# end %>
+      <%# end %>
+      <!--</ul>-->
     </div>
+  </div>
+  <div class="arrow-contain">
+    <a class="next-arrow" href="#business-solutions">
+      <%= image_tag("arrow-white.png", :class => 'list_image', :size => '40x40') %>
+    </a>
+  </div>
 </section>
 
-<section class="background_image" id="connect"></section>
+
+<section class="background_image_5" id="connect"></section>
 
 <section class="connect">
   <h3>Stay Connected with <%= @artist.name %>!</h3>
