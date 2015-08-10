@@ -23,10 +23,14 @@ h4 {
 
 }
 
+.col-lg-4 {
+  width: 33.33333333%;
+  margin-bottom: 20px;
+}
+
 #footer {
   font: normal normal 300 normal 16px 'Gotham SSm A', 'Gotham SSm B', sans-serif;
 }
-
 
 .navbar-brand {
   box-sizing: border-box;
