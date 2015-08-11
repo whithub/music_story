@@ -2,7 +2,7 @@
 <head>
   <meta charset="utf-8">
   <%= stylesheet_link_tag "artist", :media => "all" %>
-  <% cache("artist-intro") do %>
+  <% cache("#{@artist.name}-intro") do %>
     <title><%= @artist.name %></title>
 </head>
 
@@ -30,7 +30,7 @@
   <%#= image_tag(@artist_images.last.url) %>
 </section>
 
-  <% cache("artist-bio") do %>
+  <% cache("#{@artist.name}-bio") do %>
 
     <section class="about">
       <h3>BIO</h3>
@@ -48,7 +48,7 @@
 
   <% end %>
 
-  <% cache("artist-videos") do %>
+  <% cache("#{@artist.name}-videos") do %>
 
     <section class="connect">
       <h3>MUSIC VIDEOS</h3>
@@ -76,7 +76,7 @@
     <section class="background_image_2" id="professional"></section>
   <% end %>
 
-  <% cache("artist-reviews") do %>
+  <% cache("#{@artist.name}-reviews") do %>
 
     <section class="about">
       <h3>ARTIST REVIEWS</h3>
@@ -116,7 +116,7 @@
 
   <% end %>
 
-  <% cache("artist-intro") do %>
+  <% cache("#{@artist.name}-intro") do %>
 
     <section class="professional">
       <h3>SIMILAR ARTISTS</h3>
@@ -153,7 +153,7 @@
 
   <% end %>
 
-  <% cache("artist-TBD") do %>
+  <% cache("#{@artist.name}-TBD") do %>
 
     <section class="business-solutions">
       <h3>Maybe have a section with the concert dates/tour info.</h3>
@@ -173,7 +173,7 @@
 
   <% end %>
 
-  <% cache("artist-social-media") do %>
+  <% cache("#{@artist.name}-social-media") do %>
 
     <section class="connect">
       <h3>Stay Connected with <%= @artist.name %>!</h3>
