@@ -1,87 +1,100 @@
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <title><%= @artist.name %></title>
-  <link rel="stylesheet" href="assets/stylesheets/artist.scss">
-  <!--<link rel="stylesheet" href="Assets/Fonts/ProximaNovaSoft-Regular.otf">-->
+  <% cache("artist-intro") do %>
+    <meta charset="utf-8">
+    <title><%= @artist.name %></title>
+    <link rel="stylesheet" href="assets/stylesheets/artist.scss">
+    <!--<link rel="stylesheet" href="Assets/Fonts/ProximaNovaSoft-Regular.otf">-->
 </head>
 
 <body cz-shortcut-listen="true">
 
-<section class="name-title">
-  <%# if @artist_images != nil %>
-    <img class="img-circle" <%= image_tag(@artist_images.first.url, :class => 'list_image', :size => '350x350') %>
-  <%# else %>
-    <!--<img class="img-circle" <%#= image_tag(@profile_pic['url'], :class => 'list_image', :size => '350x350') %>-->
-  <%# end %>
-  <!--<img class="headshot" src="assets/images/billy_profile.jpg" alt="photo of artist">-->
-  <h1 class="container"><%= @artist.name %></h1>
-  <div class="arrow-contain">
-    <a class="next-arrow" href="#about">
-      <%= image_tag("arrow-white.png", :class => 'list_image', :size => '40x40') %>
+  <section class="name-title">
+    <%# if @artist_images != nil %>
+      <img class="img-circle" <%= image_tag(@artist_images.first.url, :class => 'list_image', :size => '350x350') %>
+    <%# else %>
+      <!--<img class="img-circle" <%#= image_tag(@profile_pic['url'], :class => 'list_image', :size => '350x350') %>-->
+    <%# end %>
+    <!--<img class="headshot" src="assets/images/billy_profile.jpg" alt="photo of artist">-->
+    <h1 class="container"><%= @artist.name %></h1>
+    <div class="arrow-contain">
+      <a class="next-arrow" href="#about">
+        <%= image_tag("arrow-white.png", :class => 'list_image', :size => '40x40') %>
 
-      <!--<img src="assets/images/arrow-white.png" alt="down arrow">-->
-    </a>
-  </div>
-</section>
+        <!--<img src="assets/images/arrow-white.png" alt="down arrow">-->
+      </a>
+    </div>
+  </section>
+  <% end %>
+
 <section class="background_image" id="about">
   <%#= image_tag(@artist_images.last.url) %>
 </section>
-<section class="about">
-  <h3>BIO</h3>
-  <div class="text" id="artist-bio">
-    <%= @artist_bio.text %>
-  </div>
-  <div class="arrow-contain">
-    <a class="next-arrow" href="#professional">
-      <%= image_tag("arrow-blue.png", :class => 'list_image', :size => '40x40') %>
-    </a>
-  </div>
-</section>
 
-<section class="background_image_1" id="professional"></section>
+  <% cache("artist-bio") do %>
 
-<section class="connect">
-  <h3>MUSIC VIDEOS</h3>
-  <div id="grid">
-    <div class="row">
-      <ul>
-        <% @videos.each do |video| %>
-          <div class="col-lg-3" id="related_artists">
-            <li>
-              <%= link_to image_tag(video.image_url, :id => 'music-videos', :title => video.title, :size => '150x150'), video.url %>
-              <%#= video.title %>
-            </li>
-          </div>
-        <% end %>
-      </ul>
-    </div>
-  </div>
-  <div class="arrow-contain">
-    <a class="next-arrow" href="#professional">
-      <%= image_tag("arrow-white.png", :class => 'list_image', :size => '40x40') %>
-    </a>
-  </div>
-</section>
+    <section class="about">
+      <h3>BIO</h3>
+      <div class="text" id="artist-bio">
+        <%= @artist_bio.text %>
+      </div>
+      <div class="arrow-contain">
+        <a class="next-arrow" href="#professional">
+          <%= image_tag("arrow-blue.png", :class => 'list_image', :size => '40x40') %>
+        </a>
+      </div>
+    </section>
 
-<section class="background_image_2" id="professional"></section>
+    <section class="background_image_1" id="professional"></section>
 
-<section class="about">
-  <h3>ARTIST REVIEWS</h3>
-  <% @reviews.each do |review| %>
-    <h4><%= review.date_found.to_time.strftime('%B %d, %Y') %></h4>
-
-    <div class="text" id="artist-reviews">
-      <%= review.summary %>
-      <%#= @artist_news.summary %>
-    </div>
   <% end %>
-  <div class="arrow-contain">
-    <a class="next-arrow" href="#professional">
-      <%= image_tag("arrow-blue.png", :class => 'list_image', :size => '40x40') %>
-    </a>
-  </div>
-</section>
+
+  <% cache("artist-videos") do %>
+
+    <section class="connect">
+      <h3>MUSIC VIDEOS</h3>
+      <div id="grid">
+        <div class="row">
+          <ul>
+            <% @videos.each do |video| %>
+              <div class="col-lg-3" id="related_artists">
+                <li>
+                  <%= link_to image_tag(video.image_url, :id => 'music-videos', :title => video.title, :size => '150x150'), video.url %>
+                  <%#= video.title %>
+                </li>
+              </div>
+            <% end %>
+          </ul>
+        </div>
+      </div>
+      <div class="arrow-contain">
+        <a class="next-arrow" href="#professional">
+          <%= image_tag("arrow-white.png", :class => 'list_image', :size => '40x40') %>
+        </a>
+      </div>
+    </section>
+
+    <section class="background_image_2" id="professional"></section>
+  <% end %>
+
+  <% cache("artist-reviews") do %>
+
+    <section class="about">
+      <h3>ARTIST REVIEWS</h3>
+      <% @reviews.each do |review| %>
+        <h4><%= review.date_found.to_time.strftime('%B %d, %Y') %></h4>
+
+        <div class="text" id="artist-reviews">
+          <%= review.summary %>
+          <%#= @artist_news.summary %>
+        </div>
+      <% end %>
+      <div class="arrow-contain">
+        <a class="next-arrow" href="#professional">
+          <%= image_tag("arrow-blue.png", :class => 'list_image', :size => '40x40') %>
+        </a>
+      </div>
+    </section>
 
 
 <!--<section class="about">-->
@@ -100,93 +113,107 @@
   <!--</div>-->
 <!--</section>-->
 
-<section class="background_image_3" id="business-solutions"></section>
+    <section class="background_image_3" id="business-solutions"></section>
 
-<section class="professional">
-  <h3>SIMILAR ARTISTS</h3>
-  <h3>Fan of <%= @artist.name %>?   You may also like:</h3>
-  <div id="grid">
-    <div class="row">
-      <!--<ul>-->
-      <%# if @related_artists != nil %>
-      <% @similar_artists.each do |artist| %>
-        <div class="col-lg-4" id="related_artists">
-          <ul><%= link_to image_tag(Echowrap.artist_images(name: artist.name).first.url, :class => 'img-circle', :size => '120x120'), artist_path(artist.name) %></ul>
-          <ul><%= link_to artist.name, artist_path(artist.name), :id => "similar", :style => 'color:white;' %></ul>
+  <% end %>
+
+  <% cache("artist-intro") do %>
+
+    <section class="professional">
+      <h3>SIMILAR ARTISTS</h3>
+      <h3>Fan of <%= @artist.name %>?   You may also like:</h3>
+      <div id="grid">
+        <div class="row">
+          <!--<ul>-->
+          <%# if @related_artists != nil %>
+          <% @similar_artists.each do |artist| %>
+            <div class="col-lg-4" id="related_artists">
+              <ul><%= link_to image_tag(Echowrap.artist_images(name: artist.name).first.url, :class => 'img-circle', :size => '150x150'), artist_path(artist.name) %></ul>
+              <ul><%= link_to artist.name, artist_path(artist.name), :id => "similar", :style => 'color:white;' %></ul>
+            </div>
+          <% end %>
+          <%# else %>
+          <%# @related_artists.each do |artist| %>
+          <!--<div class="col-lg-4" id="related_artists">-->
+          <ul><%#= link_to image_tag(artist.images.last['url'], :class => 'img-circle', :size => '80x80'), artist_path(artist.name) %></ul>
+          <ul><%#= link_to artist.name, artist_path(artist.name), :style => 'color:white;' %></ul>
+          <!--</div>-->
+          <%# end %>
+          <%# end %>
+          <!--</ul>-->
         </div>
-      <% end %>
-      <%# else %>
-      <%# @related_artists.each do |artist| %>
-      <!--<div class="col-lg-4" id="related_artists">-->
-      <ul><%#= link_to image_tag(artist.images.last['url'], :class => 'img-circle', :size => '80x80'), artist_path(artist.name) %></ul>
-      <ul><%#= link_to artist.name, artist_path(artist.name), :style => 'color:white;' %></ul>
-      <!--</div>-->
-      <%# end %>
-      <%# end %>
-      <!--</ul>-->
-    </div>
-  </div>
-  <div class="arrow-contain">
-    <a class="next-arrow" href="#business-solutions">
-      <%= image_tag("arrow-white.png", :class => 'list_image', :size => '40x40') %>
-    </a>
-  </div>
-</section>
+      </div>
+      <div class="arrow-contain">
+        <a class="next-arrow" href="#business-solutions">
+          <%= image_tag("arrow-white.png", :class => 'list_image', :size => '40x40') %>
+        </a>
+      </div>
+    </section>
 
-<section class="background_image_4" id="connect"></section>
+    <section class="background_image_4" id="connect"></section>
 
-<section class="business-solutions">
-  <h3>Maybe have a section with the concert dates/tour info.</h3>
-  <h4>I would have additional sections about latest news on the artists, blogs, music videos, ... </h4>
-  <div class="text">
+  <% end %>
+
+  <% cache("artist-TBD") do %>
+
+    <section class="business-solutions">
+      <h3>Maybe have a section with the concert dates/tour info.</h3>
+      <h4>I would have additional sections about latest news on the artists, blogs, music videos, ... </h4>
+      <div class="text">
 
 
-  </div>
-  <div class="arrow-contain">
-    <a class="next-arrow" href="#connect">
-      <%= image_tag("arrow-blue.png", :class => 'list_image', :size => '40x40') %>
-    </a>
-  </div>
-</section>
+      </div>
+      <div class="arrow-contain">
+        <a class="next-arrow" href="#connect">
+          <%= image_tag("arrow-blue.png", :class => 'list_image', :size => '40x40') %>
+        </a>
+      </div>
+    </section>
 
-<section class="background_image_5" id="connect"></section>
+    <section class="background_image_5" id="connect"></section>
 
-<section class="connect">
-  <h3>Stay Connected with <%= @artist.name %>!</h3>
-  <h4> </h4>
-    <div class="stay-connected">
-      <% if @twitter_handle != nil %>
-          <%= link_to image_tag("twitter-icon.png", :class => 'list_image', :size => '60x60') %>
-          <%#= link_to "Visit Twitter Page", "https://twitter.com/#{@twitter_handle}", :style => 'color:white;' %>
-        <!--<ul>Start Following: <%#= link_to "@#{@twitter_handle}", current_user.follow_artist(@twitter_handle), :style => 'color:white;' %></ul>-->
-      <% end %>
+  <% end %>
 
-      <% if @websites.official_url != nil %>
-          <%= link_to image_tag("band-site-icon.png", :class => 'list_image', :size => '60x60') %>
-          <%#= link_to "#{@artist.name}'s Website", @websites.official_url, :style => 'color:white;' %>
-      <% end %>
+  <% cache("artist-social-media") do %>
 
-      <% if @websites.wikipedia_url != nil %>
-          <%= link_to image_tag("wiki-icon.png", :class => 'list_image', :size => '60x60') %>
-          <%#= link_to "Learn more about #{@artist.name}", @websites.wikipedia_url, :style => 'color:white;' %>
-      <% end %>
+    <section class="connect">
+      <h3>Stay Connected with <%= @artist.name %>!</h3>
+      <h4> </h4>
+        <div class="stay-connected">
+          <% if @twitter_handle != nil %>
+              <%= link_to image_tag("twitter-icon.png", :class => 'list_image', :size => '60x60') %>
+              <%#= link_to "Visit Twitter Page", "https://twitter.com/#{@twitter_handle}", :style => 'color:white;' %>
+            <!--<ul>Start Following: <%#= link_to "@#{@twitter_handle}", current_user.follow_artist(@twitter_handle), :style => 'color:white;' %></ul>-->
+          <% end %>
 
-      <% if @websites.itunes_url != nil %>
-          <%= link_to image_tag("itunes-icon.png", :class => 'list_image', :size => '60x60') %>
-          <%#= link_to "Buy Music", @websites.itunes_url, :style => 'color:white;' %>
-      <% end %>
+          <% if @websites.official_url != nil %>
+              <%= link_to image_tag("band-site-icon.png", :class => 'list_image', :size => '60x60') %>
+              <%#= link_to "#{@artist.name}'s Website", @websites.official_url, :style => 'color:white;' %>
+          <% end %>
 
-      <% if @spotify_artist != nil %>
-          <%= link_to image_tag("spotify-icon.png", :class => 'list_image', :size => '60x60') %>
-          <%#= link_to "Spotify", @spotify_website, :style => 'color:white;' %>
-      <% end %>
+          <% if @websites.wikipedia_url != nil %>
+              <%= link_to image_tag("wiki-icon.png", :class => 'list_image', :size => '60x60') %>
+              <%#= link_to "Learn more about #{@artist.name}", @websites.wikipedia_url, :style => 'color:white;' %>
+          <% end %>
 
-      <% if @websites.amazon_url != nil %>
-          <%= link_to image_tag("amazon-icon.png", :class => 'list_image', :size => '60x60') %>
-          <%#= link_to "Purchase!", @websites.amazon_url, :style => 'color:white;' %>
-      <% end %>
-    </div>
-</section>
+          <% if @websites.itunes_url != nil %>
+              <%= link_to image_tag("itunes-icon.png", :class => 'list_image', :size => '60x60') %>
+              <%#= link_to "Buy Music", @websites.itunes_url, :style => 'color:white;' %>
+          <% end %>
+
+          <% if @spotify_artist != nil %>
+              <%= link_to image_tag("spotify-icon.png", :class => 'list_image', :size => '60x60') %>
+              <%#= link_to "Spotify", @spotify_website, :style => 'color:white;' %>
+          <% end %>
+
+          <% if @websites.amazon_url != nil %>
+              <%= link_to image_tag("amazon-icon.png", :class => 'list_image', :size => '60x60') %>
+              <%#= link_to "Purchase!", @websites.amazon_url, :style => 'color:white;' %>
+          <% end %>
+        </div>
+    </section>
+
+  <% end %>
 
 <!--<section class="connect-icons">-->
   <!--<div class="col-1-3">-->
