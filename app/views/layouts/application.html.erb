@@ -41,7 +41,7 @@
 <div class="navbar navbar-default navbar-static-top">
   <div class="container">
     <% if current_user %>
-      <a class="navbar-brand" href="/genres">Music Story</a>
+      <%= link_to 'Music Story', genres_path, class: 'navbar-brand' %>
     <% else %>
       <a class="navbar-brand">Music Story</a>
     <% end %>
