@@ -26,6 +26,7 @@ ul {
   color: white;
 }
 
+
 .container {
   width: 100%;
 }
@@ -64,17 +65,19 @@ ul {
 }
 
 .container .navbar-brand {
-  margin-left: 15px;
-  color: #4EA696;
-  font-size: 100px;
+  margin-left: 30px;
+  /*margin-top: -35px;*/
+  font-size: 80px;
   font-weight: 400;
+  color: #4EA696;
+  /*text-shadow: 1px 1px 52px #FFF;*/
 }
 
 .navbar-brand {
   box-sizing: border-box;
   color: rgb(0, 0, 0);
   letter-spacing: 2.98665595054626px;
-  text-align: left;
+  /*text-align: left;*/
   text-decoration: none;
   text-transform: uppercase;
   border: 0px none rgb(0, 0, 0);
@@ -126,4 +129,8 @@ ul {
 
 #home_grid {
   background-color: #074F68;
+  /*background-color: #153959;*/
 }
+
+
+
