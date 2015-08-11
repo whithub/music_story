@@ -13,5 +13,25 @@
 //= require jquery
 //= require jquery_ujs
 //= require twitter/bootstrap
-//= require turbolinks
 //= require_tree .
+//= require_self
+
+jQuery(document).ready(function() {
+  $('.genres a').click(function(event) {
+    var $genre_link = $(this);
+
+    $.ajax({
+      url: $genre_link.attr('href'),
+      dataType: 'html',
+      success: function(data) {
+        $('#grid').html(data);
+      },
+      error: function() {
+        alert('an error occurred. maybe an api limit.');
+      }
+    });
+    event.preventDefault();
+
+
+  });
+});
