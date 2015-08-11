@@ -9,7 +9,6 @@ class Artist < ActiveRecord::Base
   def self.search(artist)
     if artist
       where('name LIKE ?', "%#{artist}%")
-      # find(:all, :conditions => ['name LIKE ?', "%#{artist}%"])
       redirect_to artist_path(artist)
     else
       find(:all)

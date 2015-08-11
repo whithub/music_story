@@ -1,10 +1,3 @@
-<!--<div class="row">-->                        <%#= Look at rails #in_groups_of %>
-  <!--<%# 3.times do %>-->
-    <!--<div class="col-lg-4">-->
-      <!--<img src="http://placehold.it/351x150">-->
-    <!--</div>-->
-  <!--<%# end %>-->
-<!--</div>-->
 <% cache("genres-list") do %>
   <div class="form-search">
     <%= form_tag(artists_path, :method => "get", class: "form-search") do %>
@@ -16,17 +9,16 @@
   <div id="grid">
       <div class="row">
         <div class="col-lg-3">
-          <%= link_to image_tag("blues_1.jpg", :class => 'list_image', :size => '460x300'), genre_path('pop') %>
-          <%#= image_tag("cassette_tape.png", :class => 'list_image', :size => '460x300') %>
+          <%= link_to image_tag("POP", :class => 'list_image', :size => '460x300'), genre_path('pop') %>
         </div>
         <div class="col-lg-3">
-          <%= link_to image_tag("blues_1.jpg", :class => 'list_image', :size => '460x300'), genre_path('blues') %>
+          <%= link_to image_tag("BLUES", :class => 'list_image', :size => '460x300'), genre_path('blues') %>
         </div>
         <div class="col-lg-3">
-          <%= link_to image_tag("blues_1.jpg", :class => 'list_image', :size => '460x300'), genre_path('r&b') %>
+          <%= link_to image_tag("R&B", :class => 'list_image', :size => '460x300'), genre_path('r&b') %>
         </div>
         <div class="col-lg-3">
-          <%= link_to image_tag("blues_1.jpg", :class => 'list_image', :size => '460x300'), genre_path('rock')  %>
+          <%= link_to image_tag("ROCK", :class => 'list_image', :size => '460x300'), genre_path('rock')  %>
         </div>
       </div>
 
