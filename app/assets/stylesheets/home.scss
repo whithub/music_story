@@ -257,14 +257,14 @@
 //}
 
 #welcome_image img {
-  background-image: url("billy_3.jpg");
+  background-image: image-url("billy_3.jpg");
   width: 80%;
   height: auto;
   margin-bottom: 5%;
 }
 
 .home-page-image {
-   background-image: url(music_1.jpg);
+   background-image: image-url("music_1.jpg");
    background-size: 100%;
    background-attachment: fixed;
    background-position: 50% 40px;
