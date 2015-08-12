@@ -26,12 +26,30 @@ li, ul {
   font: normal normal 300 normal 22px 'Gotham SSm A', 'Gotham SSm B', sans-serif;
 }
 
-.name-title .img-rounded {
+.header .name-title {
+  float: left;
+  margin-left: 50px;
+}
+
+.header .img-rounded {
   width: 180px;
   height: 180px;
-  box-shadow: 8px 8px 22px #888;
-  float: left;
-  margin-left: 90px;
+  box-shadow: 14px 12px 30px #DDD;
+}
+
+.header .artist-name {
+  color: #000;
+  font-size: 20px;
+//  float: left;
+  margin-top: -8%;
+}
+
+.header .similar-artists {
+  float: right;
+  margin-right: 6%;
+  color: #000000;
+  font-size: 20px;
+  border: 2px solid red;
 }
 
 html, body, div, span, applet, object, iframe,
@@ -211,7 +229,7 @@ Backgrounds
 ==========================
 */
 
-.background_image {
+#background_image {
   margin: 0 auto;
   padding: 300px 0;
   text-align: center;

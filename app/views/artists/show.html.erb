@@ -1,10 +1,24 @@
 <%= render partial: 'home/nav' %>
 
-<section class="name-title">
-    <img class="img-rounded" <%= image_tag(@artist_images.first.url, :class => 'list_image') %>
-  <h1 class="container"><%= @artist.name %></h1>
+<section class="header">
+    <div class="name-title">
+      <ul><img class="img-rounded" <%= image_tag(@artist_images.first.url, :class => 'list_image') %></ul>
+      <ul><h1 class="artist-name"><%= @artist.name %></h1></ul>
+    </div>
 
-  <%= link_to "Find similiar artists to #{@artist.name}", artist_similar_artists_path(@artist.name) %>
+    <div class="similar-artists">Similar Artists
+      <%#= link_to "Find similiar artists to #{@artist.name}", artist_similar_artists_path(@artist.name) %>
+
+      <% @similar_artists.each do |artist| %>
+        <ul>
+          <ul><%= link_to image_tag(Echowrap.artist_images(name: artist.name).first.url, :class => 'img-circle', :size => '60x60'), artist_path(artist.name) %></ul>
+          <ul><%= link_to artist.name, artist_path(artist.name), :id => "similar", :style => 'color:white;' %></ul>
+        </ul>
+      <% end %>
+    </div>
+
+
+
   <div class="arrow-contain">
     <a class="next-arrow" href="#about">
       <%= image_tag("arrow-white.png", :class => 'list_image', :size => '40x40') %>
@@ -12,7 +26,7 @@
   </div>
 </section>
 
-<section class="background_image" id="about">
+<section id="background_image" id="about">
 </section>
 
   <% cache("#{@artist.name}-bio") do %>
