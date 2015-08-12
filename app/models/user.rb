@@ -1,12 +1,18 @@
 class User < ActiveRecord::Base
 
+  before_create :notify_admin
+
+  def notify_admin
+    UserMailer.new_user_email(self).deliver_now
+  end
+
   def self.from_omniauth(auth_info)
     if user = find_by(uid: auth_info.extra.raw_info.user_id)
       user
     else
-      create({name: auth_info.extra.raw_info.name,
-          uid: auth_info.extra.raw_info.user_id,
-          oauth_token: auth_info.credentials.token,
+      create({name:           auth_info.extra.raw_info.name,
+          uid:                auth_info.extra.raw_info.user_id,
+          oauth_token:        auth_info.credentials.token,
           oauth_token_secret: auth_info.credentials.secret
         })
     end
