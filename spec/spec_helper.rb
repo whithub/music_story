@@ -1,5 +1,5 @@
 require 'simplecov'
-SimpleCov.start 'rails'
+SimpleCov.start
 
 
 RSpec.configure do |config|
@@ -23,11 +23,11 @@ RSpec.configure do |config|
     mocks.verify_partial_doubles = true
   end
 
-  OmniAuth.config.test_mode = true
-  OmniAuth.config.add_mock(:twitter, {
-    :uid => '12345',
-    :info => { :name => 'Whitney' }
-  })
+  # OmniAuth.config.test_mode = true
+  # OmniAuth.config.add_mock(:twitter, {
+  #   :uid => '12345',
+  #   :info => { :name => 'Whitney' }
+  # })
 # The settings below are suggested to provide a good initial experience
 # with RSpec, but feel free to customize to your heart's content.
 =begin

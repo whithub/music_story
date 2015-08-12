@@ -1,70 +1,32 @@
-require "rails_helper"
+require 'spec_helper'
 
 RSpec.describe UserMailer, type: :mailer do
-
-  describe "updated_story_notification" do
-    let(:payload) { FactoryGirl.create(:move_payload) }
-    let(:story) { FactoryGirl.create(:story, :with_user_and_email) }
-    let(:mail) { StoryMailer.updated_story_notification(story.user.email_address, story, payload.message) }
-
-    it "renders the headers" do
-      expect(mail.subject).to eq("Story Progress Update")
-      expect(mail.to).to eq(["foo@example.com"])
-      expect(mail.bcc).to eq(["justin@example.com"])
-      expect(mail.from).to eq(["foo@example.local"])
-    end
-
-    it "renders the body" do
-      expect(mail.body.encoded).to match("Good News. Your story request has been updated.")
-    end
+  before(:each) do
+    ActionMailer::Base.delivery_method = :test
+    ActionMailer::Base.perform_deliveries = true
+    ActionMailer::Base.deliveries = []
+    @story = Factory.create(:story)
+    EbookConfirmationMailer.confirmation_email(@story).deliver
   end
 
-  describe "submitted_story_notification" do
-    let(:story) { FactoryGirl.create(:story, :with_user_and_email) }
-    let(:admins) { FactoryGirl.create_list(:user, 2, :with_email, :admin) }
-    let(:mail) { StoryMailer.submitted_story_notification(admins, story) }
-
-    it "renders the headers" do
-      expect(mail.subject).to eq("Story Submission Notice")
-      expect(mail.to).to eq(admins.map(&:email_address))
-      expect(mail.from).to eq(["foo@example.local"])
-    end
-
-    it "renders the body" do
-      expect(mail.body.encoded).to match("A new story has been submitted for review")
-    end
+  after(:each) do
+    ActionMailer::Base.deliveries.clear
   end
 
-  describe "deleted_story_notification" do
-    let(:payload) { FactoryGirl.create(:delete_payload) }
-    let(:story) { FactoryGirl.create(:story, :with_user_and_email) }
-    let(:mail) { StoryMailer.deleted_story_notification(story.user.email_address, story, payload.message) }
 
-    it "renders the headers" do
-      expect(mail.subject).to eq("Story Request Closed")
-      expect(mail.to).to eq(["foo@example.com"])
-      expect(mail.bcc).to eq(["justin@example.com"])
-      expect(mail.from).to eq(["foo@example.local"])
-    end
-
-    it "renders the body" do
-      expect(mail.body.encoded).to match("Unfortunately your story request has been closed.")
-    end
+  it 'should send an email' do
+    ActionMailer::Base.deliveries.count.should == 1
   end
 
-  describe "rejected_story_notification" do
-    let(:story) { FactoryGirl.create(:story, :with_user_and_email) }
-    let(:mail) { StoryMailer.rejected_story_notification(story.user.email_address, story) }
-
-    it "renders the headers" do
-      expect(mail.subject).to eq("Story Request Closed")
-      expect(mail.to).to eq(["foo@example.com"])
-      expect(mail.from).to eq(["foo@example.local"])
-    end
-
-    it "renders the body" do
-      expect(mail.body.encoded).to match("Unfortunately your story request has been closed.")
-    end
+  it 'renders the receiver email' do
+    ActionMailer::Base.deliveries.first.to.should == @story.email
   end
 
+  it 'should set the subject to the correct subject' do
+    ActionMailer::Base.deliveries.first.subject.should == 'New Client!'
+  end
+
+  it 'renders the sender email' do
+    ActionMailer::Base.deliveries.first.from.should == ['notifications@musicstory.com']
+  end
 end

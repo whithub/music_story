@@ -1,25 +1,18 @@
+<%= render partial: 'home/nav' %>
 
 <section class="name-title">
-  <%# if @artist_images != nil %>
-    <img class="img-circle" <%= image_tag(@artist_images.first.url, :class => 'list_image', :size => '350x350') %>
-  <%# else %>
-    <!--<img class="img-circle" <%#= image_tag(@profile_pic['url'], :class => 'list_image', :size => '350x350') %>-->
-  <%# end %>
-  <!--<img class="headshot" src="assets/images/billy_profile.jpg" alt="photo of artist">-->
+    <img class="img-rounded" <%= image_tag(@artist_images.first.url, :class => 'list_image') %>
   <h1 class="container"><%= @artist.name %></h1>
 
   <%= link_to "Find similiar artists to #{@artist.name}", artist_similar_artists_path(@artist.name) %>
   <div class="arrow-contain">
     <a class="next-arrow" href="#about">
       <%= image_tag("arrow-white.png", :class => 'list_image', :size => '40x40') %>
-
-      <!--<img src="assets/images/arrow-white.png" alt="down arrow">-->
     </a>
   </div>
 </section>
 
 <section class="background_image" id="about">
-  <%#= image_tag(@artist_images.last.url) %>
 </section>
 
   <% cache("#{@artist.name}-bio") do %>

@@ -1,4 +1,4 @@
-require 'test_helper'
+require "rails_helper"
 
 describe 'auth user can navigate pages', type: :feature do
 

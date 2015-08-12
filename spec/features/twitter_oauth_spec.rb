@@ -1,7 +1,7 @@
 require "rails_helper"
 
 
-describe 'user can login and out', type: :feature do
+describe 'user', type: :feature do
 
   it "should login successfully" do
     visit '/auth/twitter'

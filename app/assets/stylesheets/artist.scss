@@ -26,9 +26,12 @@ li, ul {
   font: normal normal 300 normal 22px 'Gotham SSm A', 'Gotham SSm B', sans-serif;
 }
 
-.col-lg-12 .name-title .img-circle {
-  image-size: '400x400';
-  border-radius: 30%;
+.name-title .img-rounded {
+  width: 180px;
+  height: 180px;
+  box-shadow: 8px 8px 22px #888;
+  float: left;
+  margin-left: 90px;
 }
 
 html, body, div, span, applet, object, iframe,
