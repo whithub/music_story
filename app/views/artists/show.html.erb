@@ -1,30 +1,22 @@
-<html lang="en">
-<head>
-  <meta charset="utf-8">
-  <%= stylesheet_link_tag "artist", :media => "all" %>
-  <% cache("#{@artist.name}-intro") do %>
-    <title><%= @artist.name %></title>
-</head>
 
-<body cz-shortcut-listen="true">
+<section class="name-title">
+  <%# if @artist_images != nil %>
+    <img class="img-circle" <%= image_tag(@artist_images.first.url, :class => 'list_image', :size => '350x350') %>
+  <%# else %>
+    <!--<img class="img-circle" <%#= image_tag(@profile_pic['url'], :class => 'list_image', :size => '350x350') %>-->
+  <%# end %>
+  <!--<img class="headshot" src="assets/images/billy_profile.jpg" alt="photo of artist">-->
+  <h1 class="container"><%= @artist.name %></h1>
 
-  <section class="name-title">
-    <%# if @artist_images != nil %>
-      <img class="img-circle" <%= image_tag(@artist_images.first.url, :class => 'list_image', :size => '350x350') %>
-    <%# else %>
-      <!--<img class="img-circle" <%#= image_tag(@profile_pic['url'], :class => 'list_image', :size => '350x350') %>-->
-    <%# end %>
-    <!--<img class="headshot" src="assets/images/billy_profile.jpg" alt="photo of artist">-->
-    <h1 class="container"><%= @artist.name %></h1>
-    <div class="arrow-contain">
-      <a class="next-arrow" href="#about">
-        <%= image_tag("arrow-white.png", :class => 'list_image', :size => '40x40') %>
+  <%= link_to "Find similiar artists to #{@artist.name}", artist_similar_artists_path(@artist.name) %>
+  <div class="arrow-contain">
+    <a class="next-arrow" href="#about">
+      <%= image_tag("arrow-white.png", :class => 'list_image', :size => '40x40') %>
 
-        <!--<img src="assets/images/arrow-white.png" alt="down arrow">-->
-      </a>
-    </div>
-  </section>
-  <% end %>
+      <!--<img src="assets/images/arrow-white.png" alt="down arrow">-->
+    </a>
+  </div>
+</section>
 
 <section class="background_image" id="about">
   <%#= image_tag(@artist_images.last.url) %>
@@ -38,7 +30,7 @@
         <%= @artist_bio.text %>
       </div>
       <div class="arrow-contain">
-        <a class="next-arrow" href="#professional">
+        <a class="next-arrow" href="#music-videos">
           <%= image_tag("arrow-blue.png", :class => 'list_image', :size => '40x40') %>
         </a>
       </div>
@@ -50,7 +42,7 @@
 
   <% cache("#{@artist.name}-videos") do %>
 
-    <section class="connect">
+    <section class="connect" id="music-videos">
       <h3>MUSIC VIDEOS</h3>
       <div id="grid">
         <div class="row">
@@ -116,42 +108,7 @@
 
   <% end %>
 
-  <% cache("#{@artist.name}-intro") do %>
-
-    <section class="professional">
-      <h3>SIMILAR ARTISTS</h3>
-      <h3>Fan of <%= @artist.name %>?   You may also like:</h3>
-      <div id="grid">
-        <div class="row">
-          <!--<ul>-->
-          <%# if @related_artists != nil %>
-          <% @similar_artists.each do |artist| %>
-            <div class="col-lg-4" id="related_artists">
-              <ul><%= link_to image_tag(Echowrap.artist_images(name: artist.name).first.url, :class => 'img-circle', :size => '150x150'), artist_path(artist.name) %></ul>
-              <ul><%= link_to artist.name, artist_path(artist.name), :id => "similar", :style => 'color:white;' %></ul>
-            </div>
-          <% end %>
-          <%# else %>
-          <%# @related_artists.each do |artist| %>
-          <!--<div class="col-lg-4" id="related_artists">-->
-          <ul><%#= link_to image_tag(artist.images.last['url'], :class => 'img-circle', :size => '80x80'), artist_path(artist.name) %></ul>
-          <ul><%#= link_to artist.name, artist_path(artist.name), :style => 'color:white;' %></ul>
-          <!--</div>-->
-          <%# end %>
-          <%# end %>
-          <!--</ul>-->
-        </div>
-      </div>
-      <div class="arrow-contain">
-        <a class="next-arrow" href="#business-solutions">
-          <%= image_tag("arrow-white.png", :class => 'list_image', :size => '40x40') %>
-        </a>
-      </div>
-    </section>
-
-    <section class="background_image_4" id="connect"></section>
-
-  <% end %>
+  <section class="background_image_4" id="connect"></section>
 
   <% cache("#{@artist.name}-TBD") do %>
 
@@ -242,24 +199,3 @@
 <!--<footer class="copyright">-->
   <!--<small>© Whithub Company</small>-->
 <!--</footer>-->
-<script src="https://code.jquery.com/jquery-2.1.1.min.js">
-
-</script>
-<script type="text/javascript">
-  $(function() {
-    $('.primary-nav a').on('click', function(e) {
-      var className = e.target.dataset.selector;
-      if (className === "top") {
-        var selector = $(document);
-        selector.scrollTop();
-      } else {
-        var selector = $('.' + className);
-        $('body').animate({
-          scrollTop: selector.offset().top
-        }, 1000);
-      }
-    });
-  });
-</script>
-</body>
-</html>
