@@ -17,7 +17,7 @@ class ArtistsController < ApplicationController
     @websites         = Echowrap.artist_urls(       name: @artist.name)
     @twitter          = Echowrap.artist_twitter(    name: @artist.name).twitter
     # binding.pry
-    @similar_artists  = Echowrap.artist_similar(    name: @artist.name, results: 4)
+    @similar_artists  = Echowrap.artist_similar(    name: @artist.name, results: 8)
     @reviews          = Echowrap.artist_reviews(    name: @artist.name).first(2)
     # @familiarity      = Echowrap.artist_familiarity(name: @artist.name)
 
