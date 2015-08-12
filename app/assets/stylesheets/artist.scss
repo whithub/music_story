@@ -50,23 +50,26 @@ li, ul {
   color: #000000;
   font-size: 20px;
   width: 400px;
+  margin-top: 50px;
 }
 
 .header #similar-artists .artist-name {
   text-align: center;
-  font-size: 28px;
+  font-size: 45px;
   color: white;
   margin-top: auto;
+  padding-bottom: 10px;
 }
 
 .header #similar-artists .col-lg-6 ul{
+  text-align-vertical: center;
   text-align: center;
   font-family: Century Gothic, CenturyGothic, AppleGothic, sans-serif;
   margin-bottom: 8px;
 }
 .header #similar-artists .img-rounded {
-  width: 75px;
-  height: 75px;
+  width: 85px;
+  height: 85px;
   box-shadow: 5px 4px 18px #DDD;
 }
 

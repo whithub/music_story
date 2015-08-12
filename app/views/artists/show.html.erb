@@ -12,7 +12,7 @@
 
       <% @similar_artists.each do |artist| %>
         <ul class="col-lg-6">
-          <ul><%= link_to image_tag(Echowrap.artist_images(name: artist.name).first.url, :class => 'img-rounded', :size => '75x75'), artist_path(artist.name) %></ul>
+          <ul><%= link_to image_tag(Echowrap.artist_images(name: artist.name).first.url, :class => 'img-rounded'), artist_path(artist.name) %></ul>
           <ul><%= link_to artist.name, artist_path(artist.name), :id => "similar", :style => 'color:white;' %></ul>
         </ul>
       <% end %>
