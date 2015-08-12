@@ -1,10 +1,10 @@
-require 'coveralls'
+# require 'coveralls'
 require 'echowrap'
-require 'rspec'
+require 'rspec-rails'
 require 'timecop'
 require 'webmock/rspec'
 
-Coveralls.wear!
+# Coveralls.wear!
 
 RSpec.configure do |config|
   config.expect_with :rspec do |c|

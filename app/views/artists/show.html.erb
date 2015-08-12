@@ -136,8 +136,10 @@
       <h3>Stay Connected with <%= @artist.name %>!</h3>
       <h4> </h4>
         <div class="stay-connected">
-          <% if @twitter_handle != nil %>
-              <%= link_to image_tag("twitter-icon.png", :class => 'list_image', :size => '60x60') %>
+          <% if @twitter != nil %>
+              <%= link_to image_tag("twitter-icon.png", :class => 'twitter-follow-button', :size => '60x60', data_show_count: 'false', data_size:"large", data_show_screen_name:"false" ),"https://twitter.com/#{@twitter}" %>
+            <a href="http://twitter.com/#{@artist.name}" class="twitter-follow-button" data-show-count="false" data-size="large" data-show-screen-name="false">Follow</a>
+            <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
               <%#= link_to "Visit Twitter Page", "https://twitter.com/#{@twitter_handle}", :style => 'color:white;' %>
             <!--<ul>Start Following: <%#= link_to "@#{@twitter_handle}", current_user.follow_artist(@twitter_handle), :style => 'color:white;' %></ul>-->
           <% end %>

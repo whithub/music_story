@@ -1,4 +1,5 @@
 class Artist < ActiveRecord::Base
+  validates :name, presence: true
 
   def index
   end

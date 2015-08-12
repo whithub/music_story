@@ -1,4 +1,6 @@
 class User < ActiveRecord::Base
+  validates :uid, presence: true
+  validates :name, presence: true
 
   after_create :notify_admin
 

@@ -1,6 +1,7 @@
 require File.expand_path('../boot', __FILE__)
 
 require 'rails/all'
+require 'spec_helper'
 
 # Require the gems listed in Gemfile, including any gems
 # you've limited to :test, :development, or :production.
@@ -10,7 +11,7 @@ Bundler.require(*Rails.groups)
 module MusicStory
   class Application < Rails::Application
 
-    config.serve_static_assets = true
+    config.serve_static_files = true
 
     config.active_record.raise_in_transactional_callbacks = true
 

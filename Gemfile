@@ -6,10 +6,10 @@ gem 'echowrap'
 gem 'rspotify'
 
 gem 'twitter'
+gem 'omniauth'
 gem 'omniauth-twitter'
 gem "twitter-bootstrap-rails"
 gem 'figaro'
-# gem 'pg'
 gem 'rails', '4.2.1'
 gem 'sass-rails', '~> 5.0'
 gem 'uglifier', '>= 1.3.0'
@@ -23,13 +23,19 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 gem 'paperclip'
 gem 'dalli'
 gem 'sidekiq'
+gem 'factory_girl'
+gem 'webmock'
 
 group :development, :test do
   gem 'sqlite3'
   gem 'web-console', '~> 2.0'
+  gem 'launchy'
   gem 'capybara'
   gem 'rspec-rails'
   gem 'pry-rails'
+  gem 'coveralls', require: false
+  gem 'timecop'
+  gem 'simplecov', :require => false
 end
 
 group :production do

@@ -1,6 +1,9 @@
 require 'rails_helper'
 
 describe ArtistsController do
+
+  let(:user) { User.create(uid: '1', name: 'Whitney', oauth_token: '1111') }
+
   context "#index" do
     it "returns all the artists" do
       Artist.create!(name: 'Tom Petty')
