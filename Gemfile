@@ -25,6 +25,7 @@ gem 'dalli'
 gem 'sidekiq'
 gem 'factory_girl'
 # gem 'webmock'
+gem 'skylight'
 
 group :development, :test do
   gem 'sqlite3'

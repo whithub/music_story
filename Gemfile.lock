@@ -248,6 +248,8 @@ GEM
       json (~> 1.8)
       simplecov-html (~> 0.10.0)
     simplecov-html (0.10.0)
+    skylight (0.6.0)
+      activesupport (>= 3.0.0)
     slop (3.6.0)
     sprockets (3.2.0)
       rack (~> 1.0)
@@ -325,6 +327,7 @@ DEPENDENCIES
   sdoc (~> 0.4.0)
   sidekiq
   simplecov
+  skylight
   sqlite3
   timecop
   twitter
