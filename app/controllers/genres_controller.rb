@@ -8,9 +8,4 @@ class GenresController < ApplicationController
     render layout: false
   end
 
-  private
-  def genres
-
-  end
-
 end

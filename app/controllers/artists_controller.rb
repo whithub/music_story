@@ -21,7 +21,7 @@ class ArtistsController < ApplicationController
     @reviews          = Echowrap.artist_reviews(    name: @artist.name).first(2)
     # @familiarity      = Echowrap.artist_familiarity(name: @artist.name)
 
-    @twitter_handle = "https://twitter.com/#{@twitter}"
+    # @twitter_handle = "https://twitter.com/#{@twitter}"
     # @spotify_artist   = RSpotify::Artist.search(params[:id]).first
     # @profile_pic      = @spotify_artist.images.third
     # @related_artists  = @spotify_artist.related_artists.first(6)

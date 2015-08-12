@@ -1,18 +1,21 @@
-require 'rspec'
-require 'capybara'
+require "rails_helper"
+
 
 describe 'user can login and out', type: :feature do
 
-  scenario "should login successfully" do
+  it "should login successfully" do
     visit '/auth/twitter'
-    page.should have_content("Logout")
+
+    expect(page).to have_content("Logout")
+    expect(current_path).to eq(root_path)
   end
 
-  scenario "should logout successfully" do
+  it "should logout successfully" do
     visit '/auth/twitter'
-    page.should have_content("Logout")
+    expect(page).to have_content("Logout")
+
     click_on 'Logout'
-    page.should have_content("Login")
+    expect(page).to have_content("Login")
   end
 end
 
