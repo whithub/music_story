@@ -24,7 +24,7 @@ gem 'paperclip'
 gem 'dalli'
 gem 'sidekiq'
 gem 'factory_girl'
-gem 'webmock'
+# gem 'webmock'
 
 group :development, :test do
   gem 'sqlite3'
