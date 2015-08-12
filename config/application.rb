@@ -17,6 +17,8 @@ module MusicStory
     # # Do not swallow errors in after_commit/after_rollback callbacks.
     # config.active_record.raise_in_transactional_callbacks = true
 
+    config.active_job.queue_adapter = :sidekiq
+
     def spotify
       RSpotify::authenticate( ENV['SPOTIFY_KEY'], ENV['SPOTIFY_SECRET_KEY'] )
     end

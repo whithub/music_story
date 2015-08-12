@@ -1,9 +1,9 @@
 class User < ActiveRecord::Base
 
-  before_create :notify_admin
+  after_create :notify_admin
 
   def notify_admin
-    UserMailer.new_user_email(self).deliver_now
+    UserMailer.new_user_email(self).deliver_later
   end
 
   def self.from_omniauth(auth_info)
