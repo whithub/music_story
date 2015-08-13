@@ -7,7 +7,7 @@
           <div class="col-lg-3" class="related_artist">
             <li>
               <%= link_to image_tag(Echowrap.artist_images(name: artist.name).last.url, :class => 'img-rounded', :size => '300x300'), artist_path(artist.name) %>
-              <%= link_to artist.name, artist_path(artist.name) %>
+              <%= link_to artist.name, artist_path(artist.name, found_through: params[:id]) %>
             </li>
           </div>
         <% end %>

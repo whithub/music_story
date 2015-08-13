@@ -1,0 +1,2121 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://developer.echonest.com/api/v4/artist/search?api_key=BTF9TL31AHYRWPWPZ&genre=country&results=12&sort=familiarity-desc
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/json
+      User-Agent:
+      - Echowrap Ruby Gem 0.2.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Thu, 13 Aug 2015 05:38:09 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Vary:
+      - Accept-Encoding
+      X-Request-Id:
+      - 1PlTp7cBTnq5JgBOsmB06g
+      X-Worker-Node:
+      - a3028:4256
+      X-Ratelimit-Remaining:
+      - '119'
+      Server:
+      - TornadoServer/3.1
+      X-Ratelimit-Limit:
+      - '120'
+      X-Api-Key:
+      - BTF9TL31AHYRWPWPZ
+      Cache-Control:
+      - max-age=86400
+      Access-Control-Allow-Origin:
+      - "*"
+      X-Ratelimit-Used:
+      - '1'
+    body:
+      encoding: ASCII-8BIT
+      string: '{"response": {"status": {"version": "4.2", "code": 0, "message": "Success"},
+        "artists": [{"id": "ARMM6WZ1187FB4958D", "name": "Willie Nelson"}, {"id":
+        "ARYJSY01187B9B7C65", "name": "Dolly Parton"}, {"id": "AR95IYB1187FB3FE0B",
+        "name": "Keith Urban"}, {"id": "AREEQPY1187FB5B9E3", "name": "Miranda Lambert"},
+        {"id": "ARKHGQA1187B9B7AD5", "name": "Brad Paisley"}, {"id": "ARDR3K91187B9B04EB",
+        "name": "Tim McGraw"}, {"id": "ARUJZFJ1187B9B135F", "name": "Shania Twain"},
+        {"id": "ARQCFI11187FB5AE43", "name": "George Jones"}, {"id": "ARPH1W61187B9B4CD8",
+        "name": "Reba McEntire"}, {"id": "ARPT6341187B9B1F1E", "name": "Garth Brooks"},
+        {"id": "ARFJXKQ119B86694AF", "name": "Lady Antebellum"}, {"id": "ARK4ZEK1187B990A4F",
+        "name": "George Strait"}]}}'
+    http_version: 
+  recorded_at: Thu, 13 Aug 2015 05:38:08 GMT
+- request:
+    method: get
+    uri: http://developer.echonest.com/api/v4/artist/images?api_key=BTF9TL31AHYRWPWPZ&name=Willie%20Nelson
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/json
+      User-Agent:
+      - Echowrap Ruby Gem 0.2.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Thu, 13 Aug 2015 05:38:09 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Vary:
+      - Accept-Encoding
+      X-Request-Id:
+      - wxbsny3lTF2ntEiAnookAA
+      X-Worker-Node:
+      - a3028:398
+      X-Ratelimit-Remaining:
+      - '118'
+      Server:
+      - TornadoServer/3.1
+      X-Ratelimit-Limit:
+      - '120'
+      X-Api-Key:
+      - BTF9TL31AHYRWPWPZ
+      Cache-Control:
+      - max-age=86400
+      Access-Control-Allow-Origin:
+      - "*"
+      X-Ratelimit-Used:
+      - '2'
+    body:
+      encoding: ASCII-8BIT
+      string: '{"response": {"status": {"version": "4.2", "code": 0, "message": "Success"},
+        "start": 0, "total": 98, "images": [{"url": "http://upload.wikimedia.org/wikipedia/commons/thumb/b/b7/Sixth_Street_Austin.jpg/800px-Sixth_Street_Austin.jpg",
+        "tags": [], "width": 800, "height": 600, "aspect_ratio": 1.3333333333333333,
+        "verified": false, "license": {"type": "cc-by-sa", "attribution": "Photograph
+        created by Larry D. Moore (Nv8200p on en.wikipedia) using a Kodak EasyShare
+        Z740 camera.", "url": "http://en.wikipedia.org/wiki/File:Sixth_Street_Austin.jpg"}},
+        {"url": "http://userserve-ak.last.fm/serve/_/56718.jpg", "tags": [], "verified":
+        false, "license": {"type": "unknown", "attribution": "n/a", "url": "http://userserve-ak.last.fm/serve/_/56718.jpg#flat_doc"}},
+        {"url": "http://userserve-ak.last.fm/serve/_/14.jpg", "tags": [], "verified":
+        false, "license": {"type": "unknown", "attribution": "last.fm", "url": "http://userserve-ak.last.fm/serve/_/14.jpg"}},
+        {"url": "http://a983.ac-images.myspacecdn.com/images01/6/m_7715bc791f9ed83e745ea82ad5909f0e.jpg",
+        "tags": [], "width": 90, "height": 90, "aspect_ratio": 1.0, "verified": false,
+        "license": {"type": "unknown", "attribution": "myspace", "url": "http://a983.ac-images.myspacecdn.com/images01/6/m_7715bc791f9ed83e745ea82ad5909f0e.jpg"}},
+        {"url": "http://userserve-ak.last.fm/serve/_/4270730.jpg", "tags": [], "verified":
+        false, "license": {"type": "unknown", "attribution": "last.fm", "url": "http://userserve-ak.last.fm/serve/_/4270730.jpg"}},
+        {"url": "http://userserve-ak.last.fm/serve/_/356311.jpg", "tags": [], "verified":
+        false, "license": {"type": "unknown", "attribution": "last.fm", "url": "http://userserve-ak.last.fm/serve/_/356311.jpg"}},
+        {"url": "http://upload.wikimedia.org/wikipedia/commons/0/09/Willie_Nelson_Stockton.jpg",
+        "tags": [], "width": 3872, "height": 2592, "aspect_ratio": 1.4938271604938271,
+        "verified": false, "license": {"type": "cc-by", "attribution": "Bob Tilden
+        from Morada, CA, USA", "url": "http://en.wikipedia.org/wiki/File%3AWillie_Nelson_Stockton.jpg"}},
+        {"url": "http://upload.wikimedia.org/wikipedia/commons/b/bc/Willie_UK2K7_1.JPG",
+        "tags": [], "width": 717, "height": 538, "aspect_ratio": 1.3327137546468402,
+        "verified": false, "license": {"type": "cc-by-sa", "attribution": "Auld Rasmie",
+        "url": "http://en.wikipedia.org/wiki/File:Willie_UK2K7_1.JPG"}}, {"url": "http://upload.wikimedia.org/wikipedia/commons/0/03/Willie_UK2K7_2.JPG",
+        "tags": [], "width": 609, "height": 716, "aspect_ratio": 0.8505586592178771,
+        "verified": false, "license": {"type": "cc-by-sa", "attribution": "File Upload
+        Bot (Magnus Manske)", "url": "http://upload.wikimedia.org/wikipedia/commons/0/03/Willie_UK2K7_2.JPG"}},
+        {"url": "http://upload.wikimedia.org/wikipedia/commons/e/ea/Willie_Nelson.jpg",
+        "tags": [], "width": 704, "height": 800, "aspect_ratio": 0.88, "verified":
+        false, "license": {"type": "cc-by-sa", "attribution": "Original uploader was
+        Dwightmccann at en.wikipedia", "url": "http://en.wikipedia.org/wiki/File:Willie_Nelson.jpg"}},
+        {"url": "http://upload.wikimedia.org/wikipedia/commons/8/82/Willie%27s_Place_near_Hillsboro%2C_TX_IMG_4050.JPG",
+        "tags": [], "width": 4000, "height": 3000, "aspect_ratio": 1.3333333333333333,
+        "verified": false, "license": {"type": "cc-by", "attribution": "Billy Hathorn",
+        "url": "http://upload.wikimedia.org/wikipedia/commons/8/82/Willie%27s_Place_near_Hillsboro%2C_TX_IMG_4050.JPG"}},
+        {"url": "http://userserve-ak.last.fm/serve/_/8002169/Willie+Nelson+Nelson.jpg",
+        "tags": [], "width": 350, "height": 510, "aspect_ratio": 0.6862745098039216,
+        "verified": false, "license": {"type": "cc-by-sa", "attribution": "Juliana_",
+        "url": "www.last.fm/user/Juliana_"}}, {"url": "http://userserve-ak.last.fm/serve/_/26996651/Willie+Nelson.jpg",
+        "tags": [], "width": 388, "height": 600, "aspect_ratio": 0.6466666666666666,
+        "verified": false, "license": {"type": "cc-by-sa", "attribution": "P_Machado",
+        "url": "www.last.fm/user/P_Machado"}}, {"url": "http://userserve-ak.last.fm/serve/_/8002237/Willie+Nelson++in+1966.jpg",
+        "tags": [], "width": 438, "height": 486, "aspect_ratio": 0.9012345679012346,
+        "verified": false, "license": {"type": "cc-by-sa", "attribution": "Juliana_",
+        "url": "www.last.fm/user/Juliana_"}}, {"url": "http://userserve-ak.last.fm/serve/_/26996661/Willie+Nelson.jpg",
+        "tags": [], "width": 388, "height": 600, "aspect_ratio": 0.6466666666666666,
+        "verified": false, "license": {"type": "cc-by-sa", "attribution": "P_Machado",
+        "url": "www.last.fm/user/P_Machado"}}]}}'
+    http_version: 
+  recorded_at: Thu, 13 Aug 2015 05:38:08 GMT
+- request:
+    method: get
+    uri: http://developer.echonest.com/api/v4/artist/images?api_key=BTF9TL31AHYRWPWPZ&name=Dolly%20Parton
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/json
+      User-Agent:
+      - Echowrap Ruby Gem 0.2.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Thu, 13 Aug 2015 05:38:10 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Vary:
+      - Accept-Encoding
+      X-Request-Id:
+      - R+blI/OlS4uhaf7uoDYzSg
+      X-Worker-Node:
+      - 8d4ce:21018
+      X-Ratelimit-Remaining:
+      - '117'
+      Server:
+      - TornadoServer/3.1
+      X-Ratelimit-Limit:
+      - '120'
+      X-Api-Key:
+      - BTF9TL31AHYRWPWPZ
+      Cache-Control:
+      - max-age=86400
+      Access-Control-Allow-Origin:
+      - "*"
+      X-Ratelimit-Used:
+      - '3'
+    body:
+      encoding: ASCII-8BIT
+      string: '{"response": {"status": {"version": "4.2", "code": 0, "message": "Success"},
+        "start": 0, "total": 163, "images": [{"url": "http://userserve-ak.last.fm/serve/_/89774.jpg",
+        "tags": [], "verified": false, "license": {"type": "unknown", "attribution":
+        "n/a", "url": "http://userserve-ak.last.fm/serve/_/89774.jpg"}}, {"url": "http://userserve-ak.last.fm/serve/_/2339811.jpg",
+        "tags": [], "verified": false, "license": {"type": "unknown", "attribution":
+        "n/a", "url": "http://userserve-ak.last.fm/serve/_/2339811.jpg"}}, {"url":
+        "http://userserve-ak.last.fm/serve/_/62474.jpg", "tags": [], "verified": false,
+        "license": {"type": "unknown", "attribution": "n/a", "url": "http://userserve-ak.last.fm/serve/_/62474.jpg"}},
+        {"url": "http://userserve-ak.last.fm/serve/_/295785.jpg", "tags": [], "verified":
+        false, "license": {"type": "unknown", "attribution": "n/a", "url": "http://userserve-ak.last.fm/serve/_/295785.jpg"}},
+        {"url": "http://a723.ac-images.myspacecdn.com/images01/70/m_6285cb868a190b19ab2353c63d80b4e2.jpg",
+        "tags": [], "width": 90, "height": 90, "aspect_ratio": 1.0, "verified": false,
+        "license": {"type": "unknown", "attribution": "n/a", "url": "http://a723.ac-images.myspacecdn.com/images01/70/m_6285cb868a190b19ab2353c63d80b4e2.jpg"}},
+        {"url": "http://userserve-ak.last.fm/serve/_/365632.jpg", "tags": [], "verified":
+        false, "license": {"type": "unknown", "attribution": "n/a", "url": "http://userserve-ak.last.fm/serve/_/365632.jpg"}},
+        {"url": "http://userserve-ak.last.fm/serve/_/289186.jpg", "tags": [], "verified":
+        false, "license": {"type": "unknown", "attribution": "n/a", "url": "http://userserve-ak.last.fm/serve/_/289186.jpg"}},
+        {"url": "http://userserve-ak.last.fm/serve/_/2724502.jpg", "tags": [], "verified":
+        false, "license": {"type": "unknown", "attribution": "n/a", "url": "http://userserve-ak.last.fm/serve/_/2724502.jpg"}},
+        {"url": "http://userserve-ak.last.fm/serve/_/2225171.jpg", "tags": [], "verified":
+        false, "license": {"type": "unknown", "attribution": "n/a", "url": "http://userserve-ak.last.fm/serve/_/2225171.jpg"}},
+        {"url": "http://userserve-ak.last.fm/serve/_/282571.jpg", "tags": [], "verified":
+        false, "license": {"type": "unknown", "attribution": "n/a", "url": "http://userserve-ak.last.fm/serve/_/282571.jpg"}},
+        {"url": "http://userserve-ak.last.fm/serve/_/30862.jpg", "tags": [], "verified":
+        false, "license": {"type": "unknown", "attribution": "n/a", "url": "http://userserve-ak.last.fm/serve/_/30862.jpg"}},
+        {"url": "http://userserve-ak.last.fm/serve/_/851317.jpg", "tags": [], "verified":
+        false, "license": {"type": "unknown", "attribution": "n/a", "url": "http://userserve-ak.last.fm/serve/_/851317.jpg"}},
+        {"url": "http://userserve-ak.last.fm/serve/_/211554.jpg", "tags": [], "verified":
+        false, "license": {"type": "unknown", "attribution": "n/a", "url": "http://userserve-ak.last.fm/serve/_/211554.jpg"}},
+        {"url": "http://userserve-ak.last.fm/serve/_/80130.jpg", "tags": [], "verified":
+        false, "license": {"type": "unknown", "attribution": "n/a", "url": "http://userserve-ak.last.fm/serve/_/80130.jpg"}},
+        {"url": "http://userserve-ak.last.fm/serve/_/14821.jpg", "tags": [], "verified":
+        false, "license": {"type": "unknown", "attribution": "n/a", "url": "http://userserve-ak.last.fm/serve/_/14821.jpg"}}]}}'
+    http_version: 
+  recorded_at: Thu, 13 Aug 2015 05:38:09 GMT
+- request:
+    method: get
+    uri: http://developer.echonest.com/api/v4/artist/images?api_key=BTF9TL31AHYRWPWPZ&name=Keith%20Urban
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/json
+      User-Agent:
+      - Echowrap Ruby Gem 0.2.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Thu, 13 Aug 2015 05:38:10 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Vary:
+      - Accept-Encoding
+      X-Request-Id:
+      - TdSHvCLkR0+sRnrhU94+vg
+      X-Worker-Node:
+      - bf53c:25338
+      X-Ratelimit-Remaining:
+      - '116'
+      Server:
+      - TornadoServer/3.1
+      X-Ratelimit-Limit:
+      - '120'
+      X-Api-Key:
+      - BTF9TL31AHYRWPWPZ
+      Cache-Control:
+      - max-age=86400
+      Access-Control-Allow-Origin:
+      - "*"
+      X-Ratelimit-Used:
+      - '4'
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        eyJyZXNwb25zZSI6IHsic3RhdHVzIjogeyJ2ZXJzaW9uIjogIjQuMiIsICJj
+        b2RlIjogMCwgIm1lc3NhZ2UiOiAiU3VjY2VzcyJ9LCAic3RhcnQiOiAwLCAi
+        dG90YWwiOiA3NywgImltYWdlcyI6IFt7InVybCI6ICJodHRwOi8vdXNlcnNl
+        cnZlLWFrLmxhc3QuZm0vc2VydmUvXy82NzQxLmpwZyIsICJ0YWdzIjogW10s
+        ICJ2ZXJpZmllZCI6IGZhbHNlLCAibGljZW5zZSI6IHsidHlwZSI6ICJ1bmtu
+        b3duIiwgImF0dHJpYnV0aW9uIjogImxhc3QuZm0iLCAidXJsIjogImh0dHA6
+        Ly91c2Vyc2VydmUtYWsubGFzdC5mbS9zZXJ2ZS9fLzY3NDEuanBnIn19LCB7
+        InVybCI6ICJodHRwOi8vdXNlcnNlcnZlLWFrLmxhc3QuZm0vc2VydmUvXy8y
+        MTg0OTguanBnIiwgInRhZ3MiOiBbXSwgInZlcmlmaWVkIjogZmFsc2UsICJs
+        aWNlbnNlIjogeyJ0eXBlIjogInVua25vd24iLCAiYXR0cmlidXRpb24iOiAi
+        bGFzdC5mbSIsICJ1cmwiOiAiaHR0cDovL3VzZXJzZXJ2ZS1hay5sYXN0LmZt
+        L3NlcnZlL18vMjE4NDk4LmpwZyJ9fSwgeyJ1cmwiOiAiaHR0cDovL3VwbG9h
+        ZC53aWtpbWVkaWEub3JnL3dpa2lwZWRpYS9jb21tb25zL2UvZTAvS2VpdGhf
+        VXJiYW4uanBnIiwgInRhZ3MiOiBbXSwgIndpZHRoIjogODcxLCAiaGVpZ2h0
+        IjogMTE4NSwgImFzcGVjdF9yYXRpbyI6IDAuNzM1MDIxMDk3MDQ2NDEzNSwg
+        InZlcmlmaWVkIjogZmFsc2UsICJsaWNlbnNlIjogeyJ0eXBlIjogImNjLWJ5
+        LXNhIiwgImF0dHJpYnV0aW9uIjogIk1pY2hhZWwgQmVkbmFyZWsiLCAidXJs
+        IjogImh0dHA6Ly91cGxvYWQud2lraW1lZGlhLm9yZy93aWtpcGVkaWEvY29t
+        bW9ucy9lL2UwL0tlaXRoX1VyYmFuLmpwZyJ9fSwgeyJ1cmwiOiAiaHR0cDov
+        L3VwbG9hZC53aWtpbWVkaWEub3JnL3dpa2lwZWRpYS9jb21tb25zL2QvZDUv
+        S2VpdGhfVXJiYW5fMjAwNzEyMDlfZHVja193YWxrLmpwZyIsICJ0YWdzIjog
+        W10sICJ3aWR0aCI6IDEwMDAsICJoZWlnaHQiOiA2NjcsICJhc3BlY3RfcmF0
+        aW8iOiAxLjQ5OTI1MDM3NDgxMjU5MzYsICJ2ZXJpZmllZCI6IGZhbHNlLCAi
+        bGljZW5zZSI6IHsidHlwZSI6ICJjYy1ieS1zYSIsICJhdHRyaWJ1dGlvbiI6
+        ICJIb3djaGVuZyIsICJ1cmwiOiAiaHR0cDovL3VwbG9hZC53aWtpbWVkaWEu
+        b3JnL3dpa2lwZWRpYS9jb21tb25zL2QvZDUvS2VpdGhfVXJiYW5fMjAwNzEy
+        MDlfZHVja193YWxrLmpwZyJ9fSwgeyJ1cmwiOiAiaHR0cDovL3VzZXJzZXJ2
+        ZS1hay5sYXN0LmZtL3NlcnZlL18vMjI2NjU3LmpwZyIsICJ0YWdzIjogW10s
+        ICJ2ZXJpZmllZCI6IGZhbHNlLCAibGljZW5zZSI6IHsidHlwZSI6ICJ1bmtu
+        b3duIiwgImF0dHJpYnV0aW9uIjogImxhc3QuZm0iLCAidXJsIjogImh0dHA6
+        Ly91c2Vyc2VydmUtYWsubGFzdC5mbS9zZXJ2ZS9fLzIyNjY1Ny5qcGcifX0s
+        IHsidXJsIjogImh0dHA6Ly91c2Vyc2VydmUtYWsubGFzdC5mbS9zZXJ2ZS9f
+        LzI4ODkyNC5qcGciLCAidGFncyI6IFtdLCAidmVyaWZpZWQiOiBmYWxzZSwg
+        ImxpY2Vuc2UiOiB7InR5cGUiOiAidW5rbm93biIsICJhdHRyaWJ1dGlvbiI6
+        ICJsYXN0LmZtIiwgInVybCI6ICJodHRwOi8vdXNlcnNlcnZlLWFrLmxhc3Qu
+        Zm0vc2VydmUvXy8yODg5MjQuanBnIn19LCB7InVybCI6ICJodHRwOi8vdXBs
+        b2FkLndpa2ltZWRpYS5vcmcvd2lraXBlZGlhL2NvbW1vbnMvYi9iNC9LZWl0
+        aF9VcmJhbl9pbl9Qb0FILkpQRyIsICJ0YWdzIjogW10sICJ3aWR0aCI6IDM2
+        NDgsICJoZWlnaHQiOiAyNzM2LCAiYXNwZWN0X3JhdGlvIjogMS4zMzMzMzMz
+        MzMzMzMzMzMzLCAidmVyaWZpZWQiOiBmYWxzZSwgImxpY2Vuc2UiOiB7InR5
+        cGUiOiAiY2MtYnktc2EiLCAiYXR0cmlidXRpb24iOiAiQmVyaWEiLCAidXJs
+        IjogImh0dHA6Ly91cGxvYWQud2lraW1lZGlhLm9yZy93aWtpcGVkaWEvY29t
+        bW9ucy9iL2I0L0tlaXRoX1VyYmFuX2luX1BvQUguSlBHIn19LCB7InVybCI6
+        ICJodHRwOi8vdXBsb2FkLndpa2ltZWRpYS5vcmcvd2lraXBlZGlhL2NvbW1v
+        bnMvNC80OS9LZWl0aF9VcmJhbiUyQ19NYXJjaF8yMDA3LmpwZyIsICJ0YWdz
+        IjogW10sICJ3aWR0aCI6IDQ4MCwgImhlaWdodCI6IDY0MCwgImFzcGVjdF9y
+        YXRpbyI6IDAuNzUsICJ2ZXJpZmllZCI6IGZhbHNlLCAibGljZW5zZSI6IHsi
+        dHlwZSI6ICJjYy1ieSIsICJhdHRyaWJ1dGlvbiI6ICJDw6lzYXIiLCAidXJs
+        IjogImh0dHA6Ly91cGxvYWQud2lraW1lZGlhLm9yZy93aWtpcGVkaWEvY29t
+        bW9ucy80LzQ5L0tlaXRoX1VyYmFuJTJDX01hcmNoXzIwMDcuanBnIn19LCB7
+        InVybCI6ICJodHRwOi8vdXNlcnNlcnZlLWFrLmxhc3QuZm0vc2VydmUvXy8y
+        OTM1NTM1NS9LZWl0aCtVcmJhbitrZWl0aC5qcGciLCAidGFncyI6IFtdLCAi
+        d2lkdGgiOiA0ODAsICJoZWlnaHQiOiA2MjksICJhc3BlY3RfcmF0aW8iOiAw
+        Ljc2MzExNjA1NzIzMzcwNDMsICJ2ZXJpZmllZCI6IGZhbHNlLCAibGljZW5z
+        ZSI6IHsidHlwZSI6ICJjYy1ieS1zYSIsICJhdHRyaWJ1dGlvbiI6ICJyZWxp
+        ZW50X2tfbG92ZXIiLCAidXJsIjogInd3dy5sYXN0LmZtL3VzZXIvcmVsaWVu
+        dF9rX2xvdmVyIn19LCB7InVybCI6ICJodHRwOi8vdXNlcnNlcnZlLWFrLmxh
+        c3QuZm0vc2VydmUvNTAwLzgzMzA3MTUvS2VpdGgrVXJiYW4uanBnIiwgInRh
+        Z3MiOiBbXSwgIndpZHRoIjogNTAwLCAiaGVpZ2h0IjogNjU1LCAiYXNwZWN0
+        X3JhdGlvIjogMC43NjMzNTg3Nzg2MjU5NTQyLCAidmVyaWZpZWQiOiBmYWxz
+        ZSwgImxpY2Vuc2UiOiB7InR5cGUiOiAiY2MtYnktc2EiLCAiYXR0cmlidXRp
+        b24iOiAiS29zaWFyYTE3IiwgInVybCI6ICJ3d3cubGFzdC5mbS91c2VyL0tv
+        c2lhcmExNyJ9fSwgeyJ1cmwiOiAiaHR0cDovL3VzZXJzZXJ2ZS1hay5sYXN0
+        LmZtL3NlcnZlL18vNDQ5MDM3OC9LZWl0aCtVcmJhbitLZWl0aFVyYmFuLmpw
+        ZyIsICJ0YWdzIjogW10sICJ3aWR0aCI6IDMzNywgImhlaWdodCI6IDYwMCwg
+        ImFzcGVjdF9yYXRpbyI6IDAuNTYxNjY2NjY2NjY2NjY2NiwgInZlcmlmaWVk
+        IjogZmFsc2UsICJsaWNlbnNlIjogeyJ0eXBlIjogImNjLWJ5LXNhIiwgImF0
+        dHJpYnV0aW9uIjogIkxpbF9BXzg3IiwgInVybCI6ICJ3d3cubGFzdC5mbS91
+        c2VyL0xpbF9BXzg3In19LCB7InVybCI6ICJodHRwOi8vdXNlcnNlcnZlLWFr
+        Lmxhc3QuZm0vc2VydmUvXy81MTAwNDkzOS9LZWl0aCtVcmJhbit0dW1ibHJf
+        bDd2ejZwVEtBaDFxYXFrdnBvMV81MDAuanBnIiwgInRhZ3MiOiBbXSwgIndp
+        ZHRoIjogNDY4LCAiaGVpZ2h0IjogNzAwLCAiYXNwZWN0X3JhdGlvIjogMC42
+        Njg1NzE0Mjg1NzE0Mjg2LCAidmVyaWZpZWQiOiBmYWxzZSwgImxpY2Vuc2Ui
+        OiB7InR5cGUiOiAiY2MtYnktc2EiLCAiYXR0cmlidXRpb24iOiAibGFzdC5m
+        bSIsICJ1cmwiOiAid3d3Lmxhc3QuZm0vIn19LCB7InVybCI6ICJodHRwOi8v
+        dXNlcnNlcnZlLWFrLmxhc3QuZm0vc2VydmUvNTAwLzgzMzA2MDUvS2VpdGgr
+        VXJiYW4uanBnIiwgInRhZ3MiOiBbXSwgIndpZHRoIjogNTAwLCAiaGVpZ2h0
+        IjogNDk1LCAiYXNwZWN0X3JhdGlvIjogMS4wMTAxMDEwMTAxMDEwMTAyLCAi
+        dmVyaWZpZWQiOiBmYWxzZSwgImxpY2Vuc2UiOiB7InR5cGUiOiAiY2MtYnkt
+        c2EiLCAiYXR0cmlidXRpb24iOiAiS29zaWFyYTE3IiwgInVybCI6ICJ3d3cu
+        bGFzdC5mbS91c2VyL0tvc2lhcmExNyJ9fSwgeyJ1cmwiOiAiaHR0cDovL3Vz
+        ZXJzZXJ2ZS1hay5sYXN0LmZtL3NlcnZlL18vODMzMTIwMS9LZWl0aCtVcmJh
+        bi5qcGciLCAidGFncyI6IFtdLCAid2lkdGgiOiAzOTQsICJoZWlnaHQiOiAz
+        OTQsICJhc3BlY3RfcmF0aW8iOiAxLjAsICJ2ZXJpZmllZCI6IGZhbHNlLCAi
+        bGljZW5zZSI6IHsidHlwZSI6ICJjYy1ieS1zYSIsICJhdHRyaWJ1dGlvbiI6
+        ICJLb3NpYXJhMTciLCAidXJsIjogInd3dy5sYXN0LmZtL3VzZXIvS29zaWFy
+        YTE3In19LCB7InVybCI6ICJodHRwOi8vdXNlcnNlcnZlLWFrLmxhc3QuZm0v
+        c2VydmUvNTAwLzE4Nzk0MzE5L0tlaXRoK1VyYmFuK3N3ZWF0ZXIuanBnIiwg
+        InRhZ3MiOiBbXSwgIndpZHRoIjogNTAwLCAiaGVpZ2h0IjogNjI4LCAiYXNw
+        ZWN0X3JhdGlvIjogMC43OTYxNzgzNDM5NDkwNDQ2LCAidmVyaWZpZWQiOiBm
+        YWxzZSwgImxpY2Vuc2UiOiB7InR5cGUiOiAiY2MtYnktc2EiLCAiYXR0cmli
+        dXRpb24iOiAiYXphZWxpYXMiLCAidXJsIjogInd3dy5sYXN0LmZtL3VzZXIv
+        YXphZWxpYXMifX1dfX0=
+    http_version: 
+  recorded_at: Thu, 13 Aug 2015 05:38:09 GMT
+- request:
+    method: get
+    uri: http://developer.echonest.com/api/v4/artist/images?api_key=BTF9TL31AHYRWPWPZ&name=Miranda%20Lambert
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/json
+      User-Agent:
+      - Echowrap Ruby Gem 0.2.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Thu, 13 Aug 2015 05:38:10 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Vary:
+      - Accept-Encoding
+      X-Request-Id:
+      - 0f0R4ntyR4ugTlbfYAooDg
+      X-Worker-Node:
+      - b32a8:18327
+      X-Ratelimit-Remaining:
+      - '115'
+      Server:
+      - TornadoServer/3.1
+      X-Ratelimit-Limit:
+      - '120'
+      X-Api-Key:
+      - BTF9TL31AHYRWPWPZ
+      Cache-Control:
+      - max-age=86400
+      Access-Control-Allow-Origin:
+      - "*"
+      X-Ratelimit-Used:
+      - '5'
+    body:
+      encoding: ASCII-8BIT
+      string: '{"response": {"status": {"version": "4.2", "code": 0, "message": "Success"},
+        "start": 0, "total": 157, "images": [{"url": "http://upload.wikimedia.org/wikipedia/commons/7/7c/Miranda_Lambert_3.jpg",
+        "tags": [], "width": 896, "height": 1249, "aspect_ratio": 0.7173738991192954,
+        "verified": false, "license": {"type": "cc-by", "attribution": "CharlotteWebb",
+        "url": "http://upload.wikimedia.org/wikipedia/commons/7/7c/Miranda_Lambert_3.jpg"}},
+        {"url": "http://upload.wikimedia.org/wikipedia/commons/c/cc/Miranda_Lambert.jpg",
+        "tags": [], "width": 700, "height": 1000, "aspect_ratio": 0.7, "verified":
+        false, "license": {"type": "public-domain", "attribution": "Lukelambert",
+        "url": "http://upload.wikimedia.org/wikipedia/commons/c/cc/Miranda_Lambert.jpg"}},
+        {"url": "http://upload.wikimedia.org/wikipedia/commons/d/db/Miranda_Lambert_at_2010_ACMA.jpg",
+        "tags": [], "width": 2304, "height": 3072, "aspect_ratio": 0.75, "verified":
+        false, "license": {"type": "cc-by", "attribution": "Flickr upload bot", "url":
+        "http://upload.wikimedia.org/wikipedia/commons/d/db/Miranda_Lambert_at_2010_ACMA.jpg"}},
+        {"url": "http://userserve-ak.last.fm/serve/_/2444060.jpg", "tags": [], "verified":
+        false, "license": {"type": "unknown", "attribution": "last.fm", "url": "http://userserve-ak.last.fm/serve/_/2444060.jpg"}},
+        {"url": "http://a795.ac-images.myspacecdn.com/images01/115/m_036c648e09d1fe8a994d0cfbaa24e7ca.jpg",
+        "tags": [], "width": 90, "height": 90, "aspect_ratio": 1.0, "verified": false,
+        "license": {"type": "unknown", "attribution": "myspace", "url": "http://a795.ac-images.myspacecdn.com/images01/115/m_036c648e09d1fe8a994d0cfbaa24e7ca.jpg"}},
+        {"url": "http://userserve-ak.last.fm/serve/_/586760.jpg", "tags": [], "verified":
+        false, "license": {"type": "unknown", "attribution": "last.fm", "url": "http://userserve-ak.last.fm/serve/_/586760.jpg"}},
+        {"url": "http://userserve-ak.last.fm/serve/_/4183066.jpg", "tags": [], "verified":
+        false, "license": {"type": "unknown", "attribution": "last.fm", "url": "http://userserve-ak.last.fm/serve/_/4183066.jpg"}},
+        {"url": "http://userserve-ak.last.fm/serve/_/484243.jpg", "tags": [], "verified":
+        false, "license": {"type": "unknown", "attribution": "last.fm", "url": "http://userserve-ak.last.fm/serve/_/484243.jpg"}},
+        {"url": "http://upload.wikimedia.org/wikipedia/commons/0/0b/MirandaLambertApr10.jpg",
+        "tags": [], "width": 1631, "height": 2148, "aspect_ratio": 0.7593109869646183,
+        "verified": false, "license": {"type": "cc-by", "attribution": "Nehrams2020",
+        "url": "http://upload.wikimedia.org/wikipedia/commons/0/0b/MirandaLambertApr10.jpg"}},
+        {"url": "http://userserve-ak.last.fm/serve/_/765858.jpg", "tags": [], "verified":
+        false, "license": {"type": "unknown", "attribution": "last.fm", "url": "http://userserve-ak.last.fm/serve/_/765858.jpg"}},
+        {"url": "http://userserve-ak.last.fm/serve/_/110539.jpg", "tags": [], "verified":
+        false, "license": {"type": "unknown", "attribution": "last.fm", "url": "http://userserve-ak.last.fm/serve/_/110539.jpg"}},
+        {"url": "http://userserve-ak.last.fm/serve/_/580791.jpg", "tags": [], "verified":
+        false, "license": {"type": "unknown", "attribution": "last.fm", "url": "http://userserve-ak.last.fm/serve/_/580791.jpg"}},
+        {"url": "http://userserve-ak.last.fm/serve/_/4183141.jpg", "tags": [], "verified":
+        false, "license": {"type": "unknown", "attribution": "last.fm", "url": "http://userserve-ak.last.fm/serve/_/4183141.jpg"}},
+        {"url": "http://userserve-ak.last.fm/serve/_/3748795.jpg", "tags": [], "verified":
+        false, "license": {"type": "unknown", "attribution": "last.fm", "url": "http://userserve-ak.last.fm/serve/_/3748795.jpg"}},
+        {"url": "http://a513.ac-images.myspacecdn.com/images01/11/m_a1d9f8375482240b3e448a75662add80.jpg",
+        "tags": [], "width": 90, "height": 90, "aspect_ratio": 1.0, "verified": false,
+        "license": {"type": "unknown", "attribution": "myspace", "url": "http://a513.ac-images.myspacecdn.com/images01/11/m_a1d9f8375482240b3e448a75662add80.jpg"}}]}}'
+    http_version: 
+  recorded_at: Thu, 13 Aug 2015 05:38:09 GMT
+- request:
+    method: get
+    uri: http://developer.echonest.com/api/v4/artist/images?api_key=BTF9TL31AHYRWPWPZ&name=Brad%20Paisley
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/json
+      User-Agent:
+      - Echowrap Ruby Gem 0.2.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Thu, 13 Aug 2015 05:38:10 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Vary:
+      - Accept-Encoding
+      X-Request-Id:
+      - ztqAOjT+Qh+j3L1DncFZuA
+      X-Worker-Node:
+      - 13afb:33050
+      X-Ratelimit-Remaining:
+      - '114'
+      Server:
+      - TornadoServer/3.1
+      X-Ratelimit-Limit:
+      - '120'
+      X-Api-Key:
+      - BTF9TL31AHYRWPWPZ
+      Cache-Control:
+      - max-age=86400
+      Access-Control-Allow-Origin:
+      - "*"
+      X-Ratelimit-Used:
+      - '6'
+    body:
+      encoding: ASCII-8BIT
+      string: '{"response": {"status": {"version": "4.2", "code": 0, "message": "Success"},
+        "start": 0, "total": 94, "images": [{"url": "http://userserve-ak.last.fm/serve/_/374934.jpg",
+        "tags": [], "verified": false, "license": {"type": "unknown", "attribution":
+        "last.fm", "url": "http://userserve-ak.last.fm/serve/_/374934.jpg"}}, {"url":
+        "http://userserve-ak.last.fm/serve/_/4179068.jpg", "tags": [], "verified":
+        false, "license": {"type": "unknown", "attribution": "last.fm", "url": "http://userserve-ak.last.fm/serve/_/4179068.jpg"}},
+        {"url": "http://upload.wikimedia.org/wikipedia/commons/5/58/Brad_Paisley_at_the_White_House.jpg",
+        "tags": [], "width": 898, "height": 1339, "aspect_ratio": 0.6706497386109037,
+        "verified": false, "license": {"type": "public-domain", "attribution": "Gage",
+        "url": "http://upload.wikimedia.org/wikipedia/commons/5/58/Brad_Paisley_at_the_White_House.jpg"}},
+        {"url": "http://a253.ac-images.myspacecdn.com/images01/80/m_f3a015f37d935c5902229daee51be164.jpg",
+        "tags": [], "width": 90, "height": 90, "aspect_ratio": 1.0, "verified": false,
+        "license": {"type": "unknown", "attribution": "myspace", "url": "http://a253.ac-images.myspacecdn.com/images01/80/m_f3a015f37d935c5902229daee51be164.jpg"}},
+        {"url": "http://userserve-ak.last.fm/serve/_/83001.jpg", "tags": [], "verified":
+        false, "license": {"type": "unknown", "attribution": "last.fm", "url": "http://userserve-ak.last.fm/serve/_/83001.jpg"}},
+        {"url": "http://userserve-ak.last.fm/serve/_/4179083.jpg", "tags": [], "verified":
+        false, "license": {"type": "unknown", "attribution": "last.fm", "url": "http://userserve-ak.last.fm/serve/_/4179083.jpg"}},
+        {"url": "http://userserve-ak.last.fm/serve/_/4179088.jpg", "tags": [], "verified":
+        false, "license": {"type": "unknown", "attribution": "last.fm", "url": "http://userserve-ak.last.fm/serve/_/4179088.jpg"}},
+        {"url": "http://upload.wikimedia.org/wikipedia/commons/9/9f/BradPaiselyApr10.jpg",
+        "tags": [], "width": 1251, "height": 1489, "aspect_ratio": 0.8401611820013432,
+        "verified": false, "license": {"type": "cc-by", "attribution": "Nehrams2020",
+        "url": "http://upload.wikimedia.org/wikipedia/commons/9/9f/BradPaiselyApr10.jpg"}},
+        {"url": "http://upload.wikimedia.org/wikipedia/commons/8/89/Paisley%2C_Brad_%282007%29_2.jpg",
+        "tags": [], "width": 1024, "height": 683, "aspect_ratio": 1.499267935578331,
+        "verified": false, "license": {"type": "cc-by-sa", "attribution": "GeeJo",
+        "url": "http://upload.wikimedia.org/wikipedia/commons/8/89/Paisley%2C_Brad_%282007%29_2.jpg"}},
+        {"url": "http://userserve-ak.last.fm/serve/500/56984919/Brad+Paisley+hits+alive.png",
+        "tags": [], "width": 500, "height": 500, "aspect_ratio": 1.0, "verified":
+        false, "license": {"type": "cc-by-sa", "attribution": "last.fm", "url": "www.last.fm/"}},
+        {"url": "http://userserve-ak.last.fm/serve/_/19046925/Brad+Paisley+Brad.jpg",
+        "tags": [], "width": 411, "height": 600, "aspect_ratio": 0.685, "verified":
+        false, "license": {"type": "cc-by-sa", "attribution": "CountryGal1", "url":
+        "www.last.fm/user/CountryGal1"}}, {"url": "http://userserve-ak.last.fm/serve/_/19144457/Brad+Paisley.jpg",
+        "tags": [], "verified": false, "license": {"type": "unknown", "attribution":
+        "n/a", "url": "http://www.last.fm/music/Brad+Paisley/+images"}}, {"url": "http://userserve-ak.last.fm/serve/_/19144821/Brad+Paisley+brad.jpg",
+        "tags": [], "verified": false, "license": {"type": "unknown", "attribution":
+        "last.fm", "url": "http://www.last.fm/music/Brad+Paisley/+images"}}, {"url":
+        "http://userserve-ak.last.fm/serve/_/19189985/Brad+Paisley+brad.jpg", "tags":
+        [], "verified": false, "license": {"type": "unknown", "attribution": "n/a",
+        "url": "http://www.last.fm/music/Brad+Paisley/+images"}}, {"url": "http://userserve-ak.last.fm/serve/_/19145909/Brad+Paisley.jpg",
+        "tags": [], "verified": false, "license": {"type": "unknown", "attribution":
+        "n/a", "url": "http://www.last.fm/music/Brad+Paisley/+images"}}]}}'
+    http_version: 
+  recorded_at: Thu, 13 Aug 2015 05:38:09 GMT
+- request:
+    method: get
+    uri: http://developer.echonest.com/api/v4/artist/images?api_key=BTF9TL31AHYRWPWPZ&name=Tim%20McGraw
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/json
+      User-Agent:
+      - Echowrap Ruby Gem 0.2.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Thu, 13 Aug 2015 05:38:10 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Vary:
+      - Accept-Encoding
+      X-Request-Id:
+      - EHVW1YF+QIa925H6B0TjxQ
+      X-Worker-Node:
+      - 89a7b:2038
+      X-Ratelimit-Remaining:
+      - '113'
+      Server:
+      - TornadoServer/3.1
+      X-Ratelimit-Limit:
+      - '120'
+      X-Api-Key:
+      - BTF9TL31AHYRWPWPZ
+      Cache-Control:
+      - max-age=86400
+      Access-Control-Allow-Origin:
+      - "*"
+      X-Ratelimit-Used:
+      - '7'
+    body:
+      encoding: ASCII-8BIT
+      string: '{"response": {"status": {"version": "4.2", "code": 0, "message": "Success"},
+        "start": 0, "total": 43, "images": [{"url": "http://userserve-ak.last.fm/serve/_/2132780.jpg",
+        "tags": [], "verified": false, "license": {"type": "unknown", "attribution":
+        "last.fm", "url": "http://userserve-ak.last.fm/serve/_/2132780.jpg"}}, {"url":
+        "http://userserve-ak.last.fm/serve/_/83143.jpg", "tags": [], "verified": false,
+        "license": {"type": "unknown", "attribution": "last.fm", "url": "http://userserve-ak.last.fm/serve/_/83143.jpg"}},
+        {"url": "http://a71.ac-images.myspacecdn.com/images01/6/m_26374a6996da518b1cbd944f17c87a7e.jpg",
+        "tags": [], "width": 90, "height": 90, "aspect_ratio": 1.0, "verified": false,
+        "license": {"type": "unknown", "attribution": "myspace", "url": "http://a71.ac-images.myspacecdn.com/images01/6/m_26374a6996da518b1cbd944f17c87a7e.jpg"}},
+        {"url": "http://userserve-ak.last.fm/serve/_/228056.jpg", "tags": [], "verified":
+        false, "license": {"type": "unknown", "attribution": "last.fm", "url": "http://userserve-ak.last.fm/serve/_/228056.jpg"}},
+        {"url": "http://userserve-ak.last.fm/serve/_/89620.jpg", "tags": [], "verified":
+        false, "license": {"type": "unknown", "attribution": "last.fm", "url": "http://userserve-ak.last.fm/serve/_/89620.jpg"}},
+        {"url": "http://userserve-ak.last.fm/serve/_/125384.jpg", "tags": [], "verified":
+        false, "license": {"type": "unknown", "attribution": "last.fm", "url": "http://userserve-ak.last.fm/serve/_/125384.jpg"}},
+        {"url": "http://userserve-ak.last.fm/serve/_/390025.jpg", "tags": [], "verified":
+        false, "license": {"type": "unknown", "attribution": "last.fm", "url": "http://userserve-ak.last.fm/serve/_/390025.jpg"}},
+        {"url": "http://upload.wikimedia.org/wikipedia/commons/9/96/Tim_McGraw.jpg",
+        "tags": [], "width": 1392, "height": 2268, "aspect_ratio": 0.6137566137566137,
+        "verified": false, "license": {"type": "unknown", "attribution": "n/a", "url":
+        "http://en.wikipedia.org/wiki/File:Tim_McGraw.jpg"}}, {"url": "http://upload.wikimedia.org/wikipedia/commons/f/f6/Start%2C_LA%2C_welcome_sign_IMG_0142.JPG",
+        "tags": [], "width": 4320, "height": 3240, "aspect_ratio": 1.3333333333333333,
+        "verified": false, "license": {"type": "cc-by-sa", "attribution": "Billy Hathorn",
+        "url": "http://upload.wikimedia.org/wikipedia/commons/f/f6/Start%2C_LA%2C_welcome_sign_IMG_0142.JPG"}},
+        {"url": "http://userserve-ak.last.fm/serve/500/36391801/Tim+McGraw+TM2020Publicity20Shot1.jpg",
+        "tags": [], "width": 500, "height": 637, "aspect_ratio": 0.7849293563579278,
+        "verified": false, "license": {"type": "cc-by-sa", "attribution": "Curb Records",
+        "url": "www.last.fm/label/Curb+Records"}}, {"url": "http://userserve-ak.last.fm/serve/500/59793587/Tim+McGraw+RCA_0125.jpg",
+        "tags": [], "verified": false, "license": {"type": "unknown", "attribution":
+        "n/a", "url": "http://www.last.fm/music/Tim+McGraw/+images"}}, {"url": "http://userserve-ak.last.fm/serve/500/49795127/Tim+McGraw.png",
+        "tags": [], "width": 500, "height": 375, "aspect_ratio": 1.3333333333333333,
+        "verified": false, "license": {"type": "cc-by-sa", "attribution": "onitorment",
+        "url": "www.last.fm/user/onitorment"}}, {"url": "http://userserve-ak.last.fm/serve/500/5577005/Tim+McGraw+TimMcGrawAgainstWall_Brown.jpg",
+        "tags": [], "width": 500, "height": 572, "aspect_ratio": 0.8741258741258742,
+        "verified": false, "license": {"type": "cc-by-sa", "attribution": "theguyone2",
+        "url": "www.last.fm/user/theguyone2"}}, {"url": "http://userserve-ak.last.fm/serve/_/17452305/Tim+McGraw+mcgraw.png",
+        "tags": [], "verified": false, "license": {"type": "unknown", "attribution":
+        "last.fm", "url": "http://www.last.fm/music/Tim+McGraw/+images"}}, {"url":
+        "http://userserve-ak.last.fm/serve/500/17451761/Tim+McGraw++and+faith+hill.jpg",
+        "tags": [], "verified": false, "license": {"type": "unknown", "attribution":
+        "last.fm", "url": "http://www.last.fm/music/Tim+McGraw/+images"}}]}}'
+    http_version: 
+  recorded_at: Thu, 13 Aug 2015 05:38:09 GMT
+- request:
+    method: get
+    uri: http://developer.echonest.com/api/v4/artist/images?api_key=BTF9TL31AHYRWPWPZ&name=Shania%20Twain
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/json
+      User-Agent:
+      - Echowrap Ruby Gem 0.2.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Thu, 13 Aug 2015 05:38:10 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Vary:
+      - Accept-Encoding
+      X-Request-Id:
+      - nhVAFBYQSleFa0f89ZphQw
+      X-Worker-Node:
+      - 472e0:22227
+      X-Ratelimit-Remaining:
+      - '112'
+      Server:
+      - TornadoServer/3.1
+      X-Ratelimit-Limit:
+      - '120'
+      X-Api-Key:
+      - BTF9TL31AHYRWPWPZ
+      Cache-Control:
+      - max-age=86400
+      Access-Control-Allow-Origin:
+      - "*"
+      X-Ratelimit-Used:
+      - '8'
+    body:
+      encoding: ASCII-8BIT
+      string: '{"response": {"status": {"version": "4.2", "code": 0, "message": "Success"},
+        "start": 0, "total": 156, "images": [{"url": "http://upload.wikimedia.org/wikipedia/commons/f/fe/Shania_Twain_Portrait.jpg",
+        "tags": [], "width": 192, "height": 132, "aspect_ratio": 1.4545454545454546,
+        "verified": false, "license": {"type": "cc-by", "attribution": "Bserin", "url":
+        "http://upload.wikimedia.org/wikipedia/commons/f/fe/Shania_Twain_Portrait.jpg"}},
+        {"url": "http://upload.wikimedia.org/wikipedia/commons/thumb/d/d0/Kenogami.jpg/800px-Kenogami.jpg",
+        "tags": [], "width": 800, "height": 600, "aspect_ratio": 1.3333333333333333,
+        "verified": false, "license": {"type": "cc-by-sa", "attribution": "Ldesbiens",
+        "url": "http://en.wikipedia.org/wiki/File:Kenogami.jpg"}}, {"url": "http://upload.wikimedia.org/wikipedia/commons/thumb/1/18/ShaniaTwain2.jpg/560px-ShaniaTwain2.jpg",
+        "tags": [], "width": 560, "height": 600, "aspect_ratio": 0.9333333333333333,
+        "verified": false, "license": {"type": "cc-by", "attribution": "Jerry Daykin
+        from Cambridge, United Kingdom", "url": "http://commons.wikimedia.org/wiki/File:ShaniaTwain2.jpg"}},
+        {"url": "http://upload.wikimedia.org/wikipedia/commons/thumb/7/7a/ShaniaTwain1.jpg/438px-ShaniaTwain1.jpg",
+        "tags": [], "width": 438, "height": 600, "aspect_ratio": 0.73, "verified":
+        false, "license": {"type": "cc-by", "attribution": "David Swales", "url":
+        "http://en.wikipedia.org/wiki/File:ShaniaTwain1.jpg"}}, {"url": "http://upload.wikimedia.org/wikipedia/commons/d/da/ShaniaTwainJune2011.jpg",
+        "tags": [], "width": 729, "height": 1216, "aspect_ratio": 0.5995065789473685,
+        "verified": false, "license": {"type": "cc-by-sa", "attribution": "Entheta",
+        "url": "http://upload.wikimedia.org/wikipedia/commons/d/da/ShaniaTwainJune2011.jpg"}},
+        {"url": "http://upload.wikimedia.org/wikipedia/commons/e/ee/ShaniaTwainJunoAwardsMar2011.jpg",
+        "tags": [], "width": 325, "height": 513, "aspect_ratio": 0.6335282651072125,
+        "verified": false, "license": {"type": "cc-by-sa", "attribution": "Materialscientist",
+        "url": "http://upload.wikimedia.org/wikipedia/commons/e/ee/ShaniaTwainJunoAwardsMar2011.jpg"}},
+        {"url": "http://upload.wikimedia.org/wikipedia/commons/5/5d/ShaniaTwain3.jpg",
+        "tags": [], "width": 368, "height": 500, "aspect_ratio": 0.736, "verified":
+        false, "license": {"type": "cc-by", "attribution": "Jeangagnon", "url": "http://en.wikipedia.org/wiki/File:ShaniaTwain3.jpg"}},
+        {"url": "http://upload.wikimedia.org/wikipedia/commons/0/00/Shania_Twain_-_Come_on_Over_Tour_-_Boston.jpg",
+        "tags": [], "width": 740, "height": 1035, "aspect_ratio": 0.714975845410628,
+        "verified": false, "license": {"type": "cc-by-sa", "attribution": "Ipodnano05",
+        "url": "http://upload.wikimedia.org/wikipedia/commons/0/00/Shania_Twain_-_Come_on_Over_Tour_-_Boston.jpg"}},
+        {"url": "http://upload.wikimedia.org/wikipedia/commons/d/d0/Kenogami.jpg",
+        "tags": [], "width": 2048, "height": 1536, "aspect_ratio": 1.3333333333333333,
+        "verified": false, "license": {"type": "cc-by-sa", "attribution": "Adqproductions",
+        "url": "http://upload.wikimedia.org/wikipedia/commons/d/d0/Kenogami.jpg"}},
+        {"url": "http://upload.wikimedia.org/wikipedia/commons/b/b0/Shania_Twain_star_on_Walk_of_Fame.jpg",
+        "tags": [], "width": 2094, "height": 1679, "aspect_ratio": 1.247170935080405,
+        "verified": false, "license": {"type": "cc-by-sa", "attribution": "Tabercil",
+        "url": "http://upload.wikimedia.org/wikipedia/commons/b/b0/Shania_Twain_star_on_Walk_of_Fame.jpg"}},
+        {"url": "http://upload.wikimedia.org/wikipedia/commons/7/7a/ShaniaTwain1.jpg",
+        "tags": [], "width": 584, "height": 800, "aspect_ratio": 0.73, "verified":
+        false, "license": {"type": "cc-by", "attribution": "David Swales", "url":
+        "http://en.wikipedia.org/wiki/File:ShaniaTwain1.jpg"}}, {"url": "http://userserve-ak.last.fm/serve/_/380147.jpg",
+        "tags": [], "verified": false, "license": {"type": "unknown", "attribution":
+        "last.fm", "url": "http://userserve-ak.last.fm/serve/_/380147.jpg"}}, {"url":
+        "http://userserve-ak.last.fm/serve/_/379263.jpg", "tags": [], "verified":
+        false, "license": {"type": "unknown", "attribution": "last.fm", "url": "http://userserve-ak.last.fm/serve/_/379263.jpg"}},
+        {"url": "http://userserve-ak.last.fm/serve/_/308499.jpg", "tags": [], "verified":
+        false, "license": {"type": "unknown", "attribution": "last.fm", "url": "http://userserve-ak.last.fm/serve/_/308499.jpg"}},
+        {"url": "http://userserve-ak.last.fm/serve/_/190018.jpg", "tags": [], "verified":
+        false, "license": {"type": "unknown", "attribution": "last.fm", "url": "http://userserve-ak.last.fm/serve/_/190018.jpg"}}]}}'
+    http_version: 
+  recorded_at: Thu, 13 Aug 2015 05:38:09 GMT
+- request:
+    method: get
+    uri: http://developer.echonest.com/api/v4/artist/images?api_key=BTF9TL31AHYRWPWPZ&name=George%20Jones
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/json
+      User-Agent:
+      - Echowrap Ruby Gem 0.2.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Thu, 13 Aug 2015 05:38:10 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Vary:
+      - Accept-Encoding
+      X-Request-Id:
+      - 8YNgeDiLQlSCB7usNCw34w
+      X-Worker-Node:
+      - ab936:32663
+      X-Ratelimit-Remaining:
+      - '111'
+      Server:
+      - TornadoServer/3.1
+      X-Ratelimit-Limit:
+      - '120'
+      X-Api-Key:
+      - BTF9TL31AHYRWPWPZ
+      Cache-Control:
+      - max-age=86400
+      Access-Control-Allow-Origin:
+      - "*"
+      X-Ratelimit-Used:
+      - '9'
+    body:
+      encoding: ASCII-8BIT
+      string: '{"response": {"status": {"version": "4.2", "code": 0, "message": "Success"},
+        "start": 0, "total": 44, "images": [{"url": "http://userserve-ak.last.fm/serve/_/529539.jpg",
+        "tags": [], "verified": false, "license": {"type": "unknown", "attribution":
+        "last.fm", "url": "http://userserve-ak.last.fm/serve/_/529539.jpg"}}, {"url":
+        "http://userserve-ak.last.fm/serve/_/341.jpg", "tags": [], "verified": false,
+        "license": {"type": "unknown", "attribution": "last.fm", "url": "http://userserve-ak.last.fm/serve/_/341.jpg"}},
+        {"url": "http://userserve-ak.last.fm/serve/_/133031.jpg", "tags": [], "verified":
+        false, "license": {"type": "unknown", "attribution": "last.fm", "url": "http://userserve-ak.last.fm/serve/_/133031.jpg"}},
+        {"url": "http://userserve-ak.last.fm/serve/_/4204049.jpg", "tags": [], "verified":
+        false, "license": {"type": "unknown", "attribution": "last.fm", "url": "http://userserve-ak.last.fm/serve/_/4204049.jpg"}},
+        {"url": "http://a32.ac-images.myspacecdn.com/images01/9/m_17c7cbf2d4ea1a71d27cd5239d5f300f.jpg",
+        "tags": [], "width": 90, "height": 90, "aspect_ratio": 1.0, "verified": false,
+        "license": {"type": "unknown", "attribution": "myspace", "url": "http://a32.ac-images.myspacecdn.com/images01/9/m_17c7cbf2d4ea1a71d27cd5239d5f300f.jpg"}},
+        {"url": "http://userserve-ak.last.fm/serve/_/4204056.jpg", "tags": [], "verified":
+        false, "license": {"type": "unknown", "attribution": "last.fm", "url": "http://userserve-ak.last.fm/serve/_/4204056.jpg"}},
+        {"url": "http://userserve-ak.last.fm/serve/_/4204061.jpg", "tags": [], "verified":
+        false, "license": {"type": "unknown", "attribution": "last.fm", "url": "http://userserve-ak.last.fm/serve/_/4204061.jpg"}},
+        {"url": "http://upload.wikimedia.org/wikipedia/commons/0/00/George_Jones.jpg",
+        "tags": [], "width": 600, "height": 878, "aspect_ratio": 0.683371298405467,
+        "verified": false, "license": {"type": "public-domain", "attribution": "Infrogmation",
+        "url": "http://upload.wikimedia.org/wikipedia/commons/0/00/George_Jones.jpg"}},
+        {"url": "http://upload.wikimedia.org/wikipedia/commons/thumb/0/00/George_Jones.jpg/410px-George_Jones.jpg",
+        "tags": [], "width": 410, "height": 600, "aspect_ratio": 0.6833333333333333,
+        "verified": false, "license": {"type": "public-domain", "attribution": "n/a",
+        "url": "http://en.wikipedia.org/wiki/File:George_Jones.jpg"}}, {"url": "http://userserve-ak.last.fm/serve/500/60650663/George+Jones+The+Great++882004.jpg",
+        "tags": [], "width": 500, "height": 652, "aspect_ratio": 0.7668711656441718,
+        "verified": false, "license": {"type": "cc-by-sa", "attribution": "Deato",
+        "url": "www.last.fm/user/Deato"}}, {"url": "http://userserve-ak.last.fm/serve/500/60650729/George+Jones+The+One+and+Only.jpg",
+        "tags": [], "width": 500, "height": 589, "aspect_ratio": 0.8488964346349746,
+        "verified": false, "license": {"type": "cc-by-sa", "attribution": "Deato",
+        "url": "www.last.fm/user/Deato"}}, {"url": "http://userserve-ak.last.fm/serve/_/25551779/George+Jones.jpg",
+        "tags": [], "width": 402, "height": 394, "aspect_ratio": 1.0203045685279188,
+        "verified": false, "license": {"type": "cc-by-sa", "attribution": "bigfanofmusic",
+        "url": "www.last.fm/user/bigfanofmusic"}}, {"url": "http://userserve-ak.last.fm/serve/_/20098951/George+Jones+CAZKXN6VCA0W5QO1CAS0AS5BCAMTH7.jpg",
+        "tags": [], "width": 116, "height": 116, "aspect_ratio": 1.0, "verified":
+        false, "license": {"type": "cc-by-sa", "attribution": "G-57", "url": "www.last.fm/user/G-57"}},
+        {"url": "http://userserve-ak.last.fm/serve/_/4204056/George+Jones+jones_george.jpg",
+        "tags": [], "width": 160, "height": 160, "aspect_ratio": 1.0, "verified":
+        false, "license": {"type": "cc-by-sa", "attribution": "snuff238", "url": "www.last.fm/user/snuff238"}},
+        {"url": "http://userserve-ak.last.fm/serve/500/21360505/George+Jones++live.jpg",
+        "tags": [], "width": 500, "height": 777, "aspect_ratio": 0.6435006435006435,
+        "verified": false, "license": {"type": "cc-by-sa", "attribution": "trackaghost",
+        "url": "www.last.fm/user/trackaghost"}}]}}'
+    http_version: 
+  recorded_at: Thu, 13 Aug 2015 05:38:09 GMT
+- request:
+    method: get
+    uri: http://developer.echonest.com/api/v4/artist/images?api_key=BTF9TL31AHYRWPWPZ&name=Reba%20McEntire
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/json
+      User-Agent:
+      - Echowrap Ruby Gem 0.2.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Thu, 13 Aug 2015 05:38:11 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Vary:
+      - Accept-Encoding
+      X-Request-Id:
+      - S8J1+ue8QPO3ARGHIq9sAg
+      X-Worker-Node:
+      - a1d6c:32463
+      X-Ratelimit-Remaining:
+      - '110'
+      Server:
+      - TornadoServer/3.1
+      X-Ratelimit-Limit:
+      - '120'
+      X-Api-Key:
+      - BTF9TL31AHYRWPWPZ
+      Cache-Control:
+      - max-age=86400
+      Access-Control-Allow-Origin:
+      - "*"
+      X-Ratelimit-Used:
+      - '10'
+    body:
+      encoding: ASCII-8BIT
+      string: '{"response": {"status": {"version": "4.2", "code": 0, "message": "Success"},
+        "start": 0, "total": 102, "images": [{"url": "http://userserve-ak.last.fm/serve/_/58771.jpg",
+        "tags": [], "verified": false, "license": {"type": "unknown", "attribution":
+        "last.fm", "url": "http://userserve-ak.last.fm/serve/_/58771.jpg"}}, {"url":
+        "http://userserve-ak.last.fm/serve/_/4319084.jpg", "tags": [], "verified":
+        false, "license": {"type": "unknown", "attribution": "last.fm", "url": "http://userserve-ak.last.fm/serve/_/4319084.jpg"}},
+        {"url": "http://userserve-ak.last.fm/serve/_/2273657.jpg", "tags": [], "verified":
+        false, "license": {"type": "unknown", "attribution": "last.fm", "url": "http://userserve-ak.last.fm/serve/_/2273657.jpg"}},
+        {"url": "http://userserve-ak.last.fm/serve/_/4319058.jpg", "tags": [], "verified":
+        false, "license": {"type": "unknown", "attribution": "last.fm", "url": "http://userserve-ak.last.fm/serve/_/4319058.jpg"}},
+        {"url": "http://userserve-ak.last.fm/serve/_/589931.jpg", "tags": [], "verified":
+        false, "license": {"type": "unknown", "attribution": "last.fm", "url": "http://userserve-ak.last.fm/serve/_/589931.jpg"}},
+        {"url": "http://userserve-ak.last.fm/serve/_/589926.jpg", "tags": [], "verified":
+        false, "license": {"type": "unknown", "attribution": "last.fm", "url": "http://userserve-ak.last.fm/serve/_/589926.jpg"}},
+        {"url": "http://userserve-ak.last.fm/serve/_/215560.jpg", "tags": [], "verified":
+        false, "license": {"type": "unknown", "attribution": "last.fm", "url": "http://userserve-ak.last.fm/serve/_/215560.jpg"}},
+        {"url": "http://userserve-ak.last.fm/serve/_/4319070.jpg", "tags": [], "verified":
+        false, "license": {"type": "unknown", "attribution": "last.fm", "url": "http://userserve-ak.last.fm/serve/_/4319070.jpg"}},
+        {"url": "http://userserve-ak.last.fm/serve/_/589929.jpg", "tags": [], "verified":
+        false, "license": {"type": "unknown", "attribution": "last.fm", "url": "http://userserve-ak.last.fm/serve/_/589929.jpg"}},
+        {"url": "http://userserve-ak.last.fm/serve/_/4319080.jpg", "tags": [], "verified":
+        false, "license": {"type": "unknown", "attribution": "last.fm", "url": "http://userserve-ak.last.fm/serve/_/4319080.jpg"}},
+        {"url": "http://userserve-ak.last.fm/serve/_/4319064.jpg", "tags": [], "verified":
+        false, "license": {"type": "unknown", "attribution": "last.fm", "url": "http://userserve-ak.last.fm/serve/_/4319064.jpg"}},
+        {"url": "http://userserve-ak.last.fm/serve/_/4319069.jpg", "tags": [], "verified":
+        false, "license": {"type": "unknown", "attribution": "last.fm", "url": "http://userserve-ak.last.fm/serve/_/4319069.jpg"}},
+        {"url": "http://userserve-ak.last.fm/serve/_/4319068.jpg", "tags": [], "verified":
+        false, "license": {"type": "unknown", "attribution": "last.fm", "url": "http://userserve-ak.last.fm/serve/_/4319068.jpg"}},
+        {"url": "http://userserve-ak.last.fm/serve/_/883649.jpg", "tags": [], "verified":
+        false, "license": {"type": "unknown", "attribution": "last.fm", "url": "http://userserve-ak.last.fm/serve/_/883649.jpg"}},
+        {"url": "http://upload.wikimedia.org/wikipedia/commons/d/d0/RebaStage.jpg",
+        "tags": [], "width": 1024, "height": 683, "aspect_ratio": 1.499267935578331,
+        "verified": false, "license": {"type": "cc-by", "attribution": "Vwbeetle boy~commonswiki",
+        "url": "http://upload.wikimedia.org/wikipedia/commons/d/d0/RebaStage.jpg"}}]}}'
+    http_version: 
+  recorded_at: Thu, 13 Aug 2015 05:38:10 GMT
+- request:
+    method: get
+    uri: http://developer.echonest.com/api/v4/artist/images?api_key=BTF9TL31AHYRWPWPZ&name=Garth%20Brooks
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/json
+      User-Agent:
+      - Echowrap Ruby Gem 0.2.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Thu, 13 Aug 2015 05:38:11 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Vary:
+      - Accept-Encoding
+      X-Request-Id:
+      - j12EhJlwQB2MAMpR84qeig
+      X-Worker-Node:
+      - ef4ff:5290
+      X-Ratelimit-Remaining:
+      - '109'
+      Server:
+      - TornadoServer/3.1
+      X-Ratelimit-Limit:
+      - '120'
+      X-Api-Key:
+      - BTF9TL31AHYRWPWPZ
+      Cache-Control:
+      - max-age=86400
+      Access-Control-Allow-Origin:
+      - "*"
+      X-Ratelimit-Used:
+      - '11'
+    body:
+      encoding: ASCII-8BIT
+      string: '{"response": {"status": {"version": "4.2", "code": 0, "message": "Success"},
+        "start": 0, "total": 39, "images": [{"url": "http://userserve-ak.last.fm/serve/_/60941.jpg",
+        "tags": [], "verified": false, "license": {"type": "unknown", "attribution":
+        "n/a", "url": "http://userserve-ak.last.fm/serve/_/60941.jpg#flat_doc"}},
+        {"url": "http://userserve-ak.last.fm/serve/_/2703782.jpg", "tags": [], "verified":
+        false, "license": {"type": "unknown", "attribution": "n/a", "url": "http://userserve-ak.last.fm/serve/_/2703782.jpg#flat_doc"}},
+        {"url": "http://upload.wikimedia.org/wikipedia/commons/f/f3/Garth_Brooks_at_We_Are_One.jpg",
+        "tags": [], "width": 2359, "height": 2290, "aspect_ratio": 1.0301310043668122,
+        "verified": false, "license": {"type": "cc-by", "attribution": "Steve Jurvetson",
+        "url": "http://en.wikipedia.org/wiki/File:Garth_Brooks_at_We_Are_One.jpg"}},
+        {"url": "http://userserve-ak.last.fm/serve/_/82500.jpg", "tags": [], "verified":
+        false, "license": {"type": "unknown", "attribution": "n/a", "url": "http://userserve-ak.last.fm/serve/_/82500.jpg#flat_doc"}},
+        {"url": "http://upload.wikimedia.org/wikipedia/commons/4/46/Garth_Brooks.jpg",
+        "tags": [], "width": 1796, "height": 1987, "aspect_ratio": 0.9038751887267237,
+        "verified": false, "license": {"type": "unknown", "attribution": "n/a", "url":
+        "http://en.wikipedia.org/wiki/File:Garth_Brooks.jpg"}}, {"url": "http://userserve-ak.last.fm/serve/_/15923.jpg",
+        "tags": [], "verified": false, "license": {"type": "unknown", "attribution":
+        "n/a", "url": "http://userserve-ak.last.fm/serve/_/15923.jpg"}}, {"url": "http://upload.wikimedia.org/wikipedia/commons/4/4d/GarthBrooks.jpg",
+        "tags": [], "width": 248, "height": 357, "aspect_ratio": 0.6946778711484594,
+        "verified": false, "license": {"type": "cc-by", "attribution": "David Washington,
+        DC (dbking)", "url": "http://en.wikipedia.org/wiki/File:GarthBrooks.jpg"}},
+        {"url": "http://userserve-ak.last.fm/serve/_/3185046/Garth+Brooks+z.jpg",
+        "tags": [], "width": 281, "height": 211, "aspect_ratio": 1.3317535545023698,
+        "verified": false, "license": {"type": "cc-by-sa", "attribution": "liquiddatura",
+        "url": "www.last.fm/user/liquiddatura"}}, {"url": "http://userserve-ak.last.fm/serve/_/2703789/Garth+Brooks+Dream_Concert_Performance_15_w.jpg",
+        "tags": [], "width": 500, "height": 750, "aspect_ratio": 0.6666666666666666,
+        "verified": false, "license": {"type": "cc-by-sa", "attribution": "elifim",
+        "url": "www.last.fm/user/elifim"}}, {"url": "http://userserve-ak.last.fm/serve/_/13250619/Garth+Brooks+brooksls1.jpg",
+        "tags": [], "width": 225, "height": 500, "aspect_ratio": 0.45, "verified":
+        false, "license": {"type": "cc-by-sa", "attribution": "davekg", "url": "www.last.fm/user/davekg"}},
+        {"url": "http://userserve-ak.last.fm/serve/_/2703782/Garth+Brooks+Dream_Concert_Performance_09_w.jpg",
+        "tags": [], "width": 500, "height": 750, "aspect_ratio": 0.6666666666666666,
+        "verified": false, "license": {"type": "cc-by-sa", "attribution": "elifim",
+        "url": "www.last.fm/user/elifim"}}, {"url": "http://userserve-ak.last.fm/serve/_/13251603/Garth+Brooks+brooksls11.jpg",
+        "tags": [], "width": 313, "height": 500, "aspect_ratio": 0.626, "verified":
+        false, "license": {"type": "cc-by-sa", "attribution": "davekg", "url": "www.last.fm/user/davekg"}},
+        {"url": "http://userserve-ak.last.fm/serve/_/13251143/Garth+Brooks+brooksls5.jpg",
+        "tags": [], "width": 334, "height": 500, "aspect_ratio": 0.668, "verified":
+        false, "license": {"type": "cc-by-sa", "attribution": "davekg", "url": "www.last.fm/user/davekg"}},
+        {"url": "http://userserve-ak.last.fm/serve/_/13251193/Garth+Brooks+brooksls6.jpg",
+        "tags": [], "width": 305, "height": 500, "aspect_ratio": 0.61, "verified":
+        false, "license": {"type": "cc-by-sa", "attribution": "davekg", "url": "www.last.fm/user/davekg"}},
+        {"url": "http://userserve-ak.last.fm/serve/_/13250843/Garth+Brooks+brooksls2.jpg",
+        "tags": [], "width": 326, "height": 460, "aspect_ratio": 0.7086956521739131,
+        "verified": false, "license": {"type": "cc-by-sa", "attribution": "davekg",
+        "url": "www.last.fm/user/davekg"}}]}}'
+    http_version: 
+  recorded_at: Thu, 13 Aug 2015 05:38:10 GMT
+- request:
+    method: get
+    uri: http://developer.echonest.com/api/v4/artist/images?api_key=BTF9TL31AHYRWPWPZ&name=Lady%20Antebellum
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/json
+      User-Agent:
+      - Echowrap Ruby Gem 0.2.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Thu, 13 Aug 2015 05:38:11 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Vary:
+      - Accept-Encoding
+      X-Request-Id:
+      - oy26pgp9TQu0OBkUIFpGYg
+      X-Worker-Node:
+      - b6334:16533
+      X-Ratelimit-Remaining:
+      - '108'
+      Server:
+      - TornadoServer/3.1
+      X-Ratelimit-Limit:
+      - '120'
+      X-Api-Key:
+      - BTF9TL31AHYRWPWPZ
+      Cache-Control:
+      - max-age=86400
+      Access-Control-Allow-Origin:
+      - "*"
+      X-Ratelimit-Used:
+      - '12'
+    body:
+      encoding: ASCII-8BIT
+      string: '{"response": {"status": {"version": "4.2", "code": 0, "message": "Success"},
+        "start": 0, "total": 85, "images": [{"url": "http://a461.ac-images.myspacecdn.com/images01/34/m_5b4de373fedb461cfc05f58fe34568cc.jpg",
+        "tags": [], "width": 90, "height": 90, "aspect_ratio": 1.0, "verified": false,
+        "license": {"type": "unknown", "attribution": "myspace", "url": "http://a461.ac-images.myspacecdn.com/images01/34/m_5b4de373fedb461cfc05f58fe34568cc.jpg"}},
+        {"url": "http://upload.wikimedia.org/wikipedia/commons/4/41/Lady_Antebellum_2008.jpg",
+        "tags": [], "width": 1600, "height": 1600, "aspect_ratio": 1.0, "verified":
+        false, "license": {"type": "cc-by-sa", "attribution": "Secondarywaltz", "url":
+        "http://upload.wikimedia.org/wikipedia/commons/4/41/Lady_Antebellum_2008.jpg"}},
+        {"url": "http://upload.wikimedia.org/wikipedia/commons/d/d8/LadyAntebellumAwardsApr10.jpg",
+        "tags": [], "width": 2179, "height": 1686, "aspect_ratio": 1.2924080664294186,
+        "verified": false, "license": {"type": "cc-by", "attribution": "Nehrams2020",
+        "url": "http://upload.wikimedia.org/wikipedia/commons/d/d8/LadyAntebellumAwardsApr10.jpg"}},
+        {"url": "http://upload.wikimedia.org/wikipedia/commons/4/4a/LadyAntebellumApr10.jpg",
+        "tags": [], "width": 2080, "height": 1538, "aspect_ratio": 1.3524057217165149,
+        "verified": false, "license": {"type": "cc-by", "attribution": "Nehrams2020",
+        "url": "http://upload.wikimedia.org/wikipedia/commons/4/4a/LadyAntebellumApr10.jpg"}},
+        {"url": "http://userserve-ak.last.fm/serve/500/57078967/Lady+Antebellum+png.png",
+        "tags": [], "width": 500, "height": 430, "aspect_ratio": 1.1627906976744187,
+        "verified": false, "license": {"type": "cc-by-sa", "attribution": "potterican",
+        "url": "www.last.fm/user/potterican"}}, {"url": "http://userserve-ak.last.fm/serve/500/5361357/Lady+Antebellum+zoom_50420.png",
+        "tags": [], "width": 500, "height": 445, "aspect_ratio": 1.1235955056179776,
+        "verified": false, "license": {"type": "cc-by-sa", "attribution": "powterfan319",
+        "url": "www.last.fm/user/powterfan319"}}, {"url": "http://userserve-ak.last.fm/serve/_/49770549/Lady+Antebellum+Our+Kind+Of+Love.png",
+        "tags": [], "verified": false, "license": {"type": "unknown", "attribution":
+        "n/a", "url": "http://www.last.fm/music/Lady+Antebellum/+images"}}, {"url":
+        "http://userserve-ak.last.fm/serve/500/17371735/Lady+Antebellum+ladya.jpg",
+        "tags": [], "verified": false, "license": {"type": "unknown", "attribution":
+        "n/a", "url": "http://www.last.fm/music/Lady+Antebellum/+images"}}, {"url":
+        "http://userserve-ak.last.fm/serve/_/20103913/Lady+Antebellum.jpg", "tags":
+        [], "verified": false, "license": {"type": "unknown", "attribution": "n/a",
+        "url": "http://www.last.fm/music/Lady+Antebellum/+images"}}, {"url": "http://userserve-ak.last.fm/serve/500/52586637/Lady+Antebellum.png",
+        "tags": [], "width": 500, "height": 374, "aspect_ratio": 1.3368983957219251,
+        "verified": false, "license": {"type": "cc-by-sa", "attribution": "onitorment",
+        "url": "www.last.fm/user/onitorment"}}, {"url": "http://userserve-ak.last.fm/serve/_/11738263/Lady+Antebellum+Clipboard03.gif",
+        "tags": [], "verified": false, "license": {"type": "unknown", "attribution":
+        "n/a", "url": "http://www.last.fm/music/Lady+Antebellum/+images"}}, {"url":
+        "http://userserve-ak.last.fm/serve/_/20103837/Lady+Antebellum.jpg", "tags":
+        [], "verified": false, "license": {"type": "unknown", "attribution": "n/a",
+        "url": "http://www.last.fm/music/Lady+Antebellum/+images"}}, {"url": "http://userserve-ak.last.fm/serve/500/49770491/Lady+Antebellum+Our+Kind+Of+Love.png",
+        "tags": [], "width": 500, "height": 350, "aspect_ratio": 1.4285714285714286,
+        "verified": false, "license": {"type": "cc-by-sa", "attribution": "mariavk",
+        "url": "www.last.fm/user/mariavk"}}, {"url": "http://userserve-ak.last.fm/serve/500/40925853/Lady+Antebellum.jpg",
+        "tags": [], "width": 500, "height": 335, "aspect_ratio": 1.492537313432836,
+        "verified": false, "license": {"type": "cc-by-sa", "attribution": "BrunoInTheSky",
+        "url": "www.last.fm/user/BrunoInTheSky"}}, {"url": "http://userserve-ak.last.fm/serve/500/17371791/Lady+Antebellum+a4545.jpg",
+        "tags": [], "width": 500, "height": 333, "aspect_ratio": 1.5015015015015014,
+        "verified": false, "license": {"type": "cc-by-sa", "attribution": "onitorment",
+        "url": "www.last.fm/user/onitorment"}}]}}'
+    http_version: 
+  recorded_at: Thu, 13 Aug 2015 05:38:10 GMT
+- request:
+    method: get
+    uri: http://developer.echonest.com/api/v4/artist/images?api_key=BTF9TL31AHYRWPWPZ&name=George%20Strait
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/json
+      User-Agent:
+      - Echowrap Ruby Gem 0.2.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Thu, 13 Aug 2015 05:38:11 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Vary:
+      - Accept-Encoding
+      X-Request-Id:
+      - sWQkJ9/7QT2d1ZWVWoFgcQ
+      X-Worker-Node:
+      - ef4ff:20337
+      X-Ratelimit-Remaining:
+      - '107'
+      Server:
+      - TornadoServer/3.1
+      X-Ratelimit-Limit:
+      - '120'
+      X-Api-Key:
+      - BTF9TL31AHYRWPWPZ
+      Cache-Control:
+      - max-age=86400
+      Access-Control-Allow-Origin:
+      - "*"
+      X-Ratelimit-Used:
+      - '13'
+    body:
+      encoding: ASCII-8BIT
+      string: '{"response": {"status": {"version": "4.2", "code": 0, "message": "Success"},
+        "start": 0, "total": 54, "images": [{"url": "http://upload.wikimedia.org/wikipedia/commons/7/78/George_strait_2005_cropped.jpg",
+        "tags": [], "width": 258, "height": 364, "aspect_ratio": 0.7087912087912088,
+        "verified": false, "license": {"type": "public-domain", "attribution": "Nv8200pa",
+        "url": "http://upload.wikimedia.org/wikipedia/commons/7/78/George_strait_2005_cropped.jpg"}},
+        {"url": "http://upload.wikimedia.org/wikipedia/commons/1/1f/George_Strait_concert.jpg",
+        "tags": [], "width": 2272, "height": 1704, "aspect_ratio": 1.3333333333333333,
+        "verified": false, "license": {"type": "cc-by", "attribution": "Flickr upload
+        bot", "url": "http://upload.wikimedia.org/wikipedia/commons/1/1f/George_Strait_concert.jpg"}},
+        {"url": "http://userserve-ak.last.fm/serve/_/68118.jpg", "tags": [], "verified":
+        false, "license": {"type": "unknown", "attribution": "last.fm", "url": "http://userserve-ak.last.fm/serve/_/68118.jpg"}},
+        {"url": "http://upload.wikimedia.org/wikipedia/commons/0/09/George_Strait_on_stage.jpg",
+        "tags": [], "width": 2336, "height": 3504, "aspect_ratio": 0.6666666666666666,
+        "verified": false, "license": {"type": "cc-by-sa", "attribution": "Polly",
+        "url": "http://upload.wikimedia.org/wikipedia/commons/0/09/George_Strait_on_stage.jpg"}},
+        {"url": "http://upload.wikimedia.org/wikipedia/commons/d/d6/Hall_of_Fame_Rotunda.jpg",
+        "tags": [], "width": 960, "height": 1280, "aspect_ratio": 0.75, "verified":
+        false, "license": {"type": "cc-by", "attribution": "Flickr upload bot", "url":
+        "http://upload.wikimedia.org/wikipedia/commons/d/d6/Hall_of_Fame_Rotunda.jpg"}},
+        {"url": "http://userserve-ak.last.fm/serve/500/10791497/George+Strait+Pict+back.jpg",
+        "tags": [], "width": 500, "height": 504, "aspect_ratio": 0.9920634920634921,
+        "verified": false, "license": {"type": "cc-by-sa", "attribution": "live2tell",
+        "url": "www.last.fm/user/live2tell"}}, {"url": "http://userserve-ak.last.fm/serve/500/9276431/George+Strait+troubadour5.jpg",
+        "tags": [], "width": 500, "height": 346, "aspect_ratio": 1.4450867052023122,
+        "verified": false, "license": {"type": "cc-by-sa", "attribution": "davidn87",
+        "url": "www.last.fm/user/davidn87"}}, {"url": "http://userserve-ak.last.fm/serve/500/9276463/George+Strait+troubadour6.jpg",
+        "tags": [], "width": 500, "height": 350, "aspect_ratio": 1.4285714285714286,
+        "verified": false, "license": {"type": "cc-by-sa", "attribution": "davidn87",
+        "url": "www.last.fm/user/davidn87"}}, {"url": "http://userserve-ak.last.fm/serve/_/20099721/George+Strait+CA1CS1VXCA61HAO2CA82JBWJCAAOY6.jpg",
+        "tags": [], "width": 111, "height": 120, "aspect_ratio": 0.925, "verified":
+        false, "license": {"type": "cc-by-sa", "attribution": "G-57", "url": "www.last.fm/user/G-57"}},
+        {"url": "http://userserve-ak.last.fm/serve/_/5137388/George+Strait+1016429.jpg",
+        "tags": [], "width": 450, "height": 450, "aspect_ratio": 1.0, "verified":
+        false, "license": {"type": "cc-by-sa", "attribution": "briankaplan", "url":
+        "www.last.fm/user/briankaplan"}}, {"url": "http://userserve-ak.last.fm/serve/500/9276353/George+Strait+troubadour2.jpg",
+        "tags": [], "width": 500, "height": 345, "aspect_ratio": 1.4492753623188406,
+        "verified": false, "license": {"type": "cc-by-sa", "attribution": "davidn87",
+        "url": "www.last.fm/user/davidn87"}}, {"url": "http://userserve-ak.last.fm/serve/_/9276199/George+Strait+troubadour1.jpg",
+        "tags": [], "width": 258, "height": 220, "aspect_ratio": 1.1727272727272726,
+        "verified": false, "license": {"type": "cc-by-sa", "attribution": "davidn87",
+        "url": "www.last.fm/user/davidn87"}}, {"url": "http://userserve-ak.last.fm/serve/500/9277401/George+Strait+08cmas600.jpg",
+        "tags": [], "width": 500, "height": 275, "aspect_ratio": 1.8181818181818181,
+        "verified": false, "license": {"type": "cc-by-sa", "attribution": "davidn87",
+        "url": "www.last.fm/user/davidn87"}}, {"url": "http://userserve-ak.last.fm/serve/_/20053921/George+Strait.jpg",
+        "tags": [], "width": 280, "height": 336, "aspect_ratio": 0.8333333333333334,
+        "verified": false, "license": {"type": "cc-by-sa", "attribution": "CountryGal1",
+        "url": "www.last.fm/user/CountryGal1"}}, {"url": "http://userserve-ak.last.fm/serve/_/20174509/George+Strait.jpg",
+        "tags": [], "width": 93, "height": 116, "aspect_ratio": 0.8017241379310345,
+        "verified": false, "license": {"type": "cc-by-sa", "attribution": "G-57",
+        "url": "www.last.fm/user/G-57"}}]}}'
+    http_version: 
+  recorded_at: Thu, 13 Aug 2015 05:38:10 GMT
+- request:
+    method: get
+    uri: http://developer.echonest.com/api/v4/artist/search?api_key=BTF9TL31AHYRWPWPZ&name=Tim%20McGraw
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/json
+      User-Agent:
+      - Echowrap Ruby Gem 0.2.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Thu, 13 Aug 2015 05:38:11 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Vary:
+      - Accept-Encoding
+      X-Request-Id:
+      - Wcw5ddDQRZeivoAvb2Xn7g
+      X-Worker-Node:
+      - bf53c:14256
+      X-Ratelimit-Remaining:
+      - '106'
+      Server:
+      - TornadoServer/3.1
+      X-Ratelimit-Limit:
+      - '120'
+      X-Api-Key:
+      - BTF9TL31AHYRWPWPZ
+      Cache-Control:
+      - max-age=86400
+      Access-Control-Allow-Origin:
+      - "*"
+      X-Ratelimit-Used:
+      - '14'
+    body:
+      encoding: ASCII-8BIT
+      string: '{"response": {"status": {"version": "4.2", "code": 0, "message": "Success"},
+        "artists": [{"id": "ARDR3K91187B9B04EB", "name": "Tim McGraw"}, {"id": "ARTNTBL1241B9C53F9",
+        "name": "Tim McGraw Bluegrass Tribute"}, {"id": "ARKWLQY13A71F38FFF", "name":
+        "Tim McGraw Tribute"}, {"id": "ARHGWDW1241B9C7580", "name": "Tim McGraw Tribute
+        Band"}, {"id": "AROZPHI14AE6396BBF", "name": "Tim McGraw w/Catherine Dunn"}]}}'
+    http_version: 
+  recorded_at: Thu, 13 Aug 2015 05:38:10 GMT
+- request:
+    method: get
+    uri: http://developer.echonest.com/api/v4/artist/images?api_key=BTF9TL31AHYRWPWPZ&name=Tim%20McGraw
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/json
+      User-Agent:
+      - Echowrap Ruby Gem 0.2.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Thu, 13 Aug 2015 05:38:12 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Vary:
+      - Accept-Encoding
+      X-Request-Id:
+      - fq8g7OOaSiqWMuxk6PBwNQ
+      X-Worker-Node:
+      - 8a511:35905
+      X-Ratelimit-Remaining:
+      - '105'
+      Server:
+      - TornadoServer/3.1
+      X-Ratelimit-Limit:
+      - '120'
+      X-Api-Key:
+      - BTF9TL31AHYRWPWPZ
+      Cache-Control:
+      - max-age=86400
+      Access-Control-Allow-Origin:
+      - "*"
+      X-Ratelimit-Used:
+      - '15'
+    body:
+      encoding: ASCII-8BIT
+      string: '{"response": {"status": {"version": "4.2", "code": 0, "message": "Success"},
+        "start": 0, "total": 43, "images": [{"url": "http://userserve-ak.last.fm/serve/_/2132780.jpg",
+        "tags": [], "verified": false, "license": {"type": "unknown", "attribution":
+        "last.fm", "url": "http://userserve-ak.last.fm/serve/_/2132780.jpg"}}, {"url":
+        "http://userserve-ak.last.fm/serve/_/83143.jpg", "tags": [], "verified": false,
+        "license": {"type": "unknown", "attribution": "last.fm", "url": "http://userserve-ak.last.fm/serve/_/83143.jpg"}},
+        {"url": "http://a71.ac-images.myspacecdn.com/images01/6/m_26374a6996da518b1cbd944f17c87a7e.jpg",
+        "tags": [], "width": 90, "height": 90, "aspect_ratio": 1.0, "verified": false,
+        "license": {"type": "unknown", "attribution": "myspace", "url": "http://a71.ac-images.myspacecdn.com/images01/6/m_26374a6996da518b1cbd944f17c87a7e.jpg"}},
+        {"url": "http://userserve-ak.last.fm/serve/_/228056.jpg", "tags": [], "verified":
+        false, "license": {"type": "unknown", "attribution": "last.fm", "url": "http://userserve-ak.last.fm/serve/_/228056.jpg"}},
+        {"url": "http://userserve-ak.last.fm/serve/_/89620.jpg", "tags": [], "verified":
+        false, "license": {"type": "unknown", "attribution": "last.fm", "url": "http://userserve-ak.last.fm/serve/_/89620.jpg"}},
+        {"url": "http://userserve-ak.last.fm/serve/_/125384.jpg", "tags": [], "verified":
+        false, "license": {"type": "unknown", "attribution": "last.fm", "url": "http://userserve-ak.last.fm/serve/_/125384.jpg"}},
+        {"url": "http://userserve-ak.last.fm/serve/_/390025.jpg", "tags": [], "verified":
+        false, "license": {"type": "unknown", "attribution": "last.fm", "url": "http://userserve-ak.last.fm/serve/_/390025.jpg"}},
+        {"url": "http://upload.wikimedia.org/wikipedia/commons/9/96/Tim_McGraw.jpg",
+        "tags": [], "width": 1392, "height": 2268, "aspect_ratio": 0.6137566137566137,
+        "verified": false, "license": {"type": "unknown", "attribution": "n/a", "url":
+        "http://en.wikipedia.org/wiki/File:Tim_McGraw.jpg"}}, {"url": "http://upload.wikimedia.org/wikipedia/commons/f/f6/Start%2C_LA%2C_welcome_sign_IMG_0142.JPG",
+        "tags": [], "width": 4320, "height": 3240, "aspect_ratio": 1.3333333333333333,
+        "verified": false, "license": {"type": "cc-by-sa", "attribution": "Billy Hathorn",
+        "url": "http://upload.wikimedia.org/wikipedia/commons/f/f6/Start%2C_LA%2C_welcome_sign_IMG_0142.JPG"}},
+        {"url": "http://userserve-ak.last.fm/serve/500/36391801/Tim+McGraw+TM2020Publicity20Shot1.jpg",
+        "tags": [], "width": 500, "height": 637, "aspect_ratio": 0.7849293563579278,
+        "verified": false, "license": {"type": "cc-by-sa", "attribution": "Curb Records",
+        "url": "www.last.fm/label/Curb+Records"}}, {"url": "http://userserve-ak.last.fm/serve/500/59793587/Tim+McGraw+RCA_0125.jpg",
+        "tags": [], "verified": false, "license": {"type": "unknown", "attribution":
+        "n/a", "url": "http://www.last.fm/music/Tim+McGraw/+images"}}, {"url": "http://userserve-ak.last.fm/serve/500/49795127/Tim+McGraw.png",
+        "tags": [], "width": 500, "height": 375, "aspect_ratio": 1.3333333333333333,
+        "verified": false, "license": {"type": "cc-by-sa", "attribution": "onitorment",
+        "url": "www.last.fm/user/onitorment"}}, {"url": "http://userserve-ak.last.fm/serve/500/5577005/Tim+McGraw+TimMcGrawAgainstWall_Brown.jpg",
+        "tags": [], "width": 500, "height": 572, "aspect_ratio": 0.8741258741258742,
+        "verified": false, "license": {"type": "cc-by-sa", "attribution": "theguyone2",
+        "url": "www.last.fm/user/theguyone2"}}, {"url": "http://userserve-ak.last.fm/serve/_/17452305/Tim+McGraw+mcgraw.png",
+        "tags": [], "verified": false, "license": {"type": "unknown", "attribution":
+        "last.fm", "url": "http://www.last.fm/music/Tim+McGraw/+images"}}, {"url":
+        "http://userserve-ak.last.fm/serve/500/17451761/Tim+McGraw++and+faith+hill.jpg",
+        "tags": [], "verified": false, "license": {"type": "unknown", "attribution":
+        "last.fm", "url": "http://www.last.fm/music/Tim+McGraw/+images"}}]}}'
+    http_version: 
+  recorded_at: Thu, 13 Aug 2015 05:38:11 GMT
+- request:
+    method: get
+    uri: http://developer.echonest.com/api/v4/artist/biographies?api_key=BTF9TL31AHYRWPWPZ&name=Tim%20McGraw
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/json
+      User-Agent:
+      - Echowrap Ruby Gem 0.2.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Thu, 13 Aug 2015 05:38:12 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Vary:
+      - Accept-Encoding
+      X-Request-Id:
+      - 8AU1kjc2RQeTquKxMaVlXg
+      X-Worker-Node:
+      - ab936:11879
+      X-Ratelimit-Remaining:
+      - '104'
+      Server:
+      - TornadoServer/3.1
+      X-Ratelimit-Limit:
+      - '120'
+      X-Api-Key:
+      - BTF9TL31AHYRWPWPZ
+      Cache-Control:
+      - max-age=86400
+      Access-Control-Allow-Origin:
+      - "*"
+      X-Ratelimit-Used:
+      - '16'
+    body:
+      encoding: ASCII-8BIT
+      string: '{"response": {"status": {"version": "4.2", "code": 0, "message": "Success"},
+        "start": 0, "total": 10, "biographies": [{"text": "When Tim McGraw debuted
+        in the early ''90s, few would ...", "site": "aol", "url": "http://music.aol.com/artist/tim-mcgraw/biography",
+        "license": {"type": "unknown", "attribution": "aol", "attribution-url": "http://music.aol.com/artist/tim-mcgraw/biography",
+        "url": "n/a", "version": "n/a"}, "truncated": true}, {"text": "Samuel Timothy
+        \"Tim\" McGraw (born May 1, 1967 in Delhi, Louisiana) is an American country
+        singer and actor. With many of his albums and singles topping the country
+        music charts, Tim has achieved total album sales in excess of 40 million units.
+        He is married to country singer Faith Hill and is the son of former baseball
+        player Tug McGraw. His trademark hit songs include Indian Outlaw, Don''t Take
+        the Girl, I Like It, I Love It, Something Like That, It''s Your Love (featuring
+        his wife, Faith Hill), and Live Like You Were Dying.  McGraw had eleven consecutive
+        albums to debut at Number One on the Billboard albums charts; Twenty-one singles
+        to hit number 1 on the Billboard Hot Country 100 chart; three singles named
+        the #1 country song of the year; (It''s Your Love, Just to See You Smile,
+        and Live Like You Were Dying) Won 3 Grammys, 14 Academy of Country Music awards,
+        11 Country Music Association (CMA) awards, 10 American Music Awards and 3
+        People''s Choice Awards. Ranked as one of the top five in all genres of music,
+        his Soul2Soul II tour with Faith Hill became the highest-grossing tour in
+        country music history.  McGraw has ventured into acting, with a supporting
+        role in the Billy Bob Thornton film, friday night lights, a role in the kingdom,
+        a lead role in 2006''s flicka and a supporting role in four christmases with
+        Vince Vaughn and Reese Witherspoon. He is also a minority owner of the Arena
+        Football League''s Nashville Kats.  McGraw came to the attention of Curb Records
+        in 1990. After cutting a demo single, McGraw gave a copy to his father, Tug
+        McGraw. A man who was friends with Curb Records executives heard the demo
+        while driving with Tug McGraw one day and recommended that Curb contact the
+        young singer. Several weeks after he was able to play his tape for Curb executives,
+        they signed him to a recording contract. Two years later, in 1992, he had
+        his first minor hit Welcome to the Club off his self-titled debut album, Tim
+        McGraw. Although the album failed to make much of a dent on the charts, McGraw
+        did have two other minor hits from it in 1993, Memory Lane and Two Steppin
+        Mind.  All I Want, released in 1995, continued his run of success, debuting
+        at number one on the country charts. The album sold over two million copies
+        and reached the top 5 on the Billboard 200. I Like It, I Love It reached number
+        one on the country charts as the leadoff single, while She Never Lets It Go
+        to Her Heart also went to number one in 1996. Can''t Be Really Gone, All I
+        Want Is a Life, and Maybe We Should Just Sleep on It were all top 5 hits.  In
+        1996, McGraw headlined the most successful country tour of the year, The Spontaneous
+        Combustion Tour, with Faith Hill as his supporting act. Faith Hill broke off
+        her engagement to her former producer Scott Hendricks so that she and Tim
+        could start dating each other; then married on October 6, 1996. The couple
+        have since had three daughters, Gracie Katherine (born May 1997), Maggie Elizabeth
+        (born August 1998) and Audrey Caroline (born December 2001).  McGraw''s next
+        album, 1997''s Everywhere, again topped the country charts and reached number
+        two on the album charts, selling 4 million copies. The first single, It''s
+        Your Love, a duet with Faith Hill, became the first single in twenty years
+        to spend six weeks on top of Billboard''s country singles chart (the previous
+        such song had been Waylon Jennings and Willie Nelson''s \"Luckenbach, Texas
+        (Back to the Basics of Love)\" in 1977). The single reached #7 on the pop
+        chart (and gained platinum status); and became the most played single in the
+        history of the Billboard country charts. Five more singles Everywhere, Where
+        the Green Grass Grows, One of These Days, For a Little While, and Just to
+        See You Smile reached the top of the country charts from the album, with the
+        last of these setting a new record by spending 42 weeks on the Billboard charts.
+        The Country Music Association awarded Everywhere its Album of the Year award
+        for 1997.  A Place in the Sun in 1999 continued McGraw''s streak, debuting
+        atop both the US pop and country album charts and selling three million albums.
+        It featured another four chart topping singles on the country charts including
+        Please Remember Me, Something Like That, My Best Friend, and My Next Thirty
+        Years; Some Things Never Change reached #7 on the country chart. He also contributed
+        a song for the Grammy-winning tribute album to Bob Wills, Ride With Bob. His
+        song, a cover of Milk Cow Blues, was recorded as a duet with Asleep at the
+        Wheel[/artost], whom he had met while performing together at the George Strait
+        Country Music Festival.  McGraw recorded two more duets with his wife in the
+        late 1990s, both of which appeared on her albums. Just To Hear You Say That
+        You Love Me off her multi-platinum 1998 album Faith, reached the top five
+        of the US country charts, while her follow-up and 1999 album Breathe featured
+        Let''s Make Love, which would win a Grammy Award in 2000 for Best Country
+        Vocal Collaboration.  In 2000, McGraw released his Greatest Hits album which
+        topped the charts for nine weeks and sold almost 6 million copies, making
+        it one of the biggest selling albums in the modern country market. In the
+        latter half of the year, he and Hill went out on the Soul2Soul Tour, playing
+        to sellout crowds in 64 venues including Madison Square Garden. It was one
+        of the top tours of any genre in the US and the leading country tour during
+        2000.  While in Buffalo, McGraw and Kenny Chesney became involved in a scuffle
+        with police officers after Chesney, who had permission from the sheriff''s
+        daughter, attempted to ride a police horse. McGraw came to Chesney''s aid
+        after police officers nearby believed the horse was being stolen and tried
+        to arrest him. The two were arrested and charged with assault, but were later
+        cleared. During a concert with the George Strait Country Music Festival several
+        weeks later, Hill, dressed as a police officer, made an unscheduled appearance
+        at the end of McGraw''s set and led him off the stage.  McGraw''s next album,
+        [album artist=tim mcgraw]Set This Circus Down, was released in April 2001
+        and spawned four number one country hits - Grown Men Don''t Cry, Angry All
+        the Time (with Faith Hill), The Cowboy in Me, and Unbroken. He also provided
+        harmony vocals for the Jo Dee Messina song Bring On The Rain, which he also
+        produced. The song topped the country charts.  Hungry for more of his music,
+        fans downloaded a version of his performance of the song Things Change from
+        his appearance at the Country Music Association Awards Show. The song was
+        played extensively on radio, becoming the first country song to appear on
+        the charts from a fully downloaded version.  In 2002, Tim McGraw bucked country
+        music traditions by recording his album Tim McGraw and the Dancehall Doctors
+        with his tour band The Dancehall Doctors. Unlike rock music, where it is commonplace
+        for touring bands to provide the music on albums recorded by the artist they
+        support, country albums are typically recorded with session musicians. McGraw
+        chose to use his own touring band in order to recognize their part in his
+        success and to capture some of the feel of a real band.  All of the Dancehall
+        Doctors have worked with McGraw since at least 1996. They include:      *
+        Darran Smith - Lead Guitar, Acoustic guitar     * Bob Minner - Rhythm Guitar,
+        Acoustic guitar, Banjo, Mandolin     * Denny Hemingson - Steel Guitar, Electric,
+        Baritone, and Slide Guitars, Dobro     * John Marcus - Bass guitar     * Dean
+        Brown - Fiddle, Mandolin     * Jeff McMahon - Piano, Organ, Synthesizer, Keyboards     *
+        Billy Mason - Drums     * David Dunkley - Percussion.  The album debuted at
+        number 2 on the country albums charts, with the single Real Good Man reaching
+        number one on the Hot Country Songs chart. She''s My Kind of Rain reached
+        number 2 in 2003 and Red Ragtop reached the top 5. The album also featured
+        a cover version of an early Elton John 1970 classic Tiny Dancer, as well as
+        appearances by Kim Carnes on Comfort Me - a response to the September 11,
+        2001 attacks - and Don Henley and Timothy B. Schmit of the Eagles on Illegal.  2004''s
+        Live Like You Were Dying continued McGraw''s record of commercial success.
+        The title track, dedicated to his father Tug McGraw who died of a brain tumor
+        earlier in the year, was a soaring ode to living life fully and in the moment,
+        while the second single Back When was a paean to an easy nostalgia. Live Like
+        You Were Dying spent seven non-consecutive weeks at #1 on Billboard (10 weeks
+        on Radio & Records) and went on to become the biggest hit single of the year.
+        It also became one the most awarded songs/records by winning ACM Single and
+        Song of the Year, CMA Single and Song of the Year and a Grammy.  In late 2004,
+        his unlikely duet with hip-hop artist Nelly on Over And Over, a soft ballad
+        of lost love, became a crossover hit spending 10 weeks atop the Top 40 chart.
+        This made Tim the first modern country artist to have two 10 week number one
+        hits in a single year. \"Over and Over\" brought McGraw a success he had never
+        previously experienced on contemporary hit radio, rap radio, and brought both
+        artists success neither had previously experienced in the hot adult contemporary
+        market. The song also spent a week at the top of the UK single charts, and
+        was McGraw''s first visit to the UK hit countdown.  Throughout the 2005 NFL
+        season McGraw sang an alternate version of I Like It, I Love It every week
+        during the season. The alternate lyrics, which changed each week, would make
+        reference to plays during Sunday''s games and the song would be played alongside
+        video highlights during halftime on Monday Night Football. Later in the year
+        McGraw became a minority owner of the Arena Football League''s Nashville Kats
+        when majority owner Bud Adams (owner of the NFL''s Tennessee Titans) was awarded
+        the expansion franchise. It was dedicated to Tug McGraw...  In April 2006
+        McGraw and Hill began their 73-concert, 55 city,  Soul2Soul II Tour 2006,
+        again to strong commercial acceptance. The tour grossed nearly $89 million
+        and sold almost 1.1 million tickets, making it the top grossing tour in the
+        history of country music. It was named \"Major Tour of the Year\" by the prestigious
+        Pollstar Magazine, beating out such heavyweights as Madonna and the Rolling
+        Stones. In a special gesture, the couple donated all of the profits from their
+        performance in New Orleans to Hurricane Katrina relief.  Tim, along with Kenny
+        Chesney, contributed to a version of Tracy Lawrence ''s song Find Out Who
+        Your Friends Are, which can be found on Lawrence''s album For The Love. Although
+        the official single version features only Lawrence''s vocals, many stations
+        have opted to play the version with McGraw and Chesney instead.  McGraw released
+        his eleventh album, Let It Go, on March 27, 2007. The album''s debut single,
+        Last Dollar (Fly Away), reached No. 1 on the Hot Country Songs chart, marking
+        Tim''s first No. 1 single since Back When in late 2004. The album debuted
+        at #1 on the Billboard Top 200 Album Chart and #1 on the Billboard Country
+        Album chart, marking his 4th #1 top 200 album and 9th #1 country album. His
+        daughters can be heard singing the chorus during the last few seconds of the
+        song on the video.  During the Academy of Country Music awards show on May
+        21, 2007, McGraw performed a song titled If You''re Reading This, which he
+        co-wrote with The Warren Brothers. Several radio stations began to play the
+        live recording of the song; as a result, it entered the Hot Country Songs
+        chart at #35.  McGraw also produced the debut album of country music duo Halfway
+        to Hazard. The duo''s first single, Daisy, peaked at #39 on the country charts
+        in Summer of 2007.  In the summer of 2007 McGraw and Hill toured together
+        once again in the Soul2Soul 2007 tour.  In the January 18, 2008 edition of
+        the USA Today newspaper, McGraw was featured on the Def Leppard album Songs
+        From The Sparkle Lounge and has co-written the first single, Nine Lives, with
+        Def Leppard band members Joe Elliott, Phil Collen and Rick Savage. The unusual
+        pairing goes back to 2006 when McGraw joined Def Leppard onstage for the song
+        Pour Some Sugar on Me. The album has a release date of May 6, 2008.  In May
+        2008 he hit the road with the Live Your Voice Tour. The mainly outdoor arena
+        concert tour will be his first solo outing in nearly three years. Also in
+        May 2008, he debuted a new song off of his follow-up to Let It Go at the Stagecoach
+        Music Festival in Indio, California.  In July 2008, Tim McGraw''s sixth single,
+        and the title track of his album, Let It Go, was released to country radio.
+        Following that, a seventh single, Nothin'' To Die For, entered the Country
+        charts at 57 late December. Tim McGraw released his third greatest hits package,
+        Greatest Hits 3 on October 7, 2008. The album features 12 tracks. No new material
+        was recorded for the compilation. A new album of all new material was scheduled
+        for release in October, but has since been pushed back to 2009.  The Better
+        Than I Used To Be Songfacts states that after over 20 years with Curb Records
+        and a legal battle, Tim McGraw finally left the label after a judge freed
+        him from his contract. Curb immediately released Better Than I Used To Be
+        as the second single from Emotional Traffic, an album that had been shelved
+        for several months following the dispute.  The Truck Yeah Songfacts reports
+        that McGraw signed with Big Machine Records on May 21, 2012.", "site": "last.fm",
+        "url": "http://www.last.fm/music/Tim+McGraw/+wiki", "license": {"type": "cc-by-sa",
+        "attribution": "Last.fm", "attribution-url": "http://www.last.fm/music/Tim+McGraw/+wiki",
+        "url": "http://creativecommons.org/licenses/by-sa/3.0/", "version": "3.0"}},
+        {"text": "Tim McGraw has spent the last decade in the upper ...", "site":
+        "myspace", "url": "http://www.myspace.com/timmcgraw", "license": {"type":
+        "unknown", "attribution": "myspace", "attribution-url": "http://www.myspace.com/timmcgraw",
+        "url": "n/a", "version": "n/a"}, "truncated": true}, {"text": "TIM MCGRAW
+        SOUTHERN VOICE", "site": "ilike", "url": "http://www.ilike.com/artist/Tim+McGraw",
+        "license": {"type": "unknown", "attribution": "ilike", "attribution-url":
+        "http://www.ilike.com/artist/Tim+McGraw", "url": "n/a", "version": "n/a"},
+        "truncated": true}, {"text": "When Tim McGraw debuted in the early ''90s,
+        few would ...", "site": "mog", "url": "http://mog.com/artists/bio/mn34074/tim%20mcgraw",
+        "license": {"type": "all-rights-reserved", "attribution": "mog", "attribution-url":
+        "http://mog.com/artists/bio/mn34074/tim%20mcgraw", "url": "n/a", "version":
+        "n/a"}, "truncated": true}, {"text": "Tim McGraw has sold more than 40 million
+        records worldwide ...", "site": "facebook", "url": "http://graph.facebook.com/5723768555",
+        "license": {"type": "unknown", "attribution": "", "attribution-url": "", "url":
+        "n/a", "version": "n/a"}, "truncated": true}, {"text": "When Tim McGraw debuted
+        in the early ''90s, few would ...", "site": "rdio", "url": "http://www.rdio.com/artist/Tim_McGraw/",
+        "license": {"type": "all-rights-reserved", "attribution": "", "attribution-url":
+        "", "url": "n/a", "version": "n/a"}, "truncated": true}, {"text": "When Tim
+        McGraw debuted in the early ''90s, few would ...", "site": "itunes", "url":
+        "https://itunes.apple.com/us/artist/tim-mcgraw/id3496236", "license": {"type":
+        "unknown", "attribution": "", "attribution-url": "", "url": "n/a", "version":
+        "n/a"}, "truncated": true}, {"text": "TIM MCGRAW SUNDOWN HEAVEN TOWN From
+        barbecue stains on white ...", "site": "amazon", "url": "http://www.amazon.com/Tim-McGraw/e/B000AQ6R7E",
+        "license": {"type": "unknown", "attribution": "", "attribution-url": "", "url":
+        "n/a", "version": "n/a"}, "truncated": true}, {"text": "Samuel Timothy \"Tim\"
+        McGraw (born May 1, 1967) is an American singer and actor. He has been married
+        to fellow singer Faith Hill since 1996, and is the son of the late baseball
+        player Tug McGraw. \nMcGraw has released thirteen studio albums: eleven for
+        Curb Records and two for Big Machine Records. Ten of his albums have reached
+        number 1 on the Top Country Albums charts, with his 1994 breakthrough album
+        Not a Moment Too Soon being the top country album of 1994. These albums have
+        produced over 50 singles, of which 25 have reached number 1 on the Hot Country
+        Songs or Country Airplay charts. Three of his singles -- \"It''s Your Love\",
+        \"Just to See You Smile\", and \"Live Like You Were Dying\" -- were the top
+        country songs of 1997, 1998, and 2004 respectively, according to Billboard
+        Year-End. He has also won three Grammy Awards, 14 Academy of Country Music
+        awards, 11 Country Music Association (CMA) awards, 10 American Music Awards,
+        and three People''s Choice Awards. His Soul2Soul II Tour with Faith Hill is
+        the highest grossing tour in country music history, and one of the Top 5 among
+        all genres of music. \nMcGraw has ventured into acting, with supporting roles
+        in The Blind Side (with Sandra Bullock), Friday Night Lights, The Kingdom,
+        and Four Christmases (with Vince Vaughn and Reese Witherspoon), and lead roles
+        in Flicka (2006) and Country Strong (2010). He was a minority owner of the
+        Arena Football League''s Nashville Kats. Taylor Swift''s debut single, \"Tim
+        McGraw\", refers to him and his song, \"Can''t Tell Me Nothin''\". \nIn acknowledgement
+        of his grandfather''s Italian heritage, McGraw was honored by the National
+        Italian American Foundation (NIAF) in 2004, receiving the NIAF Special Achievement
+        Award in Music during the Foundation''s 29th Anniversary Gala. \n\nEarly life:\nSamuel
+        Timothy McGraw was born in Delhi, Louisiana, the only child of Elizabeth \"Betty\"
+        Ann (D''Agostino), a waitress, and Frank Edwin \"Tug\" McGraw Jr., a star
+        pitcher for the New York Mets and the Philadelphia Phillies. McGraw is of
+        Italian and Irish descent on his mother''s side, and of Scots-Irish, English,
+        Scottish, French, Dutch, Czech, and German descent on his father''s side.
+        In 1966, Tug was a pitcher for the Jacksonville Suns, and he lived in an apartment
+        above Betty D''Agostino, who attended Terry Parker High School. The pair had
+        a relationship, and when Betty became pregnant, her parents sent her to Louisiana
+        to live with relatives and to have the baby. \n\nRaised by his mother in Start,
+        also in Richland Parish, east of Monroe, McGraw grew up believing his stepfather,
+        Horace Smith, was his father. From the time of his mother''s marriage until
+        the time he met his biological father, his last name was Smith. At age 11,
+        McGraw discovered his birth certificate while searching his mother''s closet
+        to look for Christmas presents. After his discovery, his mother revealed that
+        his biological father was Tug McGraw, and took Tim to meet him for the first
+        time. For seven years, Tug denied being Tim''s father. Tim was 18 years old
+        when Tug first realized how much Tim looked like him at that age, and he acknowledged
+        paternity. They remained close until Tug''s death in 2004. \nAs a child, McGraw
+        loved to play competitive sports, including baseball, even though he did not
+        know his biological father was a professional athlete. He was also a member
+        of the FFA. He attended Northeast Louisiana University, now the University
+        of Louisiana at Monroe, on a baseball scholarship, although he never earned
+        a varsity letter; he also became a member of the Pi Kappa Alpha Fraternity.
+        During his college period, he learned to play guitar, and would frequently
+        perform and sing for tips, although he claims that his roommates often hid
+        the guitar because he was so bad. \nHis mother, Betty, returned to Jacksonville,
+        Florida in 1987, and McGraw followed. He attended Florida Community College
+        at Jacksonville for one term, and occasionally sat in with local bands. In
+        1989, on the day his hero Keith Whitley died, McGraw dropped out of college
+        to head to Nashville and pursue a musical career. \n\nMusic career:\n\n1990s:\n\nTim
+        McGraw:\n\nMcGraw came to the attention of Curb Records in 1990. After cutting
+        a demo single, McGraw gave a copy to his father. A man who was friends with
+        Curb Records executives heard the demo while driving with Tug one day and
+        recommended that Curb contact the young singer. Several weeks later, he was
+        able to play his tape for Curb executives, after which they signed him to
+        a recording contract. McGraw''s first single, \"What Room Was the Holiday
+        In\", did not enter the Billboard Hot Country Songs charts upon its release.
+        In a 2001 retrospective on McGraw''s career in Billboard, a former program
+        director for Nashville station WSM-FM said that he added the song to the station''s
+        playlist because it showed \"undeniable promise\", while another former program
+        director at WXTU in Philadelphia, Pennsylvania recalled that McGraw''s debut
+        single was \"terrible\" but that he booked the singer to make an appearance
+        at the station due to his father''s fame. \nThree more singles were released
+        from Tim McGraw: \"Welcome to the Club\", \"Memory Lane\", and \"Two Steppin''
+        Mind\", although none of these made Top 40, and the album itself did not chart.
+        Both \"Memory Lane\" and \"Tears in the Rain\", another cut from the album,
+        were co-written by Joe Diffie, and the former originally appeared on Keith
+        Palmer''s self-titled 1991 debut album. \n\nNot a Moment Too Soon:\nHis second
+        album, Not a Moment Too Soon, was much more successful, becoming the best-selling
+        country album in 1994. The first single, \"Indian Outlaw\", caused considerable
+        controversy, as critics argued that it presented Native Americans in a patronizing
+        way. Some radio stations refused to play it, but the controversy helped spur
+        sales, and the song became McGraw''s first top ten country single (getting
+        as high as No. 8), and reaching No. 15 on the Billboard Hot 100. \nThe second
+        single from the album, \"Don''t Take the Girl\", became McGraw''s first No.
+        1 country hit, in addition to reaching number 17 on the Hot 100, and \"helped
+        cement his image as a ruggedly good-looking guy with a sensitive side\". By
+        year''s end, \"Down on the Farm\" had peaked at number 2 on the country charts;
+        after it, the album''s title track became his second number 1 single in early
+        1995, and \"Refried Dreams\" reached number 5 afterward. The album sold over
+        6 million copies, topping the Billboard 200 as well as the country album charts.
+        On the strength of this success, McGraw won Academy of Country Music awards
+        for Album of the Year and Top New Male Vocalist in 1994.Billboard named Not
+        a Moment Too Soon as the top country album of 1994 on Billboard Year-End.
+        \n\nAll I Want:\nAll I Want, released in 1995, also debuted at No. 1 on the
+        country charts. The album sold over 2 million copies and reached the top 5
+        on the Billboard 200. \"I Like It, I Love It\" reached No. 1 on the country
+        charts as the lead-off single, also crossing over to the Hot 100 at number
+        25. The album''s next two singles, \"Can''t Be Really Gone\" and \"All I Want
+        Is a Life\" both made Top 5, with \"She Never Lets It Go to Her Heart\" becoming
+        his fourth number 1 in 1996. Finishing off the single releases was \"Maybe
+        We Should Just Sleep on It\". \nIn 1996, McGraw headlined the most successful
+        country tour of the year, The Spontaneous Combustion Tour, with Faith Hill
+        as his supporting act. Hill broke off her engagement to her former producer
+        Scott Hendricks so that she and McGraw could start dating each other; they
+        then married on October 6, 1996. The couple have since had three daughters:
+        Gracie Katherine (born May 1997), Maggie Elizabeth (born August 1998), and
+        Audrey Caroline (born December 2001). \n\nEverywhere:\nMcGraw''s next album,
+        1997''s Everywhere, again topped the country charts and reached No. 2 on the
+        album charts, selling 4 million copies. Four singles (\"It''s Your Love\",
+        \"Everywhere\", \"Where the Green Grass Grows\", and \"Just to See You Smile\")
+        reached the top of the country charts from the album. The Country Music Association
+        awarded Everywhere its Album of the Year award for 1997. At the 40th Grammy
+        Awards \"It''s Your Love\" received two Grammy Award nominations for Best
+        Country Collaboration With Vocals and Best Country Song. \"It''s Your Love\"
+        and \"Just to See You Smile\" were the top country songs of 1997 and 1998,
+        respectively, according to Billboard Year-End; \"Just to See You Smile\" also
+        set a record for the longest run on the country charts at the time, at 42
+        weeks. \n\nA Place in the Sun:\nA Place in the Sun in 1999 continued McGraw''s
+        streak, debuting atop both the US pop and country album charts and selling
+        3 million albums. 251,000 copies were sold in the first week, making it his
+        first number 1 opener on The Billboard 200. It featured another four chart-topping
+        singles on the country charts including \"Please Remember Me\", \"Something
+        Like That\", \"My Best Friend\", and \"My Next Thirty Years\". \"Some Things
+        Never Change\" reached No. 7 on the country chart. He also contributed a song
+        for the Grammy-winning tribute album to Bob Wills: Ride With Bob. His song,
+        a cover of \"Milk Cow Blues\", was recorded as a duet with Asleep at the Wheel,
+        whom he had met while performing together at the George Strait Country Music
+        Festival. \nMcGraw recorded two more duets with his wife in the late 1990s,
+        both of which appeared on her albums. \"Just to Hear You Say That You Love
+        Me\", off of her multi-platinum 1998 album Faith, reached the top five of
+        the US country charts, while her follow-up and 1999 album Breathe featured
+        \"Let''s Make Love\", which would win a Grammy Award in 2000 for Best Country
+        Vocal Collaboration. \n\n2000s:\n\nGreatest Hits:\nIn 2000, McGraw released
+        his Greatest Hits album, which topped the charts for nine weeks and sold almost
+        6 million copies, making it one of the biggest-selling albums in the modern
+        country market. In the latter half of the year, he and Hill went out on the
+        Soul2Soul Tour, playing to sellout crowds in 64 venues, including Madison
+        Square Garden. It was one of the top tours of any genre in the US, and the
+        leading country tour during 2000. \nWhile in Buffalo, New York, McGraw and
+        Kenny Chesney became involved in a scuffle with police officers after Chesney
+        attempted to ride a police horse. McGraw came to Chesney''s aid after police
+        officers nearby believed the horse was being stolen and tried to arrest him.
+        The two were arrested and charged with assault, but were later cleared. During
+        a concert with the George Strait Country Music Festival several weeks later,
+        Hill, dressed as a police officer, made an unscheduled appearance at the end
+        of McGraw''s set and led him off the stage. \n\nSet This Circus Down:\nMcGraw''s
+        next album, Set This Circus Down, was released in April 2001, and spawned
+        four number-one country hits: \"Grown Men Don''t Cry\", \"Angry All the Time\"
+        (with Faith Hill), \"The Cowboy in Me\", and \"Unbroken\". He provided harmony
+        vocals for the Jo Dee Messina song \"Bring On the Rain\", which he also produced.
+        The song topped the country charts. \nHungry for more of his music, fans downloaded
+        a version of his performance of the song \"Things Change\" from his appearance
+        at the Country Music Association Awards Show. The song was played extensively
+        on radio, becoming the first country song to appear on the charts from a fully
+        downloaded version. \n\nTim McGraw and the Dancehall Doctors:\nIn 2002, McGraw
+        bucked country music traditions by recording his album Tim McGraw and the
+        Dancehall Doctors with his tour band The Dancehall Doctors. Unlike rock music,
+        where it is commonplace for touring bands to provide the music on albums recorded
+        by the artist they support, country albums are typically recorded with session
+        musicians. McGraw chose to use his own touring band, in order to recognize
+        their part in his success, and to capture some of the feel of a real band.
+        \nAll of the Dancehall Doctors have worked with McGraw since at least 1996.
+        They include: \nDarran Smith - lead guitar, acoustic guitar, \nBob Minner
+        - rhythm guitar, acoustic guitar, banjo, mandolin, \nDenny Hemingson - steel
+        guitar, electric, baritone, and slide guitars, dobro, \nJohn Marcus - bass
+        guitar, \nDean Brown - fiddle, mandolin, \nJeff McMahon - piano, organ, synthesizer,
+        keyboards, \nBilly Mason - drums, \nDavid Dunkley - percussion, \nThe album
+        debuted at No. 2 on the country albums charts, with the single \"Real Good
+        Man\" reaching No. 1 on the Hot Country Songs chart. \"She''s My Kind of Rain\"
+        reached No. 2 in 2003, and \"Red Ragtop\" reached the top 5. The album also
+        featured a cover version of Elton John''s early 1970s classic \"Tiny Dancer\",
+        as well as appearances by Kim Carnes on \"Comfort Me\" (a response to the
+        September 11, 2001 attacks) and Don Henley and Timothy B. Schmit of the Eagles
+        on \"Illegal\". \"She''s My Kind of Rain\" received a Grammy Award nomination
+        for Best Country Vocal Performance-Male at the 46th Grammy Awards. \n\nLive
+        Like You Were Dying:\n2004''s Live Like You Were Dying continued McGraw''s
+        record of commercial success. The title track, dedicated to his father Tug
+        McGraw, who died of a brain tumor earlier in the year, was an ode to living
+        life fully and in the moment, while the second single \"Back When\" was a
+        paean to an easy nostalgia. Live Like You Were Dying spent seven non-consecutive
+        weeks at No. 1 on Billboard and went on to become the top country song of
+        2004 on the Billboard Year-End charts. It also became one of the most awarded
+        songs/records by winning ACM Single and Song of the Year, CMA Single and Song
+        of the Year, and a Grammy. The album included three more singles: \"Drugs
+        or Jesus\", his first single since 1993 not to reach Top 10 on the country
+        charts; \"Do You Want Fries with That\", and \"My Old Friend\". \nIn late
+        2004, his unlikely duet with hip-hop artist Nelly on \"Over and Over became
+        a crossover hit, spending 10 weeks atop the Top 40 chart. \"Over and Over\"
+        brought McGraw a success he had never previously experienced on contemporary
+        hit radio or rap radio, and brought both artists success neither had previously
+        experienced in the hot adult contemporary market. The song also spent a week
+        at the top of the charts in the United Kingdom, becoming McGraw''s first British
+        hit single and Nelly''s third number one hit in the country after Dilemma
+        and My Place. ''Over and Over'' also reached the top of the charts in Australia,
+        New Zealand and the Republic of Ireland, and the top ten in Austria, Canada,
+        Denmark, Germany, Romania and Switzerland. \nThroughout the 2005 NFL season,
+        McGraw sang an alternate version of \"I Like It, I Love It\" every week during
+        the season. The alternate lyrics, which changed each week, would make reference
+        to plays during Sunday''s games, and the song would be played alongside video
+        highlights during halftime on Monday Night Football. Later in the year, McGraw
+        became a minority owner of the Arena Football League''s Nashville Kats when
+        majority owner Bud Adams (owner of the NFL''s Tennessee Titans) was awarded
+        the expansion franchise. \n\nLet It Go:\n\nIn April 2006, McGraw and Hill
+        began their 73-concert 55-city Soul2Soul II Tour, again to strong commercial
+        acceptance. The tour grossed nearly $89 million and sold almost 1.1 million
+        tickets, making it the top grossing tour in the history of country music.
+        It was named \"Major Tour of the Year\" by the prestigious Pollstar Magazine,
+        beating out such heavyweights as Madonna and the Rolling Stones. In a special
+        gesture, the couple donated all of the profits from their performance in New
+        Orleans to Hurricane Katrina relief. \nMcGraw, along with Kenny Chesney, contributed
+        to a version of Tracy Lawrence''s song \"Find Out Who Your Friends Are\",
+        which can be found on Lawrence''s album For the Love. Although the official
+        single version features only Lawrence''s vocals, many stations have opted
+        to play the version with McGraw and Chesney instead. \nMcGraw released his
+        eleventh album, Let It Go, on March 27, 2007. The album''s debut single, \"Last
+        Dollar (Fly Away)\", reached No. 1 on the Hot Country Songs chart, marking
+        McGraw''s first No. 1 single since \"Back When\" in late 2004. The album debuted
+        at No. 1 on the Billboard Top 200 Album Chart and No. 1 on the Billboard Country
+        Album chart, marking his fourth No. 1 top 200 album and ninth No. 1 country
+        album. His daughters can be heard singing the chorus during the last few seconds
+        of the song on the video. \nDuring the Academy of Country Music awards show
+        on May 21, 2007, McGraw performed a song titled \"If You''re Reading This\",
+        which he co-wrote with The Warren Brothers. Several radio stations began to
+        play the live recording of the song; as a result, it entered the Hot Country
+        Songs chart at No. 35. \nMcGraw also produced the debut album of country music
+        duo Halfway to Hazard. The duo''s first single, \"Daisy\", peaked at No. 39
+        on the country charts in the summer of 2007. \nIn the summer of 2007, McGraw
+        and Hill toured together once again in the Soul2Soul 2007 tour. \nIn the January
+        18, 2008 edition of the USA Today newspaper, McGraw was stated to be featured
+        on the Def Leppard album Songs from the Sparkle Lounge, having also co-written
+        the first single, \"Nine Lives\", with Def Leppard band members Joe Elliott,
+        Phil Collen, and Rick Savage. The unusual pairing goes back to 2006 when McGraw
+        joined Def Leppard onstage for the song \"Pour Some Sugar On Me\", and then
+        collaborated on the song \"Nine Lives\" afterward. The album was released
+        on April 25, 2008. \nAt the 2007 50th Annual Grammy Awards, McGraw received
+        5 nominations including Best Country Album Let It Go, Best Country Song (\"If
+        You''re Reading This\" & \"I Need You\"), Best Country Collaboration with
+        Vocals (\"I Need You)\"), and Best Male Country Vocal Performance (\"If You''re
+        Reading This\"). \nIn May 2008, he hit the road with the Live Your Voice tour.
+        The mainly-outdoor arena concert tour was his first solo outing in nearly
+        three years. Also in May 2008, he debuted a new song off of his follow-up
+        to Let It Go at the Stagecoach Music Festival in Indio, California. \nIn July
+        2008, McGraw''s sixth single, and the title track of his album, \"Let It Go\",
+        was released to country radio. Following that, a seventh single, \"Nothin''
+        to Die For\", entered the Country charts at No. 57 in late December. McGraw
+        released his third greatest-hits package, Greatest Hits 3 on October 7, 2008.
+        The album features 12 tracks. McGraw was set to debut a new song on the 2009
+        ACM Awards, but then cancelled his performance; he was replaced by Blake Shelton,
+        who sang \"She Wouldn''t Be Gone\". \n\nSouthern Voice:\n\nMcGraw''s twelfth
+        studio album, Southern Voice, was released October 20, 2009, and led by the
+        single \"It''s A Business Doing Pleasure With You\", which was shipped to
+        radio outlets in late June 2009.Southern Voice was argued to be McGraw''s
+        last album for Curb Records, following the dispute over releasing his third
+        Greatest Hits collection back in October 2008 without his permission. McGraw
+        did not approve of the release. On November 30, 2010, Curb Records released
+        his fourth greatest hits compilation, Number One Hits. \n\n2010s:\n\nEmotional
+        Traffic and Curb Records lawsuit:\nOn January 2, 2011, McGraw announced plans
+        for his Emotional Traffic Tour featuring opening acts Luke Bryan and The Band
+        Perry.Sirius XM announced on March 30, 2011 that they would be launching Tim
+        McGraw radio, a commercial-free music channel devoted to McGraw''s music,
+        and featuring an in depth interview with McGraw as well. \nAs of fall 2010,
+        McGraw had finished work on the album Emotional Traffic, his last album with
+        Curb Records. On May 13, 2011, Curb Records filed a breach-of-contract suit
+        against McGraw. The label alleged that McGraw recorded tracks for his Emotional
+        Traffic album too early prior to its delivery to the label. Several days later,
+        McGraw filed a counter suit against the label seeking advance payment and
+        recording-fund reimbursement, unspecified damages, and a jury trial. A trial
+        was scheduled to begin in July 2012. \nIn November 2011, a judge granted McGraw
+        permission to record music for another label, ending his relationship with
+        Curb Records that began in 1990. A few hours after the ruling, Curb released
+        \"Better Than I Used to Be\", the second single from Emotional Traffic. The
+        album was released on January 24, 2012. \n\nTwo Lanes of Freedom:\nIn December
+        2011, McGraw released his first Christmas single, \"Christmas All Over the
+        World\", on his own label StyleSonic Records. On May 21, 2012, however, he
+        signed with Big Machine Records. McGraw''s debut album for Big Machine, entitled
+        Two Lanes of Freedom, was released on February 5, 2013. It debuted at number
+        2 on the charts by selling 108,000 copies. The album includes the singles
+        \"Truck Yeah\", \"One of Those Nights\", \"Highway Don''t Care\" (a duet with
+        Taylor Swift which also features Keith Urban on lead guitar), and \"Southern
+        Girl\". \nMcGraw performed at the C2C: Country to Country festival in London
+        on March 16, 2013. \n\nLove Story and Sundown Heaven Town:\nMcGraw released
+        a single titled \"Lookin'' for That Girl\" in January 2014 as the lead-off
+        single to his second album for Big Machine. It was followed immediately by
+        the announcement of the Sundown Heaven Town Tour. The album, titled Sundown
+        Heaven Town, was released on September 16, 2014. Four months into its run,
+        \"Lookin'' for That Girl\" was withdrawn as a single and replaced with \"Meanwhile
+        Back at Mama''s\", which features backing vocals from Hill. \"Shotgun Rider\"
+        beacme the album''s third single and a number 1 Country Airplay hit by the
+        end of 2014. Following it was \"Diamond Rings and Old Barstools\", a duet
+        with Catherine Dunn. \nMcGraw''s eighth greatest hits album, Love Story, is
+        a compilation of his twelve biggest love songs and two previously unreleased
+        recordings. It was released exclusively through Walmart on February 4, 2014,
+        by Curb Records. \n\nProducer:\nMcGraw has occasionally served as a record
+        producer in collaboration with Byron Gallimore, who has co-produced all of
+        his albums. The two co-produced Jo Dee Messina''s self-titled debut, as well
+        as her next two albums, I''m Alright and Burn. McGraw and Gallimore also produced
+        the only album released by The Clark Family Experience] in 2000, and Halfway
+        to Hazard''s 2007 self-titled debut album. \n\nActing career:\nMcGraw''s first
+        acting appearance came in a 1997 episode of The Jeff Foxworthy Show, where
+        he played Foxworthy''s rival. \nIn 2004, McGraw played a sheriff in Rick Schroder''s
+        independent release Black Cloud. Later in the same year, McGraw received critical
+        acclaim as the overbearing father of a running back in the major studio Texas
+        high school football drama Friday Night Lights. The Dallas Observer said the
+        role was \"played with unexpected ferocity by country singer Tim McGraw\".
+        The movie went on to gross over $60 million worldwide at the box office, and
+        sold millions in the DVD market. Most recently, it was named one of the Top
+        50 High School Movies of All Time (No. 37) by Entertainment Weekly. \nMcGraw''s
+        first lead role was in the 2006 film Flicka, which was released in theaters
+        October 20, 2006. In the remake of the classic book My Friend Flicka, McGraw
+        played the father, Rob, costarring with Alison Lohman and Maria Bello. The
+        family-friendly movie debuted in the top 10 list and has grossed over $25
+        million at the box office. McGraw again achieved critical acclaim for his
+        acting. \nShortly before Flicka opened, McGraw received a star on the Hollywood
+        Walk of Fame. His star is located at 6901 Hollywood Blvd. Near stars in the
+        sidewalk honoring Julie Andrews, William Shatner, and the late Greta Garbo.
+        One of his Flicka co-stars, Alison Lohman, attended the ceremony that included
+        comments from Billy Bob Thornton, McGraw''s co-star in the film Friday Night
+        Lights. \nIn addition to acting in Flicka, McGraw served as executive producer
+        of the soundtrack album, which was released by his record label, StyleSonic
+        Records, in association with Curb Records and Fox 2000 films. It featured
+        the closing credit song \"My Little Girl\", one of the first two songs that
+        McGraw recorded that he also co-wrote (the other being \"I''ve Got Friends
+        That Do\", both of which were included on Greatest Hits Vol. 2). The song
+        was nominated by the Broadcast Film Critics for \"Best Song\" in a film, and
+        the movie was nominated in the category \"Best Family Film (Live Action)\".
+        The movie proved to be another success in the DVD market, and has sold over
+        a million copies, debuting at No. 3 on the DVD sales chart. \nMcGraw also
+        had a small part in the Michael Mann-produced 2007 film The Kingdom, reuniting
+        him with Friday Night Lights director Peter Berg. McGraw played a bitter,
+        angered widower whose wife was killed in the terrorist attack that is the
+        centerpiece of the movie. \nOn November 22, 2008, McGraw made his first appearance
+        on Saturday Night Live. He also played \"Dallas McVie\" in Four Christmases.
+        \nMcGraw appeared in the 2009 film The Blind Side as Sean Tuohy, husband of
+        Sandra Bullock''s character, Leigh Anne Tuohy. The Blind Side is based on
+        the true story of Michael Oher, a homeless African-American youngster from
+        a broken home, taken in and adopted by the Tuohys, a well-to-do white family
+        who help him fulfill his potential. For her performance Bullock won the Oscar
+        for Best Actress in a Leading Role. \nHe is among the stars of Dirty Girl,
+        a film that premiered on September 12, 2010, at the Toronto Film Festival,
+        along with Juno Temple, Milla Jovovich, William H. Macy and Dwight Yoakam.
+        \nAlso in 2010, McGraw starred in Country Strong as James Canter, the husband
+        and manager of the fictional country singer Kelly Canter (portrayed by Gwyneth
+        Paltrow). In addition to his appearance in the film, McGraw''s song \"Southern
+        Voice\" was played during the closing credits. \n\nCharitable efforts:\nAs
+        his success has grown, McGraw has increasingly given back to the community.
+        When McGraw first reached fame in 1994, he established his annual Swampstock
+        event. It began as a charity softball game to raise money for hometown little
+        league programs; the event now includes a celebrity softball game and a multi-artist
+        concert that attracts over 11,000 fans per year. The combined events have
+        funded new Little League parks and equipment, and have established college
+        scholarship funds for students in the northeast Louisiana area. \nFrom 1996
+        to 1999, McGraw hosted an annual New Year''s Eve concert in Nashville with
+        special guests including Jeff Foxworthy, the Dixie Chicks, and Martina McBride.
+        The 1997 show raised over $100,000 for the Country Music Foundation Hall of
+        Fame and Museum. Beginning in 1999, McGraw would pick select cities on each
+        tour, and the night before he was scheduled to perform, would choose a local
+        club and host a quickly-organized show. This tour-within-a-tour became known
+        as \"The Bread and Water Tour\", and all proceeds from the show would go to
+        a charity from that community. \nIn the days immediately following Hurricane
+        Katrina, McGraw and his wife, who was raised in Mississippi, joined groups
+        taking supplies to Gulfport, Mississippi. The two also hosted several charity
+        concerts to benefit those who were displaced by the storm. Later in the year,
+        the couple established the Neighbor''s Keeper Foundation, which provides funding
+        for community charities to assist with basic humanitarian services, in the
+        event of a natural disaster, or for desperate personal circumstances. \nMcGraw
+        is also a member of the American Red Cross National Celebrity Cabinet, to
+        which various celebrities donate their time, skills, and fame, to help the
+        Red Cross highlight important initiatives and response efforts. \nMcGraw has
+        helped out with charity events held by Minnesota Vikings quarterback Brett
+        Favre. The Brett Favre Fourward Foundation has featured McGraw (and at other
+        times Faith Hill) performing concerts during dinners and auctions that benefit
+        children with disabilities in Wisconsin and Mississippi. One instance is recorded
+        on Favre''s official website. \nOn July 12, 2007, it was made public that
+        McGraw and his wife Faith Hill, while in Grand Rapids, Michigan for a performance,
+        donated $5000 to Kailey Kozminski, 3-year-old daughter of Officer Robert Kozminski,
+        a Grand Rapids police officer who was killed on July 8, 2007 while responding
+        to a domestic disturbance. \nIn June 2010, McGraw and his wife Faith Hill
+        organized Nashville Rising, a benefit concert aimed to raise $2 million for
+        The Community Foundation of Middle Tennessee in response to the flood in early
+        May that killed 22 people and caused $2 billion in damage. \n\nPolitics:\n\nMcGraw,
+        a Democrat, has stated that he would like to run for public office in the
+        future, possibly for Senate or Governor of Tennessee, his home state. In the
+        same interview, he praised former President Bill Clinton. He has referred
+        to himself as a \"Blue Dog Democrat\" and stated that he supported presidential
+        candidate Barack Obama in 2008. \n\nPersonal life:\nMcGraw is married to fellow
+        country singer Faith Hill. Together, they have three daughters: Gracie Katherine
+        (b. 1997), Maggie Elizabeth (b. 1998) and Audrey Caroline (b. 2001). \nMcGraw
+        holds a private pilot license and owns a single-engine Cirrus SR22.", "site":
+        "wikipedia", "url": "https://en.wikipedia.org/wiki/Tim_McGraw", "license":
+        {"type": "cc-by-sa", "attribution": "wikipedia", "attribution-url": "https://en.wikipedia.org/wiki/Tim_McGraw",
+        "url": "http://creativecommons.org/licenses/by-sa/3.0/", "version": "3.0"}}]}}'
+    http_version: 
+  recorded_at: Thu, 13 Aug 2015 05:38:11 GMT
+- request:
+    method: get
+    uri: http://developer.echonest.com/api/v4/artist/video?api_key=BTF9TL31AHYRWPWPZ&name=Tim%20McGraw
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/json
+      User-Agent:
+      - Echowrap Ruby Gem 0.2.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Thu, 13 Aug 2015 05:38:12 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Vary:
+      - Accept-Encoding
+      X-Request-Id:
+      - TfdsT96NS8evG/eL1hpp2Q
+      X-Worker-Node:
+      - a3028:4256
+      X-Ratelimit-Remaining:
+      - '103'
+      Server:
+      - TornadoServer/3.1
+      X-Ratelimit-Limit:
+      - '120'
+      X-Api-Key:
+      - BTF9TL31AHYRWPWPZ
+      Cache-Control:
+      - max-age=86400
+      Access-Control-Allow-Origin:
+      - "*"
+      X-Ratelimit-Used:
+      - '17'
+    body:
+      encoding: ASCII-8BIT
+      string: '{"response": {"status": {"version": "4.2", "code": 0, "message": "Success"},
+        "start": 0, "total": 1120, "video": [{"title": "Tim McGraw - \"Lincoln Continentals
+        And Cadilacs\" (Feat, Kid Rock) (Lyrics In Description)", "url": "http://www.dailymotion.com/video/x30u03o_tim-mcgraw-lincoln-continentals-and-cadilacs-feat-kid-rock-lyrics-in-description_fun",
+        "site": "dailymotion.com", "date_found": "2015-08-09T00:00:00", "image_url":
+        "http://s1.dmcdn.net/M6bvt.jpg", "id": "eb0d89f00726c0879857f14aa1cd65dd"},
+        {"title": "Tim McGraw - VEVO News Exclusive Interview", "url": "http://www.dailymotion.com/video/x30vyfq_tim-mcgraw-vevo-news-exclusive-interview_music",
+        "site": "dailymotion.com", "date_found": "2015-08-09T00:00:00", "image_url":
+        "http://s1.dmcdn.net/M7Dh8.jpg", "id": "ce8a3e2817349ee66bddbcbfbc363374"},
+        {"title": "Tim McCgraw- Something Like That", "url": "http://www.dailymotion.com/video/x306lgj_tim-mccgraw-something-like-that_fun",
+        "site": "dailymotion.com", "date_found": "2015-08-05T00:00:00", "image_url":
+        "http://s2.dmcdn.net/MzzvO.jpg", "id": "13a4b8e935fae8b6dc6fe821c1af5660"},
+        {"title": "Tim McGraw: The Cowboy in me", "url": "http://www.dailymotion.com/video/x306avm_tim-mcgraw-the-cowboy-in-me_music",
+        "site": "dailymotion.com", "date_found": "2015-08-05T00:00:00", "image_url":
+        "http://s1.dmcdn.net/MzrsX.jpg", "id": "3481be54591659edc6bcc5f208c7d7cd"},
+        {"title": "Tim McGraw \"Where the Green Grass Grows\" - Cover", "url": "http://www.dailymotion.com/video/x302xk9_tim-mcgraw-where-the-green-grass-grows-cover_music",
+        "site": "dailymotion.com", "date_found": "2015-08-05T00:00:00", "image_url":
+        "http://s1.dmcdn.net/Mx-Nb.jpg", "id": "2deb9a9a78f36e10717471d5a7e99e99"},
+        {"title": "Grown men don''t cry by Tim McGraw", "url": "http://www.dailymotion.com/video/x2ycmdv_grown-men-don-t-cry-by-tim-mcgraw_music",
+        "site": "dailymotion.com", "date_found": "2015-07-17T00:00:00", "image_url":
+        "http://s2.dmcdn.net/MTMNA.jpg", "id": "fc2c54001b9d48a1ee32c0ccabdb7c87"},
+        {"title": "Tim McGraw - Southern Voice", "url": "http://www.dailymotion.com/video/x2y1qvs_tim-mcgraw-southern-voice_music",
+        "site": "dailymotion.com", "date_found": "2015-07-17T00:00:00", "image_url":
+        "http://s2.dmcdn.net/MN9Py.jpg", "id": "ecf2a74444afafc03644e06b81569dde"},
+        {"title": "Tim Mcgraw - Telluride", "url": "http://www.dailymotion.com/video/x2wyn6h_tim-mcgraw-telluride_music",
+        "site": "dailymotion.com", "date_found": "2015-07-07T00:00:00", "image_url":
+        "http://s1.dmcdn.net/L9j8V.jpg", "id": "e263b428705724c8155a5b2dd3ef4e84"},
+        {"title": "Southern Girl - Tim McGraw", "url": "http://www.dailymotion.com/video/x2vqhjo_southern-girl-tim-mcgraw_music",
+        "site": "dailymotion.com", "date_found": "2015-06-30T00:00:00", "image_url":
+        "http://s1.dmcdn.net/LqjIn.jpg", "id": "0a974cc1446556e9ebeb7098e2bada90"},
+        {"title": "My Old Friend - Tim McGraw", "url": "http://www.dailymotion.com/video/x2urwvo_my-old-friend-tim-mcgraw_webcam",
+        "site": "dailymotion.com", "date_found": "2015-06-30T00:00:00", "image_url":
+        "http://s2.dmcdn.net/LcFD6.jpg", "id": "438c907f5d20719a032ab82e6a9969e6"},
+        {"title": "\"When The Stars Go Blue\" Tim McGraw", "url": "http://www.dailymotion.com/video/x2vmmih_when-the-stars-go-blue-tim-mcgraw_fun",
+        "site": "dailymotion.com", "date_found": "2015-06-30T00:00:00", "image_url":
+        "http://s1.dmcdn.net/LovgT.jpg", "id": "420a3fa39eebbc8c0e7cbd285cb8e3f2"},
+        {"title": "\"Live Like You Were Dying\" Tim McGraw", "url": "http://www.dailymotion.com/video/x2vmmek_live-like-you-were-dying-tim-mcgraw_fun",
+        "site": "dailymotion.com", "date_found": "2015-06-30T00:00:00", "image_url":
+        "http://s1.dmcdn.net/LovbC.jpg", "id": "1bc26d01cdf8f4bb4749450156c2a94a"},
+        {"title": "Tim McGraw She Never Lets It Go To Her Heart Lyrics-SD", "url":
+        "http://www.dailymotion.com/video/x2tsa2c_tim-mcgraw-she-never-lets-it-go-to-her-heart-lyrics-sd_music",
+        "site": "dailymotion.com", "date_found": "2015-06-17T00:00:00", "image_url":
+        "http://s2.dmcdn.net/LOZVa.jpg", "id": "783ab6b6319ff2001c3878b376022c89"},
+        {"title": "Tim McGraw- Blank Sheet Of Paper", "url": "http://www.dailymotion.com/video/x2tqprc_tim-mcgraw-blank-sheet-of-paper_fun",
+        "site": "dailymotion.com", "date_found": "2015-06-17T00:00:00", "image_url":
+        "http://s1.dmcdn.net/LN55o.jpg", "id": "0209d0024a9711ce7cc3ac09e6f9e552"},
+        {"title": "Tim Mcgraw The cowboy in me", "url": "http://www.dailymotion.com/video/x2ti882_tim-mcgraw-the-cowboy-in-me_webcam",
+        "site": "dailymotion.com", "date_found": "2015-06-12T00:00:00", "image_url":
+        "http://s1.dmcdn.net/LLbU1.jpg", "id": "8be1a03f245a3e04f54d0fd30abfaa46"}]}}'
+    http_version: 
+  recorded_at: Thu, 13 Aug 2015 05:38:11 GMT
+recorded_with: VCR 2.9.3

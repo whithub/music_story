@@ -30,7 +30,6 @@ describe 'Viewing related arists', :omniauth, :vcr, type: :feature do
       fill_in "Search for Artist", with: "Tom Petty"
       click_on "Search"
 
-
       expect(current_path).to eq('/artists/Tom%20Petty/similar_artists')
 
       click_on "Bruce Springsteen"

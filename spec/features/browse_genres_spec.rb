@@ -30,6 +30,20 @@ describe 'Browsing genres', :omniauth, :vcr, type: :feature do
 
       expect(page).to have_content('Willie Nelson')
     end
+
+    it 'can let me like an item through genre listings' do
+      visit genres_path
+      click_on 'Country'
+      click_on 'Tim McGraw'
+
+      click_on 'Like Artist'
+
+      expect(page).to have_text("We've added Tim Mc Graw to your likes.")
+      expect(current_path).to eql('/account')
+
+      expect(page).to have_text("Tim McGraw (found through Country)")
+    end
+
   end
 end
 
