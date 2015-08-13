@@ -17,8 +17,12 @@
         <%= image_tag(@artist_images.first.url, class: 'main-artist-image') %>
       </div>
       <div class="secondary">
-        <%= image_tag(@artist_images.second.url) %>
-        <%= image_tag(@artist_images.third.url) %>
+        <% if @artist_images.count > 1 %>
+          <%= image_tag(@artist_images.second.url) %>
+        <% end %>
+        <% if @artist_images.count > 2 %>
+          <%= image_tag(@artist_images.third.url) %>
+        <% end %>
       </div>
 
     </div>
