@@ -1,0 +1,55 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://developer.echonest.com/api/v4/artist/search?api_key=BTF9TL31AHYRWPWPZ&name=78783h2jiy7cxd8907dshjkflas7837uy289hjiod
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/json
+      User-Agent:
+      - Echowrap Ruby Gem 0.2.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Thu, 13 Aug 2015 05:10:08 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Vary:
+      - Accept-Encoding
+      X-Request-Id:
+      - dw2EwtZyRVqtaIEyzaORWw
+      X-Worker-Node:
+      - 77db3:31856
+      X-Ratelimit-Remaining:
+      - '75'
+      Server:
+      - TornadoServer/3.1
+      X-Ratelimit-Limit:
+      - '120'
+      X-Api-Key:
+      - BTF9TL31AHYRWPWPZ
+      Cache-Control:
+      - max-age=86400
+      Access-Control-Allow-Origin:
+      - "*"
+      X-Ratelimit-Used:
+      - '45'
+    body:
+      encoding: ASCII-8BIT
+      string: '{"response": {"status": {"version": "4.2", "code": 0, "message": "Success"},
+        "artists": []}}'
+    http_version: 
+  recorded_at: Thu, 13 Aug 2015 05:10:07 GMT
+recorded_with: VCR 2.9.3

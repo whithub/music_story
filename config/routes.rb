@@ -8,6 +8,10 @@ Rails.application.routes.draw do
   get '/auth/failure', to: 'sessions#failure'
   get '/logout',               to: 'sessions#destroy'
 
+  get '/account', to: 'users#show', as: :account
+
+  resources :likes, only: [:create, :destroy]
+
   resources :artists, only: [:index, :show] do
     resources :similar_artists, only: [:index]
   end

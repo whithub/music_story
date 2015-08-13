@@ -1,20 +1,15 @@
 <section class="header">
-    <div class="name-title">
-      <ul><img class="img-rounded" <%= image_tag(@artist_images.first.url, :class => 'list_image') %></ul>
-      <ul><h1 class="artist-name"><%= @artist.name %></h1></ul>
-    </div>
+  <div class="name-title">
+    <ul><img class="img-rounded" <%= image_tag(@artist_images.first.url, :class => 'list_image') %></ul>
+    <ul><h1 class="artist-name"><%= @artist.name %></h1></ul>
+    <% if current_user.likes.where(artist_name: @artist.name).count > 0 %>
+      <p>Already Liked</p>
+    <% else %>
+      <%= render partial: 'like_form', locals: {artist_name: @artist.name, found_through: params[:found_through]} %>
+    <% end %>
+    <%= link_to "Find similiar artists to #{@artist.name}", artist_similar_artists_path(@artist.name) %>
+  </div>
 
-    <div class="col-lg-12" id="similar-artists">
-      <ul class="artist-name">Similar Artists</ul>
-      <%#= link_to "Find similiar artists to #{@artist.name}", artist_similar_artists_path(@artist.name) %>
-
-      <% @similar_artists.each do |artist| %>
-        <ul class="col-lg-6">
-          <ul><%= link_to image_tag(Echowrap.artist_images(name: artist.name).first.url, :class => 'img-rounded'), artist_path(artist.name) %></ul>
-          <ul><%= link_to artist.name, artist_path(artist.name), :id => "similar", :style => 'color:white;' %></ul>
-        </ul>
-      <% end %>
-    </div>
 </section>
 
 <section id="background_image" id="about"></section>

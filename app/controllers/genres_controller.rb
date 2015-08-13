@@ -1,4 +1,5 @@
 class GenresController < ApplicationController
+  before_filter :require_authentication
 
   def index
   end

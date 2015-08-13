@@ -1,0 +1,5 @@
+<%= form_for Like.new, as: :like, url: likes_path, method: 'post' do |f| %>
+  <%= f.hidden_field :artist_name, value: artist_name %>
+  <%= f.hidden_field :found_through, value: found_through %>
+  <%= f.button 'Like Artist' %>
+<% end %>

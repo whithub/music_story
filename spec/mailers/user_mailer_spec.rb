@@ -1,32 +1,20 @@
-require 'spec_helper'
+require "rails_helper"
 
-# RSpec.describe UserMailer, type: :mailer do
-  # before(:each) do
-    # ActionMailer::Base.delivery_method = :test
-    # ActionMailer::Base.perform_deliveries = true
-    # ActionMailer::Base.deliveries = []
-    # @story = Factory.create(:story)
-    # EbookConfirmationMailer.confirmation_email(@story).deliver
-  # end
+RSpec.describe UserMailer, type: :mailer do
 
-  # after(:each) do
-    # ActionMailer::Base.deliveries.clear
-  # end
+  describe "new_user_email" do
+    let(:user) { FactoryGirl.build(:user) }
+    let(:mail) { UserMailer.new_user_email(user) }
 
+    it "renders the headers" do
+      expect(mail.subject).to eq("New Client!")
+      expect(mail.to).to eq(["whitcolorado@gmail.com"])
+      expect(mail.from).to eq(["notifications@musicstory.com"])
+    end
 
-  # it 'should send an email' do
-    # ActionMailer::Base.deliveries.count.should == 1
-  # end
+    it "renders the body" do
+      expect(mail.body.encoded).to match("A new client has signed into Music Story!")
+    end
+  end
 
-  # it 'renders the receiver email' do
-    # ActionMailer::Base.deliveries.first.to.should == @story.email
-  # end
-
-  # it 'should set the subject to the correct subject' do
-    # ActionMailer::Base.deliveries.first.subject.should == 'New Client!'
-  # end
-
-  # it 'renders the sender email' do
-    # ActionMailer::Base.deliveries.first.from.should == ['notifications@musicstory.com']
-  # end
-# end
+end

@@ -1,31 +1,35 @@
 require "rails_helper"
 
-describe 'auth user can browse genres', :omniauth, type: :feature do
+describe 'Browsing genres', :omniauth, :vcr, type: :feature do
 
-  before do
-    signin
+  it "requires me to be logged in" do
+    visit genres_path
+    expect(page).to have_text('You must be logged in to perform this action.')
+    expect(current_path).to eql(root_path)
   end
 
-  it "can browse genres" do
-    visit '/genres'
-    click_on "Pop"
+  context 'when logged in' do
+    before do
+      signin
+    end
 
-    expect(page).to have_content('Find artists that are SIMILAR to:')
-    expect(page).to have_content('Michael Jackson')
+    it "can browse genres" do
+      visit '/genres'
+      click_on "Pop"
 
+      expect(page).to have_content('Find artists that are SIMILAR to:')
+      expect(page).to have_content('Michael Jackson')
 
-    visit '/genres'
-    click_on "Blues"
+      visit '/genres'
+      click_on "Blues"
 
-    expect(page).to have_content('Buddy Guy')
+      expect(page).to have_content('Buddy Guy')
 
-    visit '/genres'
-    click_on "Country"
+      visit '/genres'
+      click_on "Country"
 
-    expect(page).to have_content('Willie Nelson')
+      expect(page).to have_content('Willie Nelson')
+    end
   end
 end
-
-#stubbing -- ignore what is normally returns, and return something else
-#ignore what is normally returned when current_user is called, and return admin (for this specific instance)
 

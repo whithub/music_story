@@ -1,21 +1,45 @@
 require "rails_helper"
 
-describe 'auth user', :omniauth, type: :feature do
+describe 'Viewing related arists', :omniauth, :vcr, type: :feature do
 
-  before do
-    signin
+  context 'when not authenticated' do
+    it "requires me to be logged in" do
+      visit artist_similar_artists_path('Tom Petty')
+      expect(page).to have_text('You must be logged in to perform this action.')
+      expect(current_path).to eql(root_path)
+    end
   end
 
-  xit "can view related artists" do
-    visit '/'
-    fill_in "Tom Petty"  #fill_in .... with: "Tom Petty"
-    click_on "Search"
 
-    expect(current_path).to eq('/genres')
-    expect(page).to have_content('Tom Petty')
+  context 'when authenticated' do
+    before do
+      signin
+    end
+
+    it "can view related artists" do
+      visit '/'
+      fill_in "Search for Artist", with: "Tom Petty"
+      click_on "Search"
+
+      expect(current_path).to eq('/artists/Tom%20Petty/similar_artists')
+      expect(page).to have_content('Here are some similar artists to')
+    end
+
+    it "lets me like a similiar artist" do
+      visit genres_path
+      fill_in "Search for Artist", with: "Tom Petty"
+      click_on "Search"
+
+
+      expect(current_path).to eq('/artists/Tom%20Petty/similar_artists')
+
+      click_on "Bruce Springsteen"
+
+      click_on "Like Artist"
+
+      expect(page).to have_text("We've added Bruce Springsteen to your likes.")
+      expect(current_path).to eql('/account')
+    end
   end
+
 end
-
-#stubbing -- ignore what is normally returns, and return something else
-#ignore what is normally returned when current_user is called, and return admin (for this specific instance)
-
