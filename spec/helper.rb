@@ -10,7 +10,11 @@ RSpec.configure do |config|
   config.expect_with :rspec do |c|
     c.syntax = :expect
   end
+
+  config.include OmniAuth::Mock
+  config.include OmniAuth::SessionHelpers, type: :feature
 end
+OmniAuth.config.test_mode = true
 
 def new_test_client
   client = Echowrap::Client.new(:api_key => "AK")

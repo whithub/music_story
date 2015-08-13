@@ -9,13 +9,13 @@ describe 'auth user can navigate pages', type: :feature do
     visit '/'
 
     expect(page).to have_content("Music Story")
-    expect(page).to_not have_content("Genres")
+    expect(page).to have_content("Genres")
 
-    click_link "Genres"
+    click_on "Genres"
 
     expect(current_path).to eq('/genres')
 
-    click_link "Pop"
+    click_on "Pop"
 
     expect(page).to have_content('Pop Artists')
 
