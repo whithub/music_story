@@ -1,16 +1,23 @@
 require "rails_helper"
 
+describe 'testing oauth with twitter', :omniauth, type: :feature do
 
-describe 'user', type: :feature do
-
-  it "should login successfully" do
+  it "logs in successfully" do
+    auth_mock
     visit '/auth/twitter'
 
     expect(page).to have_content("Logout")
     expect(current_path).to eq(root_path)
   end
 
-  it "should logout successfully" do
+  it "handles invalid authentication" do
+    OmniAuth.config.mock_auth[:twitter] = :invalid_credentials
+    visit '/auth/twitter'
+    expect(page).to have_content("Login")
+  end
+
+  it "logs out successfully" do
+    auth_mock
     visit '/auth/twitter'
     expect(page).to have_content("Logout")
 

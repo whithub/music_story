@@ -1,11 +1,12 @@
 require "rails_helper"
 
-describe 'auth user', type: :feature do
+describe 'auth user', :omniauth, type: :feature do
 
-  let(:user) { FactoryGirl.create(:user) }
-  before { sign_in user }
+  before do
+    signin
+  end
 
-  it "can view related artists" do
+  xit "can view related artists" do
     visit '/'
     fill_in "Tom Petty"  #fill_in .... with: "Tom Petty"
     click_on "Search"

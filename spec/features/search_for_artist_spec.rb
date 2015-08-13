@@ -1,20 +1,31 @@
 require "rails_helper"
 
-describe 'auth user search by artist name', type: :feature do
+describe 'Searching for an Artist', :omniauth, type: :feature do
 
-  let(:user) { FactoryGirl.create(:user) }
-  before { sign_in user }
+  context 'when authenticated' do
+    before do
+      signin
+    end
 
-  it "can search for artist by name" do
-    visit '/'
-    fill_in "Tom Petty"  #fill_in .... with: "Tom Petty"
-    click_on "Search"
+    it 'can search when on the main page' do
+      visit root_path
+      expect(page).to have_field("Search for Artist")
+    end
 
-    expect(current_path).to eq('/genres')
-    expect(page).to have_content('Tom Petty')
+    it "can search for artist by name" do
+      visit genres_path
+      fill_in "Search for Artist", with: "Tom Petty"
+      click_on "Search"
+
+      expect(current_path).to eq('/artists/Tom%20Petty')
+      expect(page).to have_content('Tom Petty')
+    end
+
+    it "shows not found when an artist doesnt exist"
+  end
+
+  context 'when not authenticated' do
+    it 'needs tests'
   end
 end
-
-#stubbing -- ignore what is normally returns, and return something else
-#ignore what is normally returned when current_user is called, and return admin (for this specific instance)
 

@@ -23,8 +23,10 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 gem 'paperclip'
 gem 'dalli'
 gem 'sidekiq'
-gem 'webmock'
 gem 'skylight'
+
+gem 'quiet_assets'
+gem 'puma'
 
 group :development, :test do
   gem 'sqlite3'
@@ -43,6 +45,7 @@ group :test do
   gem 'capybara'
   # gem 'vcr'
   # gem 'webmock'
+  gem 'shoulda-matchers'
 end
 
 group :production do

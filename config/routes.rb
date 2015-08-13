@@ -3,8 +3,9 @@ Rails.application.routes.draw do
   root 'home#index'
   get '/about',                to: 'home#about'
 
-  get 'auth/twitter',          as: :login
-  get 'auth/twitter/callback', to: 'sessions#create'
+  get '/auth/twitter',          as: :login
+  get '/auth/twitter/callback', to: 'sessions#create'
+  get '/auth/failure', to: 'sessions#failure'
   get '/logout',               to: 'sessions#destroy'
 
   resources :artists, only: [:index, :show] do
@@ -18,8 +19,4 @@ Rails.application.routes.draw do
     end
   end
 
-
 end
-
-
-

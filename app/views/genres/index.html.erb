@@ -1,5 +1,38 @@
-<%= render partial: 'home/nav' %>
+<%= render partial: 'layouts/search' %>
 
 <h3 class="center-align">Pop Artists</h3>
 
-<%= render partial: "genre"%>
+<% cache("genres-list") do %>
+  <div id="grid" class="genres">
+    <div class="row">
+      <% %w(pop blues r&b rock).each do |name| %>
+        <%= render partial: 'genre', locals: {name: name} %>
+      <% end %>
+    </div>
+
+    <div class="row">
+      <% ["country", "alternative dance", "edm", "punk"].each do |name| %>
+        <%= render partial: 'genre', locals: {name: name} %>
+      <% end %>
+    </div>
+
+    <div class="row">
+      <% ["hip hop", "metal", "funk", "easy listening"].each do |name| %>
+        <%= render partial: 'genre', locals: {name: name} %>
+      <% end %>
+    </div>
+
+    <div class="row">
+      <% ["jazz", "reggae", "disco", "freakbeat"].each do |name| %>
+        <%= render partial: 'genre', locals: {name: name} %>
+      <% end %>
+    </div>
+
+    <div class="row">
+      <% ["classical", "folk", "latin", "british invasion"].each do |name| %>
+        <%= render partial: 'genre', locals: {name: name} %>
+      <% end %>
+    </div>
+  </div>
+<% end %>
+

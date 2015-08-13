@@ -20,8 +20,10 @@
             <% if current_user %>
             <li><%= link_to 'Logout', logout_path %></li>
           <% else %>
-            <a><%= "Login:" %></a>
-            <li class='icon'><a href="<%= login_path %>" id="A_10">Twitter</a></li>
+            <li class='icon'>
+              <span><%= "Login with Twitter" %></span>
+              <a href="<%= login_path %>" id="A_10">Twitter</a>
+            </li>
           <% end %>
           </li>
           <!--<li class='icon'><a href="http://instagram.com/mikekus" id="A_11">Instagram</a></li>-->

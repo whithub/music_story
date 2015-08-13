@@ -7,6 +7,11 @@ class SessionsController < ApplicationController
     redirect_to root_path, :notice => "Welcome #{user.name}"
   end
 
+  def failure
+    flash[:alert] = "Authentication error: #{params[:message].humanize}"
+    redirect_to root_url
+  end
+
   def destroy
     session.clear
     redirect_to root_path

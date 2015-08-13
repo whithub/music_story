@@ -1,5 +1,5 @@
 class User < ActiveRecord::Base
-  validates :uid, presence: true
+  validates :uid, presence: true, uniqueness: true
   validates :name, presence: true
 
   after_create :notify_admin
@@ -9,11 +9,11 @@ class User < ActiveRecord::Base
   end
 
   def self.from_omniauth(auth_info)
-    if user = find_by(uid: auth_info.extra.raw_info.user_id)
+    if user = find_by(uid: auth_info.uid)
       user
     else
-      create({name:           auth_info.extra.raw_info.name,
-          uid:                auth_info.extra.raw_info.user_id,
+      create({name:           auth_info.info.name,
+          uid:                auth_info.uid,
           oauth_token:        auth_info.credentials.token,
           oauth_token_secret: auth_info.credentials.secret
         })

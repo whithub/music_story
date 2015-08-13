@@ -1,27 +1,28 @@
 require "rails_helper"
 
-describe 'auth user can browse genres', type: :feature do
+describe 'auth user can browse genres', :omniauth, type: :feature do
 
-  let(:user) { FactoryGirl.create(:user) }
-  before { sign_in user }
+  before do
+    signin
+  end
 
   it "can browse genres" do
     visit '/genres'
     click_on "Pop"
 
-    expect(page).to have_content('Pop Artists')
-    expect(page).to have_content('Beyonce')
+    expect(page).to have_content('Find artists that are SIMILAR to:')
+    expect(page).to have_content('Michael Jackson')
 
 
     visit '/genres'
     click_on "Blues"
 
-    expect(page).to have_content('Blues Artists')
+    expect(page).to have_content('Buddy Guy')
 
     visit '/genres'
     click_on "Country"
 
-    expect(page).to have_content('Country Artists')
+    expect(page).to have_content('Willie Nelson')
   end
 end
 
