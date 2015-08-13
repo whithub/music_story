@@ -11,6 +11,7 @@
 html, body {
   margin: 0;
   padding: 0;
+  background-color: #F1F1F1;
 }
 
 
@@ -46,6 +47,8 @@ ul.block-grid li {
   span {
     text-align: center;
     display: block;
+    padding-top: 12px;
+    padding-bottom: 40px;
   }
 }
 
@@ -58,10 +61,27 @@ ul.block-grid li {
 }
 
 .artist-details {
+  @include span-columns(12);
+  padding-bottom: 20px;
+  border-bottom: 2px solid #CCC;
+  margin-bottom: 20px;
 
   header {
-    h2 { @include span-columns(8) }
-    a { @include span-columns(4) }
+    h2 {
+      @include span-columns(7);
+      font-size: 42px;
+      font-weight: bold;
+      color: #333;
+      text-shadow: 1px 0px 1px #FFF;
+    }
+    /* form { @include span-columns(2) } */
+    form { display: inline-block; }
+    /* a { @include span-columns(3) } */
+    .buttons { text-align: right; padding-top: 5px; }
+  }
+  img {
+    box-shadow: 1px 1px 7px #333;
+    border: 12px solid #FFF;
   }
 
   .details {
@@ -86,6 +106,11 @@ ul.block-grid li {
   .biography {
     @include span-columns(5);
   }
+}
+
+.artist-videos img {
+  box-shadow: 1px 1px 7px #333;
+  border: 12px solid #FFF;
 }
 
 .home-page-image {

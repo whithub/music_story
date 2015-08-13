@@ -1,8 +1,17 @@
 <section class="artist-details">
+  <header>
+    <h2 class="page-title"><%= @artist.name %></h2>
+
+    <div class="buttons">
+      <% if current_user.likes.where(artist_name: @artist.name).count > 0 %>
+        <p>Already Liked</p>
+      <% else %>
+        <%= render partial: 'like_form', locals: {artist_name: @artist.name, found_through: params[:found_through]} %>
+      <% end %>
+      <%= link_to "Find similiar artists to #{@artist.name}", artist_similar_artists_path(@artist.name), class: 'button big search icon' %>
+    </div>
+  </header>
   <% cache("#{@artist.name}-artist-details") do %>
-    <header>
-      <h2 class="page-title"><%= @artist.name %></h2>
-    </header>
     <div class="details">
       <div class="hero">
         <%= image_tag(@artist_images.first.url, class: 'main-artist-image') %>
@@ -14,19 +23,12 @@
 
     </div>
   <% end %>
-
-  <% if current_user.likes.where(artist_name: @artist.name).count > 0 %>
-    <p>Already Liked</p>
-  <% else %>
-    <%= render partial: 'like_form', locals: {artist_name: @artist.name, found_through: params[:found_through]} %>
-  <% end %>
 </section>
 
 <% cache("#{@artist.name}-artist-videos") do %>
   <section class="artist-videos">
     <header>
-      <h2 class="page-title"><%= @artist.name %> Videos</h2>
-      <%= link_to "Find similiar artists to #{@artist.name}", artist_similar_artists_path(@artist.name), class: 'button search icon' %>
+      <h2 class="page-title"><%= @artist.name %> Music Videos</h2>
     </header>
     <ul class="block-grid">
       <% @videos.each do |video| %>
