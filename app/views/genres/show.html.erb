@@ -1,8 +1,6 @@
 <h2 class="page-title">Find artists that are <strong>SIMILAR</strong> to:</h2>
-<% cache("genre-#{params[:id]}") do %>
-  <ul class="block-grid">
-    <% @artists.each do |artist| %>
-      <%= render partial: 'artists/artist_entry', locals: {artist: artist, found_through: params[:id]} %>
-    <% end %>
-  </ul>
-<% end %>
+<ul class="block-grid">
+  <% @artists.each do |artist| %>
+    <%= render partial: 'artists/artist_entry', locals: {artist: artist, found_through: params[:id]} %>
+  <% end %>
+</ul>
