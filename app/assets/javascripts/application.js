@@ -24,7 +24,7 @@ jQuery(document).ready(function() {
       url: $genre_link.attr('href'),
       dataType: 'html',
       success: function(data) {
-        $('#grid').html(data);
+        $('body > .content').html(data);
       },
       error: function() {
         alert('an error occurred. maybe an api limit.');

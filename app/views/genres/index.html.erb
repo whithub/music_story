@@ -1,38 +1,28 @@
 <%= render partial: 'layouts/search' %>
 
-<h3 class="center-align">Pop Artists</h3>
+<h2 class="page-title">Select a genre below</h3>
 
 <% cache("genres-list") do %>
-  <div id="grid" class="genres">
-    <div class="row">
-      <% %w(pop blues r&b rock).each do |name| %>
-        <%= render partial: 'genre', locals: {name: name} %>
-      <% end %>
-    </div>
+  <ul class='block-grid genres'>
+    <% %w(pop blues r&b rock).each do |name| %>
+      <%= render partial: 'genre', locals: {name: name} %>
+    <% end %>
 
-    <div class="row">
-      <% ["country", "alternative dance", "edm", "punk"].each do |name| %>
-        <%= render partial: 'genre', locals: {name: name} %>
-      <% end %>
-    </div>
+    <% ["country", "alternative dance", "edm", "punk"].each do |name| %>
+      <%= render partial: 'genre', locals: {name: name} %>
+    <% end %>
 
-    <div class="row">
-      <% ["hip hop", "metal", "funk", "easy listening"].each do |name| %>
-        <%= render partial: 'genre', locals: {name: name} %>
-      <% end %>
-    </div>
+    <% ["hip hop", "metal", "funk", "easy listening"].each do |name| %>
+      <%= render partial: 'genre', locals: {name: name} %>
+    <% end %>
 
-    <div class="row">
-      <% ["jazz", "reggae", "disco", "freakbeat"].each do |name| %>
-        <%= render partial: 'genre', locals: {name: name} %>
-      <% end %>
-    </div>
+    <% ["jazz", "reggae", "disco", "freakbeat"].each do |name| %>
+      <%= render partial: 'genre', locals: {name: name} %>
+    <% end %>
 
-    <div class="row">
-      <% ["classical", "folk", "latin", "british invasion"].each do |name| %>
-        <%= render partial: 'genre', locals: {name: name} %>
-      <% end %>
-    </div>
-  </div>
+    <% ["classical", "folk", "latin", "british invasion"].each do |name| %>
+      <%= render partial: 'genre', locals: {name: name} %>
+    <% end %>
+  </ul>
 <% end %>
 

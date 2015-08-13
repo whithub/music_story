@@ -28,6 +28,9 @@ gem 'skylight'
 gem 'quiet_assets'
 gem 'puma'
 
+gem 'bourbon'
+gem 'neat'
+
 group :development, :test do
   gem 'sqlite3'
   gem 'web-console', '~> 2.0'

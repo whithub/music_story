@@ -1,13 +1,21 @@
 <h1><%= current_user.name %>'s Profile</h1>
 
-<h3>Liked Artists</h3>
-<p>Find more artists?</p>
+<h2>Find more artists?</h2>
 <%= render partial: 'layouts/search' %>
-<ul id='liked-artists'>
-  <% current_user.likes.order('artist_name ASC').each do |like| %>
-    <li>
-      <%= like.artist_name %> (found through <%= like.found_through.titleize %>)
-      <%= link_to 'Remove', like_path(like), method: :delete, data: {confirm: 'Are you sure?'} %>
-    </li>
-  <% end %>
-</ul>
+
+<section class="liked-artists">
+  <h2>Liked Artists</h3>
+
+  <table>
+    <% current_user.likes.order('artist_name ASC').each do |like| %>
+      <tr>
+        <td>
+          <%= like.artist_name %> (found through <%= like.found_through.titleize %>)
+        </td>
+        <td class="action">
+          <%= link_to 'Remove', like_path(like), method: :delete, data: {confirm: 'Are you sure?'}, class: 'button trash danger' %>
+        </td>
+      </tr>
+    <% end %>
+  </table>
+</section>

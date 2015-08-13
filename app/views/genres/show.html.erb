@@ -1,17 +1,8 @@
-<h1>Find artists that are <strong>SIMILAR</strong> to:</h1>
+<h2 class="page-title">Find artists that are <strong>SIMILAR</strong> to:</h2>
 <% cache("genre-#{params[:id]}") do %>
-  <div id="grid">
-    <div class="row">
-      <ul>
-        <% @artists.each do |artist| %>
-          <div class="col-lg-3" class="related_artist">
-            <li>
-              <%= link_to image_tag(Echowrap.artist_images(name: artist.name).last.url, :class => 'img-rounded', :size => '300x300'), artist_path(artist.name) %>
-              <%= link_to artist.name, artist_path(artist.name, found_through: params[:id]) %>
-            </li>
-          </div>
-        <% end %>
-      </ul>
-    </div>
-  </div>
+  <ul class="block-grid">
+    <% @artists.each do |artist| %>
+      <%= render partial: 'artists/artist_entry', locals: {artist: artist, found_through: params[:id]} %>
+    <% end %>
+  </ul>
 <% end %>

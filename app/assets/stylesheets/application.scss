@@ -1,0 +1,127 @@
+@import "bourbon";
+@import "neat";
+
+@import 'fonts';
+@import 'flash';
+@import 'search';
+@import 'navigation';
+@import 'github_buttons';
+
+
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+
+header.navigation {
+  margin-bottom: 50px;
+}
+
+.content {
+  @include outer-container;
+}
+
+.page-title {
+  @include span-columns(12);
+  font-size: 32px;
+  text-shadow: 1px 1px 3px #FFF;
+  padding-bottom: 20px;
+  /* @include omega; */
+}
+
+
+ul.block-grid {
+  @include outer-container;
+}
+ul.block-grid li {
+  @include span-columns(3);
+  @include omega(4n);
+
+  img {
+    width: 243px;
+    height: 243px;
+  }
+
+  span {
+    text-align: center;
+    display: block;
+  }
+}
+
+.form-search {
+  @include span-columns(6);
+  @include shift(3);
+  @include omega;
+
+  padding: 20px 0;
+}
+
+.artist-details {
+
+  header {
+    h2 { @include span-columns(8) }
+    a { @include span-columns(4) }
+  }
+
+  .details {
+    @include span-columns(12);
+    img {
+      width: 100%;
+    }
+
+    .hero {
+      @include span-columns(8);
+      img { height: 476px; }
+    }
+
+    .secondary {
+      @include span-columns(4);
+      img {
+        height: 236px;
+      }
+    }
+  }
+
+  .biography {
+    @include span-columns(5);
+  }
+}
+
+.home-page-image {
+  background: image-url('music_1.jpg') no-repeat center;
+  min-height: 800px;
+  height: 100%;
+  padding-top: 50px;
+
+  @include span-columns(12);
+  .layover {
+    background: rgba(255,255,255,0.85);
+    margin: 100px 0;
+    padding: 50px;
+  }
+}
+
+
+.similar-artists-image {
+  background: image-url('music_4.jpg') no-repeat center;
+  min-height: 800px;
+  padding-top: 50px;
+
+  @include span-columns(12);
+  .layover {
+    background: rgba(255,255,255,0.85);
+    margin: 100px 0;
+    /* padding: 50px 0; */
+    /* @include span-columns(12); */
+    @include pad;
+  }
+}
+
+.liked-artists {
+  @include span-columns(12);
+
+  table { width: 100%; }
+  td.action { width: 100px; }
+  td { padding: 6px 0; }
+}

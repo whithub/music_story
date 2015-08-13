@@ -13,8 +13,8 @@ class ArtistsController < ApplicationController
   def show
     @artist           = Echowrap.artist_search(name: params[:id]).first
     @artist_images    = Echowrap.artist_images(name: @artist.name)
-    @artist_bio       = Echowrap.artist_biographies(name: @artist.name).first
-    @videos           = Echowrap.artist_video(name: @artist.name).sample(4)
+    # @artist_bio       = Echowrap.artist_biographies(name: @artist.name).last
+    @videos           = Echowrap.artist_video(name: @artist.name, results: 8)
     # @websites         = Echowrap.artist_urls(name: @artist.name)
     # @twitter          = Echowrap.artist_twitter(name: @artist.name).twitter
     # @similar_artists  = Echowrap.artist_similar(    name: @artist.name, results: 6)

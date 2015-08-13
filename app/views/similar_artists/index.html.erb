@@ -1,35 +1,13 @@
-<h1>Here are some similar artists to &ldquo;<%= params[:artist_id] %>&rdquo;</h1>
+<% cache("#{params[:artist_id]}-similar-artists") do %>
+  <div class="similar-artists-image">
+    <div class="layover">
+      <div class="page-title">Here are some similar artists to &ldquo;<%= params[:artist_id] %>&rdquo;</div>
 
-<div id="grid">
-  <div class="row">
-    <ul>
-      <% @similar_artists.each do |artist| %>
-        <div class="col-lg-3" id="related_artists">
-          <li>
-            <%= link_to image_tag(Echowrap.artist_images(name: artist.name).last.url, :class => 'img-rounded', :size => '300x300'), artist_path(artist.name) %></li>
-          <li><%= link_to artist.name, artist_path(artist.name, found_through: params[:artist_id]) %>
-          </li>
-        </div>
-      <% end %>
-      <!--<%# if @artists != nil %>-->
-      <!--<%# @artists.each do |artist| %>-->
-      <!--<div class="col-lg-4" id="related_artists">-->
-      <!--<li>-->
-      <!--<%#= link_to image_tag(Echowrap.artist_images(name: artist.name).last.url, :class => 'img-circle', :size => '120x120'), artist_path(artist.name) %>-->
-      <!--<%#= link_to artist.name, artist_path(artist.name), :style => 'color:white;' %>-->
-      <!--</li>-->
-      <!--</div>-->
-      <!--<%# end %>-->
-      <!--<%# else %>-->
-      <!--<%# @spotify_artists.each do |artist| %>-->
-      <!--<div class="col-lg-4" id="related_artists">-->
-      <!--<li>-->
-      <!--<%#= link_to image_tag(artist.images.last['url'], :class => 'img-circle', :size => '120x120'), artist_path(artist.name) %>-->
-      <!--<%#= link_to artist.name, artist_path(artist.name), :style => 'color:white;' %>-->
-      <!--</li>-->
-      <!--</div>-->
-      <!--<%# end %>-->
-      <!--<%# end %>-->
-    </ul>
+      <ul class='block-grid'>
+        <% @similar_artists.each do |artist| %>
+          <%= render partial: 'artists/artist_entry', locals: {artist: artist, found_through: params[:artist_id]} %>
+        <% end %>
+      </ul>
+    </div>
   </div>
-</div>
+<% end %>

@@ -1,0 +1,6 @@
+<li>
+  <%= link_to artist_path(artist.name, found_through: found_through) do %>
+    <%= image_tag(Echowrap.artist_images(name: artist.name, results: 1).last.url) %>
+    <span><%= artist.name %></span>
+  <% end %>
+</li>

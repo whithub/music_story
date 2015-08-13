@@ -19,7 +19,7 @@ http_interactions:
       message: OK
     headers:
       Date:
-      - Thu, 13 Aug 2015 05:15:40 GMT
+      - Thu, 13 Aug 2015 13:34:04 GMT
       Content-Type:
       - application/json; charset=utf-8
       Transfer-Encoding:
@@ -29,11 +29,11 @@ http_interactions:
       Vary:
       - Accept-Encoding
       X-Request-Id:
-      - s7CGlYH5TsWiTWJD25MBgg
+      - xXGdbF3KSOu2fAlTQw93wA
       X-Worker-Node:
-      - 94800:379
+      - 8d4ce:24791
       X-Ratelimit-Remaining:
-      - '119'
+      - '96'
       Server:
       - TornadoServer/3.1
       X-Ratelimit-Limit:
@@ -45,7 +45,7 @@ http_interactions:
       Access-Control-Allow-Origin:
       - "*"
       X-Ratelimit-Used:
-      - '1'
+      - '24'
     body:
       encoding: ASCII-8BIT
       string: '{"response": {"status": {"version": "4.2", "code": 0, "message": "Success"},
@@ -55,10 +55,10 @@ http_interactions:
         "name": "Tom Petty Tribute Band"}, {"id": "ARZEIRJ14D10877EDA", "name": "Tom
         Petty&Jeff Lynne"}]}}'
     http_version: 
-  recorded_at: Thu, 13 Aug 2015 05:15:39 GMT
+  recorded_at: Thu, 13 Aug 2015 13:34:04 GMT
 - request:
     method: get
-    uri: http://developer.echonest.com/api/v4/artist/similar?api_key=BTF9TL31AHYRWPWPZ&name=Tom%20Petty&results=4
+    uri: http://developer.echonest.com/api/v4/artist/similar?api_key=BTF9TL31AHYRWPWPZ&name=Tom%20Petty&results=8
     body:
       encoding: US-ASCII
       string: ''
@@ -75,7 +75,7 @@ http_interactions:
       message: OK
     headers:
       Date:
-      - Thu, 13 Aug 2015 05:15:40 GMT
+      - Thu, 13 Aug 2015 13:34:04 GMT
       Content-Type:
       - application/json; charset=utf-8
       Transfer-Encoding:
@@ -85,11 +85,11 @@ http_interactions:
       Vary:
       - Accept-Encoding
       X-Request-Id:
-      - CP3Jh0izTLeIYpiASHeHZA
+      - ywt+CZKjR++k0yml8CReIA
       X-Worker-Node:
-      - 203d7:10527
+      - 89a7b:24485
       X-Ratelimit-Remaining:
-      - '118'
+      - '95'
       Server:
       - TornadoServer/3.1
       X-Ratelimit-Limit:
@@ -101,18 +101,21 @@ http_interactions:
       Access-Control-Allow-Origin:
       - "*"
       X-Ratelimit-Used:
-      - '2'
+      - '25'
     body:
       encoding: ASCII-8BIT
       string: '{"response": {"status": {"version": "4.2", "code": 0, "message": "Success"},
         "artists": [{"id": "ARF4L041187FB4D318", "name": "Tom Petty and The Heartbreakers"},
         {"id": "ARKDEKZ119B34033AE", "name": "Mudcrutch"}, {"id": "AR91C8S1187B990901",
-        "name": "Bruce Springsteen"}, {"id": "ARYVGP31187B9A531A", "name": "John Mellencamp"}]}}'
+        "name": "Bruce Springsteen"}, {"id": "ARYVGP31187B9A531A", "name": "John Mellencamp"},
+        {"id": "ARNSS0D1187FB52AAD", "name": "Traveling Wilburys"}, {"id": "ARDZQ5U1187B9ADEAE",
+        "name": "John Fogerty"}, {"id": "ARJ45QE1187FB423B8", "name": "Bob Seger"},
+        {"id": "AR5FP401187FB523C9", "name": "Bob Dylan"}]}}'
     http_version: 
-  recorded_at: Thu, 13 Aug 2015 05:15:39 GMT
+  recorded_at: Thu, 13 Aug 2015 13:34:04 GMT
 - request:
     method: get
-    uri: http://developer.echonest.com/api/v4/artist/images?api_key=BTF9TL31AHYRWPWPZ&name=Tom%20Petty%20and%20The%20Heartbreakers
+    uri: http://developer.echonest.com/api/v4/artist/images?api_key=BTF9TL31AHYRWPWPZ&name=Tom%20Petty%20and%20The%20Heartbreakers&results=1
     body:
       encoding: US-ASCII
       string: ''
@@ -129,7 +132,7 @@ http_interactions:
       message: OK
     headers:
       Date:
-      - Thu, 13 Aug 2015 05:15:41 GMT
+      - Thu, 13 Aug 2015 13:34:04 GMT
       Content-Type:
       - application/json; charset=utf-8
       Transfer-Encoding:
@@ -139,11 +142,11 @@ http_interactions:
       Vary:
       - Accept-Encoding
       X-Request-Id:
-      - BJqYDvYNQvSsBTIdTdl2GQ
+      - KnaN5VS/R+qul9RA7TqRVg
       X-Worker-Node:
-      - 8d4ce:11635
+      - 94800:25039
       X-Ratelimit-Remaining:
-      - '117'
+      - '94'
       Server:
       - TornadoServer/3.1
       X-Ratelimit-Limit:
@@ -155,61 +158,19 @@ http_interactions:
       Access-Control-Allow-Origin:
       - "*"
       X-Ratelimit-Used:
-      - '3'
+      - '26'
     body:
       encoding: ASCII-8BIT
       string: '{"response": {"status": {"version": "4.2", "code": 0, "message": "Success"},
         "start": 0, "total": 73, "images": [{"url": "http://upload.wikimedia.org/wikipedia/commons/d/d7/Tompetty_indy.jpg",
         "tags": [], "width": 1024, "height": 680, "aspect_ratio": 1.5058823529411764,
         "verified": false, "license": {"type": "cc-by", "attribution": "KEN", "url":
-        "http://upload.wikimedia.org/wikipedia/commons/d/d7/Tompetty_indy.jpg"}},
-        {"url": "http://upload.wikimedia.org/wikipedia/commons/d/de/Tom_Petty_Walk_of_Fame.JPG",
-        "tags": [], "width": 1034, "height": 982, "aspect_ratio": 1.0529531568228105,
-        "verified": false, "license": {"type": "cc-by", "attribution": "Aavindraa",
-        "url": "http://upload.wikimedia.org/wikipedia/commons/d/de/Tom_Petty_Walk_of_Fame.JPG"}},
-        {"url": "http://userserve-ak.last.fm/serve/_/76526.jpg", "tags": [], "verified":
-        false, "license": {"type": "unknown", "attribution": "last.fm", "url": "http://userserve-ak.last.fm/serve/_/76526.jpg"}},
-        {"url": "http://userserve-ak.last.fm/serve/500/40584855/Tom+Petty+and+the+Heartbreakers+TomPettyTheHeartbreakers.png",
-        "tags": [], "verified": false, "license": {"type": "unknown", "attribution":
-        "n/a", "url": "http://www.last.fm/music/Tom+Petty+and+the+Heartbreakers/+images"}},
-        {"url": "http://userserve-ak.last.fm/serve/_/44527243/Tom+Petty+and+the+Heartbreakers+Tom+Petty+at+Bonnaroo++2006++2.jpg",
-        "tags": [], "verified": false, "license": {"type": "unknown", "attribution":
-        "n/a", "url": "http://www.last.fm/music/Tom+Petty+and+the+Heartbreakers/+images"}},
-        {"url": "http://userserve-ak.last.fm/serve/500/38166935/Tom+Petty+and+the+Heartbreakers+Tom+Petty++The+Heartbreakers.jpg",
-        "tags": [], "verified": false, "license": {"type": "unknown", "attribution":
-        "last.fm", "url": "http://www.last.fm/music/Tom+Petty+and+the+Heartbreakers/+images"}},
-        {"url": "http://userserve-ak.last.fm/serve/_/44527177/Tom+Petty+and+the+Heartbreakers+Tom+Petty+21.jpg",
-        "tags": [], "verified": false, "license": {"type": "unknown", "attribution":
-        "n/a", "url": "http://www.last.fm/music/Tom+Petty+and+the+Heartbreakers/+images"}},
-        {"url": "http://userserve-ak.last.fm/serve/_/48011339/Tom+Petty+and+the+Heartbreakers+Tom+Petty++The+Heartbreakers.jpg",
-        "tags": [], "verified": false, "license": {"type": "unknown", "attribution":
-        "n/a", "url": "http://www.last.fm/music/Tom+Petty+and+the+Heartbreakers/+images"}},
-        {"url": "http://userserve-ak.last.fm/serve/500/48454005/Tom+Petty+and+the+Heartbreakers+6a00d8341c58f853ef0133ef9ea163.jpg",
-        "tags": [], "verified": false, "license": {"type": "unknown", "attribution":
-        "n/a", "url": "http://www.last.fm/music/Tom+Petty+and+the+Heartbreakers/+images"}},
-        {"url": "http://userserve-ak.last.fm/serve/_/58198191/Tom+Petty+and+the+Heartbreakers+into+the+great+wide+open.jpg",
-        "tags": [], "verified": false, "license": {"type": "unknown", "attribution":
-        "last.fm", "url": "http://www.last.fm/music/Tom+Petty+and+the+Heartbreakers/+images"}},
-        {"url": "http://userserve-ak.last.fm/serve/_/14762875/Tom+Petty+and+the+Heartbreakers+TomPettyAndTheHeartbreakers2.jpg",
-        "tags": [], "verified": false, "license": {"type": "unknown", "attribution":
-        "last.fm", "url": "http://www.last.fm/music/Tom+Petty+and+the+Heartbreakers/+images"}},
-        {"url": "http://userserve-ak.last.fm/serve/_/21592215/Tom+Petty+and+the+Heartbreakers+tphb.jpg",
-        "tags": [], "verified": false, "license": {"type": "unknown", "attribution":
-        "last.fm", "url": "http://www.last.fm/music/Tom+Petty+and+the+Heartbreakers/+images"}},
-        {"url": "http://userserve-ak.last.fm/serve/_/48454031/Tom+Petty+and+the+Heartbreakers+342010102045.jpg",
-        "tags": [], "verified": false, "license": {"type": "unknown", "attribution":
-        "last.fm", "url": "http://www.last.fm/music/Tom+Petty+and+the+Heartbreakers/+images"}},
-        {"url": "http://userserve-ak.last.fm/serve/500/40584811/Tom+Petty+and+the+Heartbreakers+TPTheHeartbreakers.png",
-        "tags": [], "verified": false, "license": {"type": "unknown", "attribution":
-        "last.fm", "url": "http://www.last.fm/music/Tom+Petty+and+the+Heartbreakers/+images"}},
-        {"url": "http://userserve-ak.last.fm/serve/500/3548064/Tom+Petty+and+the+Heartbreakers+FIXEDHEARTBREAKERS.jpg",
-        "tags": [], "verified": false, "license": {"type": "unknown", "attribution":
-        "last.fm", "url": "http://www.last.fm/music/Tom+Petty+and+the+Heartbreakers/+images"}}]}}'
+        "http://upload.wikimedia.org/wikipedia/commons/d/d7/Tompetty_indy.jpg"}}]}}'
     http_version: 
-  recorded_at: Thu, 13 Aug 2015 05:15:40 GMT
+  recorded_at: Thu, 13 Aug 2015 13:34:04 GMT
 - request:
     method: get
-    uri: http://developer.echonest.com/api/v4/artist/images?api_key=BTF9TL31AHYRWPWPZ&name=Mudcrutch
+    uri: http://developer.echonest.com/api/v4/artist/images?api_key=BTF9TL31AHYRWPWPZ&name=Mudcrutch&results=1
     body:
       encoding: US-ASCII
       string: ''
@@ -226,7 +187,7 @@ http_interactions:
       message: OK
     headers:
       Date:
-      - Thu, 13 Aug 2015 05:15:41 GMT
+      - Thu, 13 Aug 2015 13:34:04 GMT
       Content-Type:
       - application/json; charset=utf-8
       Transfer-Encoding:
@@ -236,11 +197,11 @@ http_interactions:
       Vary:
       - Accept-Encoding
       X-Request-Id:
-      - pKKtjC1rT0WzKzsVeTsboA
+      - "+iYQBwQKTDyEMbK/v3/OLQ"
       X-Worker-Node:
-      - b6334:31338
+      - f61bc:18066
       X-Ratelimit-Remaining:
-      - '116'
+      - '93'
       Server:
       - TornadoServer/3.1
       X-Ratelimit-Limit:
@@ -252,63 +213,19 @@ http_interactions:
       Access-Control-Allow-Origin:
       - "*"
       X-Ratelimit-Used:
-      - '4'
+      - '27'
     body:
       encoding: ASCII-8BIT
       string: '{"response": {"status": {"version": "4.2", "code": 0, "message": "Success"},
         "start": 0, "total": 19, "images": [{"url": "http://upload.wikimedia.org/wikipedia/en/7/77/Campbell_autograph.jpg",
         "tags": [], "width": 1056, "height": 972, "aspect_ratio": 1.0864197530864197,
         "verified": false, "license": {"type": "cc-by", "attribution": "Mudcrutch
-        (talk | contribs)", "url": "http://upload.wikimedia.org/wikipedia/en/7/77/Campbell_autograph.jpg"}},
-        {"url": "http://upload.wikimedia.org/wikipedia/en/thumb/7/77/Campbell_autograph.jpg/651px-Campbell_autograph.jpg",
-        "tags": [], "width": 651, "height": 599, "aspect_ratio": 1.0868113522537564,
-        "verified": false, "license": {"type": "cc-by", "attribution": "Mudcrutch
-        (talk | contribs)", "url": "http://en.wikipedia.org/wiki/File:Campbell_autograph.jpg"}},
-        {"url": "http://userserve-ak.last.fm/serve/_/2142736.jpg", "tags": [], "verified":
-        false, "license": {"type": "unknown", "attribution": "n/a", "url": "http://userserve-ak.last.fm/serve/_/2142736.jpg#flat_doc"}},
-        {"url": "http://upload.wikimedia.org/wikipedia/en/f/fa/Mudcrutch.jpg", "tags":
-        [], "width": 400, "height": 341, "aspect_ratio": 1.1730205278592376, "verified":
-        false, "license": {"type": "all-rights-reserved", "attribution": "Feeling
-        free (talk | contribs)", "url": "http://upload.wikimedia.org/wikipedia/en/f/fa/Mudcrutch.jpg"}},
-        {"url": "http://userserve-ak.last.fm/serve/500/15685779/Mudcrutch+2469176858_ef639d28fa_o.jpg",
-        "tags": [], "width": 500, "height": 375, "aspect_ratio": 1.3333333333333333,
-        "verified": false, "license": {"type": "cc-by-sa", "attribution": "Lira_Joggi",
-        "url": "www.last.fm/user/Lira_Joggi"}}, {"url": "http://userserve-ak.last.fm/serve/_/34495723/Mudcrutch+crutch2.jpg",
-        "tags": [], "width": 500, "height": 280, "aspect_ratio": 1.7857142857142858,
-        "verified": false, "license": {"type": "cc-by-sa", "attribution": "RocknRollGirl93",
-        "url": "www.last.fm/user/RocknRollGirl93"}}, {"url": "http://userserve-ak.last.fm/serve/500/47107447/Mudcrutch+mudcruch65.jpg",
-        "tags": [], "width": 500, "height": 288, "aspect_ratio": 1.7361111111111112,
-        "verified": false, "license": {"type": "cc-by-sa", "attribution": "JulieCanFlyy",
-        "url": "www.last.fm/user/JulieCanFlyy"}}, {"url": "http://userserve-ak.last.fm/serve/500/34495839/Mudcrutch.jpg",
-        "tags": [], "width": 500, "height": 275, "aspect_ratio": 1.8181818181818181,
-        "verified": false, "license": {"type": "cc-by-sa", "attribution": "RocknRollGirl93",
-        "url": "www.last.fm/user/RocknRollGirl93"}}, {"url": "http://userserve-ak.last.fm/serve/500/15685871/Mudcrutch+_album_large3.jpg",
-        "tags": [], "width": 500, "height": 445, "aspect_ratio": 1.1235955056179776,
-        "verified": false, "license": {"type": "cc-by-sa", "attribution": "Lira_Joggi",
-        "url": "www.last.fm/user/Lira_Joggi"}}, {"url": "http://userserve-ak.last.fm/serve/_/15686061/Mudcrutch++Early.jpg",
-        "tags": [], "width": 400, "height": 320, "aspect_ratio": 1.25, "verified":
-        false, "license": {"type": "cc-by-sa", "attribution": "Lira_Joggi", "url":
-        "www.last.fm/user/Lira_Joggi"}}, {"url": "http://userserve-ak.last.fm/serve/_/34495783/Mudcrutch+tom_petty_revives.jpg",
-        "tags": [], "width": 450, "height": 305, "aspect_ratio": 1.4754098360655739,
-        "verified": false, "license": {"type": "cc-by-sa", "attribution": "RocknRollGirl93",
-        "url": "www.last.fm/user/RocknRollGirl93"}}, {"url": "http://userserve-ak.last.fm/serve/_/4976945/Mudcrutch+6.jpg",
-        "tags": [], "width": 369, "height": 249, "aspect_ratio": 1.4819277108433735,
-        "verified": false, "license": {"type": "cc-by-sa", "attribution": "Rust1978",
-        "url": "www.last.fm/user/Rust1978"}}, {"url": "http://userserve-ak.last.fm/serve/_/9623117/Mudcrutch.jpg",
-        "tags": [], "width": 340, "height": 300, "aspect_ratio": 1.1333333333333333,
-        "verified": false, "license": {"type": "cc-by-sa", "attribution": "peach-cooler",
-        "url": "www.last.fm/user/peach-cooler"}}, {"url": "http://userserve-ak.last.fm/serve/_/5526184/Mudcrutch.jpg",
-        "tags": [], "width": 400, "height": 341, "aspect_ratio": 1.1730205278592376,
-        "verified": false, "license": {"type": "cc-by-sa", "attribution": "Woorcy",
-        "url": "www.last.fm/user/Woorcy"}}, {"url": "http://a2.ec-images.myspacecdn.com/profile01/114/128e6a4435784262a568d5d9aee62e3d/p.jpg",
-        "tags": [], "width": 170, "height": 176, "aspect_ratio": 0.9659090909090909,
-        "verified": false, "license": {"type": "all-rights-reserved", "attribution":
-        "myspace", "url": "http://a2.ec-images.myspacecdn.com/profile01/114/128e6a4435784262a568d5d9aee62e3d/p.jpg"}}]}}'
+        (talk | contribs)", "url": "http://upload.wikimedia.org/wikipedia/en/7/77/Campbell_autograph.jpg"}}]}}'
     http_version: 
-  recorded_at: Thu, 13 Aug 2015 05:15:40 GMT
+  recorded_at: Thu, 13 Aug 2015 13:34:04 GMT
 - request:
     method: get
-    uri: http://developer.echonest.com/api/v4/artist/images?api_key=BTF9TL31AHYRWPWPZ&name=Bruce%20Springsteen
+    uri: http://developer.echonest.com/api/v4/artist/images?api_key=BTF9TL31AHYRWPWPZ&name=Bruce%20Springsteen&results=1
     body:
       encoding: US-ASCII
       string: ''
@@ -325,7 +242,7 @@ http_interactions:
       message: OK
     headers:
       Date:
-      - Thu, 13 Aug 2015 05:15:41 GMT
+      - Thu, 13 Aug 2015 13:34:04 GMT
       Content-Type:
       - application/json; charset=utf-8
       Transfer-Encoding:
@@ -335,11 +252,11 @@ http_interactions:
       Vary:
       - Accept-Encoding
       X-Request-Id:
-      - y2lSvKsnTSSoDDfT1aLtUw
+      - 8A7xbDX0S6SbrgnmleDUwA
       X-Worker-Node:
-      - 77db3:31856
+      - 203d7:8397
       X-Ratelimit-Remaining:
-      - '115'
+      - '92'
       Server:
       - TornadoServer/3.1
       X-Ratelimit-Limit:
@@ -351,61 +268,19 @@ http_interactions:
       Access-Control-Allow-Origin:
       - "*"
       X-Ratelimit-Used:
-      - '5'
+      - '28'
     body:
       encoding: ASCII-8BIT
       string: '{"response": {"status": {"version": "4.2", "code": 0, "message": "Success"},
         "start": 0, "total": 149, "images": [{"url": "http://upload.wikimedia.org/wikipedia/commons/7/73/Kennedy_Center_honorees_2009_WhiteHouse_Photo.jpg",
         "tags": [], "width": 560, "height": 373, "aspect_ratio": 1.5013404825737264,
         "verified": false, "license": {"type": "public-domain", "attribution": "Nesnad",
-        "url": "http://upload.wikimedia.org/wikipedia/commons/7/73/Kennedy_Center_honorees_2009_WhiteHouse_Photo.jpg"}},
-        {"url": "http://upload.wikimedia.org/wikipedia/commons/5/5d/Bruce_Springsteen_Milan_2006_05_12.jpg",
-        "tags": [], "width": 2048, "height": 1536, "aspect_ratio": 1.3333333333333333,
-        "verified": false, "license": {"type": "cc-by", "attribution": "Absturz~commonswiki",
-        "url": "http://upload.wikimedia.org/wikipedia/commons/5/5d/Bruce_Springsteen_Milan_2006_05_12.jpg"}},
-        {"url": "http://upload.wikimedia.org/wikipedia/commons/thumb/7/7d/Bundesarchiv_Bild_183-1988-0719-38%2C_Bruce_Springsteen%2C_Konzert_in_der_DDR.jpg/379px-Bundesarchiv_Bild_183-1988-0719-38%2C_Bruce_Springsteen%2C_Konzert_in_der_DDR.jpg",
-        "tags": [], "width": 379, "height": 599, "aspect_ratio": 0.6327212020033389,
-        "verified": false, "license": {"type": "unknown", "attribution": "Uhlemann,
-        Thomas", "url": "http://commons.wikimedia.org/wiki/File:Bundesarchiv_Bild_183-1988-0719-38,_Bruce_Springsteen,_Konzert_in_der_DDR.jpg"}},
-        {"url": "http://userserve-ak.last.fm/serve/_/275102.jpg", "tags": [], "verified":
-        false, "license": {"type": "unknown", "attribution": "last.fm", "url": "http://userserve-ak.last.fm/serve/_/275102.jpg"}},
-        {"url": "http://upload.wikimedia.org/wikipedia/commons/c/c8/20081102Bruce_Springsteen_and_family_greet_Barack_Obama_and_family.JPG",
-        "tags": [], "width": 3072, "height": 2304, "aspect_ratio": 1.3333333333333333,
-        "verified": false, "license": {"type": "cc-by-sa", "attribution": "File Upload
-        Bot (Magnus Manske)", "url": "http://upload.wikimedia.org/wikipedia/commons/c/c8/20081102Bruce_Springsteen_and_family_greet_Barack_Obama_and_family.JPG"}},
-        {"url": "http://userserve-ak.last.fm/serve/_/307931.jpg", "tags": [], "verified":
-        false, "license": {"type": "unknown", "attribution": "last.fm", "url": "http://userserve-ak.last.fm/serve/_/307931.jpg"}},
-        {"url": "http://userserve-ak.last.fm/serve/_/110548.jpg", "tags": [], "verified":
-        false, "license": {"type": "unknown", "attribution": "last.fm", "url": "http://userserve-ak.last.fm/serve/_/110548.jpg"}},
-        {"url": "http://userserve-ak.last.fm/serve/_/27773.jpg", "tags": [], "verified":
-        false, "license": {"type": "unknown", "attribution": "last.fm", "url": "http://userserve-ak.last.fm/serve/_/27773.jpg"}},
-        {"url": "http://userserve-ak.last.fm/serve/_/797379.jpg", "tags": [], "verified":
-        false, "license": {"type": "unknown", "attribution": "last.fm", "url": "http://userserve-ak.last.fm/serve/_/797379.jpg"}},
-        {"url": "http://upload.wikimedia.org/wikipedia/commons/6/65/Beach_tickets.JPG",
-        "tags": [], "width": 640, "height": 480, "aspect_ratio": 1.3333333333333333,
-        "verified": false, "license": {"type": "cc-by-sa", "attribution": "File Upload
-        Bot (Magnus Manske)", "url": "http://upload.wikimedia.org/wikipedia/commons/6/65/Beach_tickets.JPG"}},
-        {"url": "http://userserve-ak.last.fm/serve/_/322193.jpg", "tags": [], "verified":
-        false, "license": {"type": "unknown", "attribution": "last.fm", "url": "http://userserve-ak.last.fm/serve/_/322193.jpg"}},
-        {"url": "http://userserve-ak.last.fm/serve/_/29554.jpg", "tags": [], "verified":
-        false, "license": {"type": "unknown", "attribution": "last.fm", "url": "http://userserve-ak.last.fm/serve/_/29554.jpg"}},
-        {"url": "http://upload.wikimedia.org/wikipedia/commons/7/76/Springsteen_05051981_01_200.jpg",
-        "tags": [], "width": 200, "height": 255, "aspect_ratio": 0.7843137254901961,
-        "verified": false, "license": {"type": "cc-by", "attribution": "Helwik", "url":
-        "http://en.wikipedia.org/wiki/File:Springsteen_05051981_01_200.jpg"}}, {"url":
-        "http://upload.wikimedia.org/wikipedia/commons/0/0a/Bruce_Springsteen_2005.jpg",
-        "tags": [], "width": 528, "height": 409, "aspect_ratio": 1.2909535452322738,
-        "verified": false, "license": {"type": "cc-by-sa", "attribution": "Yarl",
-        "url": "http://upload.wikimedia.org/wikipedia/commons/0/0a/Bruce_Springsteen_2005.jpg"}},
-        {"url": "http://upload.wikimedia.org/wikipedia/commons/7/72/BruceSpringsteen2009.jpg",
-        "tags": [], "width": 2576, "height": 1716, "aspect_ratio": 1.5011655011655012,
-        "verified": false, "license": {"type": "cc-by-sa", "attribution": "Manuel
-        Martinez Perez", "url": "http://en.wikipedia.org/wiki/File%3ABruceSpringsteen2009.jpg"}}]}}'
+        "url": "http://upload.wikimedia.org/wikipedia/commons/7/73/Kennedy_Center_honorees_2009_WhiteHouse_Photo.jpg"}}]}}'
     http_version: 
-  recorded_at: Thu, 13 Aug 2015 05:15:40 GMT
+  recorded_at: Thu, 13 Aug 2015 13:34:04 GMT
 - request:
     method: get
-    uri: http://developer.echonest.com/api/v4/artist/images?api_key=BTF9TL31AHYRWPWPZ&name=John%20Mellencamp
+    uri: http://developer.echonest.com/api/v4/artist/images?api_key=BTF9TL31AHYRWPWPZ&name=John%20Mellencamp&results=1
     body:
       encoding: US-ASCII
       string: ''
@@ -422,7 +297,7 @@ http_interactions:
       message: OK
     headers:
       Date:
-      - Thu, 13 Aug 2015 05:15:41 GMT
+      - Thu, 13 Aug 2015 13:34:04 GMT
       Content-Type:
       - application/json; charset=utf-8
       Transfer-Encoding:
@@ -432,11 +307,11 @@ http_interactions:
       Vary:
       - Accept-Encoding
       X-Request-Id:
-      - uxv7U2iJTp+6YJJR7aOY1w
+      - S1rqUM53Th6U8JX0T+6YZQ
       X-Worker-Node:
-      - 13afb:33209
+      - 1c88a:16212
       X-Ratelimit-Remaining:
-      - '114'
+      - '91'
       Server:
       - TornadoServer/3.1
       X-Ratelimit-Limit:
@@ -448,51 +323,231 @@ http_interactions:
       Access-Control-Allow-Origin:
       - "*"
       X-Ratelimit-Used:
-      - '6'
+      - '29'
     body:
       encoding: ASCII-8BIT
       string: '{"response": {"status": {"version": "4.2", "code": 0, "message": "Success"},
         "start": 0, "total": 66, "images": [{"url": "http://userserve-ak.last.fm/serve/_/500205.jpg",
         "tags": [], "verified": false, "license": {"type": "unknown", "attribution":
-        "last.fm", "url": "http://userserve-ak.last.fm/serve/_/500205.jpg"}}, {"url":
-        "http://userserve-ak.last.fm/serve/_/135108.jpg", "tags": [], "verified":
-        false, "license": {"type": "unknown", "attribution": "last.fm", "url": "http://userserve-ak.last.fm/serve/_/135108.jpg"}},
-        {"url": "http://upload.wikimedia.org/wikipedia/commons/c/c1/Mellencamp.jpg",
-        "tags": [], "width": 1932, "height": 2520, "aspect_ratio": 0.7666666666666667,
-        "verified": false, "license": {"type": "cc-by", "attribution": "Martin Overstrom",
-        "url": "http://en.wikipedia.org/wiki/File:Mellencamp.jpg"}}, {"url": "http://a218.ac-images.myspacecdn.com/images01/4/m_bfe4672d17790b49fd409c5e40b896c1.jpg",
-        "tags": [], "width": 90, "height": 90, "aspect_ratio": 1.0, "verified": false,
-        "license": {"type": "unknown", "attribution": "myspace", "url": "http://a218.ac-images.myspacecdn.com/images01/4/m_bfe4672d17790b49fd409c5e40b896c1.jpg"}},
-        {"url": "http://upload.wikimedia.org/wikipedia/commons/f/fa/Mellencamp-Crow.jpg",
-        "tags": [], "width": 320, "height": 480, "aspect_ratio": 0.6666666666666666,
-        "verified": false, "license": {"type": "public-domain", "attribution": "JMFan08~commonswiki",
-        "url": "http://upload.wikimedia.org/wikipedia/commons/f/fa/Mellencamp-Crow.jpg"}},
-        {"url": "http://userserve-ak.last.fm/serve/_/5451.jpg", "tags": [], "verified":
-        false, "license": {"type": "unknown", "attribution": "last.fm", "url": "http://userserve-ak.last.fm/serve/_/5451.jpg"}},
-        {"url": "http://userserve-ak.last.fm/serve/_/152009.jpg", "tags": [], "verified":
-        false, "license": {"type": "unknown", "attribution": "last.fm", "url": "http://userserve-ak.last.fm/serve/_/152009.jpg"}},
-        {"url": "http://userserve-ak.last.fm/serve/_/30004.jpg", "tags": [], "verified":
-        false, "license": {"type": "unknown", "attribution": "last.fm", "url": "http://userserve-ak.last.fm/serve/_/30004.jpg"}},
-        {"url": "http://userserve-ak.last.fm/serve/_/380251.jpg", "tags": [], "verified":
-        false, "license": {"type": "unknown", "attribution": "last.fm", "url": "http://userserve-ak.last.fm/serve/_/380251.jpg"}},
-        {"url": "http://userserve-ak.last.fm/serve/_/206812.jpg", "tags": [], "verified":
-        false, "license": {"type": "unknown", "attribution": "last.fm", "url": "http://userserve-ak.last.fm/serve/_/206812.jpg"}},
-        {"url": "http://userserve-ak.last.fm/serve/_/360997.jpg", "tags": [], "verified":
-        false, "license": {"type": "unknown", "attribution": "last.fm", "url": "http://userserve-ak.last.fm/serve/_/360997.jpg"}},
-        {"url": "http://upload.wikimedia.org/wikipedia/commons/c/cb/JohnMellencamp01a.jpg",
-        "tags": [], "width": 667, "height": 564, "aspect_ratio": 1.1826241134751774,
-        "verified": false, "license": {"type": "public-domain", "attribution": "Liftarn",
-        "url": "http://upload.wikimedia.org/wikipedia/commons/c/cb/JohnMellencamp01a.jpg"}},
-        {"url": "http://userserve-ak.last.fm/serve/_/30960407/John+Mellencamp+john_mellencamp_rod_laver_aren.jpg",
-        "tags": [], "width": 296, "height": 296, "aspect_ratio": 1.0, "verified":
-        false, "license": {"type": "cc-by-sa", "attribution": "Gochir", "url": "www.last.fm/user/Gochir"}},
-        {"url": "http://userserve-ak.last.fm/serve/_/3179271/John+Mellencamp+JohnMellencamp.jpg",
-        "tags": [], "width": 170, "height": 170, "aspect_ratio": 1.0, "verified":
-        false, "license": {"type": "cc-by-sa", "attribution": "vs271", "url": "www.last.fm/user/vs271"}},
-        {"url": "http://userserve-ak.last.fm/serve/_/36271653/John+Mellencamp+mellencamp.jpg",
-        "tags": [], "width": 445, "height": 410, "aspect_ratio": 1.0853658536585367,
-        "verified": false, "license": {"type": "cc-by-sa", "attribution": "last.fm",
-        "url": "www.last.fm/"}}]}}'
+        "last.fm", "url": "http://userserve-ak.last.fm/serve/_/500205.jpg"}}]}}'
     http_version: 
-  recorded_at: Thu, 13 Aug 2015 05:15:40 GMT
+  recorded_at: Thu, 13 Aug 2015 13:34:04 GMT
+- request:
+    method: get
+    uri: http://developer.echonest.com/api/v4/artist/images?api_key=BTF9TL31AHYRWPWPZ&name=Traveling%20Wilburys&results=1
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/json
+      User-Agent:
+      - Echowrap Ruby Gem 0.2.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Thu, 13 Aug 2015 13:34:05 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Vary:
+      - Accept-Encoding
+      X-Request-Id:
+      - iM179IWLQEWPGztmYRUYbA
+      X-Worker-Node:
+      - 203d7:20644
+      X-Ratelimit-Remaining:
+      - '90'
+      Server:
+      - TornadoServer/3.1
+      X-Ratelimit-Limit:
+      - '120'
+      X-Api-Key:
+      - BTF9TL31AHYRWPWPZ
+      Cache-Control:
+      - max-age=86400
+      Access-Control-Allow-Origin:
+      - "*"
+      X-Ratelimit-Used:
+      - '30'
+    body:
+      encoding: ASCII-8BIT
+      string: '{"response": {"status": {"version": "4.2", "code": 0, "message": "Success"},
+        "start": 0, "total": 32, "images": [{"url": "http://a41.ac-images.myspacecdn.com/images01/18/m_bb6aa14bc34088c3c0f5a80deaed64f8.jpg",
+        "tags": [], "width": 90, "height": 90, "aspect_ratio": 1.0, "verified": false,
+        "license": {"type": "unknown", "attribution": "myspace", "url": "http://a41.ac-images.myspacecdn.com/images01/18/m_bb6aa14bc34088c3c0f5a80deaed64f8.jpg"}}]}}'
+    http_version: 
+  recorded_at: Thu, 13 Aug 2015 13:34:05 GMT
+- request:
+    method: get
+    uri: http://developer.echonest.com/api/v4/artist/images?api_key=BTF9TL31AHYRWPWPZ&name=John%20Fogerty&results=1
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/json
+      User-Agent:
+      - Echowrap Ruby Gem 0.2.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Thu, 13 Aug 2015 13:34:05 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Vary:
+      - Accept-Encoding
+      X-Request-Id:
+      - zwKCZMCSTz+NsTc+zoeriA
+      X-Worker-Node:
+      - a3028:11027
+      X-Ratelimit-Remaining:
+      - '89'
+      Server:
+      - TornadoServer/3.1
+      X-Ratelimit-Limit:
+      - '120'
+      X-Api-Key:
+      - BTF9TL31AHYRWPWPZ
+      Cache-Control:
+      - max-age=86400
+      Access-Control-Allow-Origin:
+      - "*"
+      X-Ratelimit-Used:
+      - '31'
+    body:
+      encoding: ASCII-8BIT
+      string: '{"response": {"status": {"version": "4.2", "code": 0, "message": "Success"},
+        "start": 0, "total": 48, "images": [{"url": "http://userserve-ak.last.fm/serve/_/2719668.jpg",
+        "tags": [], "verified": false, "license": {"type": "unknown", "attribution":
+        "n/a", "url": "http://userserve-ak.last.fm/serve/_/2719668.jpg#flat_doc"}}]}}'
+    http_version: 
+  recorded_at: Thu, 13 Aug 2015 13:34:05 GMT
+- request:
+    method: get
+    uri: http://developer.echonest.com/api/v4/artist/images?api_key=BTF9TL31AHYRWPWPZ&name=Bob%20Seger&results=1
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/json
+      User-Agent:
+      - Echowrap Ruby Gem 0.2.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Thu, 13 Aug 2015 13:34:05 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Vary:
+      - Accept-Encoding
+      X-Request-Id:
+      - kOO01+O1QtCDEAxz7gTS9A
+      X-Worker-Node:
+      - 203d7:8397
+      X-Ratelimit-Remaining:
+      - '88'
+      Server:
+      - TornadoServer/3.1
+      X-Ratelimit-Limit:
+      - '120'
+      X-Api-Key:
+      - BTF9TL31AHYRWPWPZ
+      Cache-Control:
+      - max-age=86400
+      Access-Control-Allow-Origin:
+      - "*"
+      X-Ratelimit-Used:
+      - '32'
+    body:
+      encoding: ASCII-8BIT
+      string: '{"response": {"status": {"version": "4.2", "code": 0, "message": "Success"},
+        "start": 0, "total": 28, "images": [{"url": "http://upload.wikimedia.org/wikipedia/commons/thumb/7/73/Bob_Seger.jpg/800px-Bob_Seger.jpg",
+        "tags": [], "width": 800, "height": 600, "aspect_ratio": 1.3333333333333333,
+        "verified": false, "license": {"type": "cc-by", "attribution": "radioactv915",
+        "url": "http://en.wikipedia.org/wiki/File%3ABob_Seger.jpg"}}]}}'
+    http_version: 
+  recorded_at: Thu, 13 Aug 2015 13:34:05 GMT
+- request:
+    method: get
+    uri: http://developer.echonest.com/api/v4/artist/images?api_key=BTF9TL31AHYRWPWPZ&name=Bob%20Dylan&results=1
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/json
+      User-Agent:
+      - Echowrap Ruby Gem 0.2.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Thu, 13 Aug 2015 13:34:05 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Vary:
+      - Accept-Encoding
+      X-Request-Id:
+      - yZRorFORRY6yUyY9GsV+8g
+      X-Worker-Node:
+      - 1ce08:1467
+      X-Ratelimit-Remaining:
+      - '87'
+      Server:
+      - TornadoServer/3.1
+      X-Ratelimit-Limit:
+      - '120'
+      X-Api-Key:
+      - BTF9TL31AHYRWPWPZ
+      Cache-Control:
+      - max-age=86400
+      Access-Control-Allow-Origin:
+      - "*"
+      X-Ratelimit-Used:
+      - '33'
+    body:
+      encoding: ASCII-8BIT
+      string: '{"response": {"status": {"version": "4.2", "code": 0, "message": "Success"},
+        "start": 0, "total": 126, "images": [{"url": "http://upload.wikimedia.org/wikipedia/commons/e/e7/The_Big_Pink_%28crop%29.jpg",
+        "tags": [], "width": 2592, "height": 1455, "aspect_ratio": 1.7814432989690723,
+        "verified": false, "license": {"type": "cc-by", "attribution": "Viniciusmc",
+        "url": "http://upload.wikimedia.org/wikipedia/commons/e/e7/The_Big_Pink_%28crop%29.jpg"}}]}}'
+    http_version: 
+  recorded_at: Thu, 13 Aug 2015 13:34:05 GMT
 recorded_with: VCR 2.9.3

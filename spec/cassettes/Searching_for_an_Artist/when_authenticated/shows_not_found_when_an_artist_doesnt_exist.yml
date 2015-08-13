@@ -19,7 +19,7 @@ http_interactions:
       message: OK
     headers:
       Date:
-      - Thu, 13 Aug 2015 05:10:08 GMT
+      - Thu, 13 Aug 2015 13:34:10 GMT
       Content-Type:
       - application/json; charset=utf-8
       Transfer-Encoding:
@@ -29,11 +29,11 @@ http_interactions:
       Vary:
       - Accept-Encoding
       X-Request-Id:
-      - dw2EwtZyRVqtaIEyzaORWw
+      - bZALoTz0QfSlNxz18FIk1w
       X-Worker-Node:
-      - 77db3:31856
+      - 38f89:37477
       X-Ratelimit-Remaining:
-      - '75'
+      - '63'
       Server:
       - TornadoServer/3.1
       X-Ratelimit-Limit:
@@ -45,11 +45,11 @@ http_interactions:
       Access-Control-Allow-Origin:
       - "*"
       X-Ratelimit-Used:
-      - '45'
+      - '57'
     body:
       encoding: ASCII-8BIT
       string: '{"response": {"status": {"version": "4.2", "code": 0, "message": "Success"},
         "artists": []}}'
     http_version: 
-  recorded_at: Thu, 13 Aug 2015 05:10:07 GMT
+  recorded_at: Thu, 13 Aug 2015 13:34:10 GMT
 recorded_with: VCR 2.9.3

@@ -1,165 +1,43 @@
-<section class="header">
-  <div class="name-title">
-    <ul><img class="img-rounded" <%= image_tag(@artist_images.first.url, :class => 'list_image') %></ul>
-    <ul><h1 class="artist-name"><%= @artist.name %></h1></ul>
-    <% if current_user.likes.where(artist_name: @artist.name).count > 0 %>
-      <p>Already Liked</p>
-    <% else %>
-      <%= render partial: 'like_form', locals: {artist_name: @artist.name, found_through: params[:found_through]} %>
-    <% end %>
-    <%= link_to "Find similiar artists to #{@artist.name}", artist_similar_artists_path(@artist.name) %>
-  </div>
+<section class="artist-details">
+  <% cache("#{@artist.name}-artist-details") do %>
+    <header>
+      <h2 class="page-title"><%= @artist.name %></h2>
+    </header>
+    <div class="details">
+      <div class="hero">
+        <%= image_tag(@artist_images.first.url, class: 'main-artist-image') %>
+      </div>
+      <div class="secondary">
+        <%= image_tag(@artist_images.second.url) %>
+        <%= image_tag(@artist_images.third.url) %>
+      </div>
 
+    </div>
+  <% end %>
+
+  <% if current_user.likes.where(artist_name: @artist.name).count > 0 %>
+    <p>Already Liked</p>
+  <% else %>
+    <%= render partial: 'like_form', locals: {artist_name: @artist.name, found_through: params[:found_through]} %>
+  <% end %>
 </section>
 
-<section id="background_image" id="about"></section>
-
-  <!--<# cache("#{@artist.name}-bio") do %>-->
-
-    <!--<section class="about">-->
-      <!--<h3>BIO</h3>-->
-      <!--<div class="text" id="artist-bio">-->
-        <!--<%#= @artist_bio.text %>-->
-      <!--</div>-->
-      <!--<div class="arrow-contain">-->
-        <!--<a class="next-arrow" href="#music-videos">-->
-          <!--<%#= image_tag("arrow-blue.png", :class => 'list_image', :size => '40x40') %>-->
-        <!--</a>-->
-      <!--</div>-->
-    <!--</section>-->
-
-    <!--<section class="background_image_1" id="professional"></section>-->
-
-  <!--<%# end %>-->
-
-  <!--<%# cache("#{@artist.name}-videos") do %>-->
-
-    <!--<section class="connect" id="music-videos">-->
-      <!--<h3>MUSIC VIDEOS</h3>-->
-      <!--<div id="grid">-->
-        <!--<div class="row">-->
-          <!--<ul>-->
-            <!--<%# @videos.each do |video| %>-->
-              <!--<div class="col-lg-3" id="related_artists">-->
-                <!--<li>-->
-                  <!--<%#= link_to image_tag(video.image_url, :id => 'music-videos', :title => video.title, :size => '150x150'), video.url %>-->
-                  <!--<%#= video.title %>-->
-                <!--</li>-->
-              <!--</div>-->
-            <!--<%# end %>-->
-          <!--</ul>-->
-        <!--</div>-->
-      <!--</div>-->
-      <!--<div class="arrow-contain">-->
-        <!--<a class="next-arrow" href="#professional">-->
-          <!--<%#= image_tag("arrow-white.png", :class => 'list_image', :size => '40x40') %>-->
-        <!--</a>-->
-      <!--</div>-->
-    <!--</section>-->
-
-    <!--<section class="background_image_2" id="professional"></section>-->
-  <!--<%# end %>-->
-
-  <!--<%# cache("#{@artist.name}-reviews") do %>-->
-
-    <!--<section class="about">-->
-      <!--<h3>ARTIST REVIEWS</h3>-->
-      <!--<%# @reviews.each do |review| %>-->
-        <!--<h4><%#= review.date_found.to_time.strftime('%B %d, %Y') %></h4>-->
-
-        <!--<div class="text" id="artist-reviews">-->
-          <!--<%#= review.summary %>-->
-          <!--<%#= @artist_news.summary %>-->
-        <!--</div>-->
-      <!--<%# end %>-->
-      <!--<div class="arrow-contain">-->
-        <!--<a class="next-arrow" href="#professional">-->
-          <!--<%#= image_tag("arrow-blue.png", :class => 'list_image', :size => '40x40') %>-->
-        <!--</a>-->
-      <!--</div>-->
-    <!--</section>-->
-
-
-<!--<section class="about">-->
-  <!--<h3>BLOGS</h3>-->
-  <!--<h4><%#= @artist_news.date_found.to_time.strftime('%B %d, %Y') %></h4>-->
-  <!--<h4><%#= @artist_blog.date_posted.to_time.strftime('%B %d, %Y') %></h4>-->
-
-  <!--<div class="text">-->
-    <!--<%#= @artist_blog.summary %>-->
-    <!--<%#= @artist_news.summary %>-->
-  <!--</div>-->
-  <!--<div class="arrow-contain">-->
-    <!--<a class="next-arrow" href="#professional">-->
-      <!--<%#= image_tag("arrow-white.png", :class => 'list_image', :size => '40x40') %>-->
-    <!--</a>-->
-  <!--</div>-->
-<!--</section>-->
-
-    <!--<section class="background_image_3" id="business-solutions"></section>-->
-
-  <!--<%# end %>-->
-
-  <!--<section class="background_image_4" id="connect"></section>-->
-
-  <!--<%# cache("#{@artist.name}-TBD") do %>-->
-
-    <!--<section class="business-solutions">-->
-      <!--<h3>Maybe have a section with the concert dates/tour info.</h3>-->
-      <!--<h4>I would have additional sections about latest news on the artists, blogs, music videos, ... </h4>-->
-      <!--<div class="text">-->
-
-
-      <!--</div>-->
-      <!--<div class="arrow-contain">-->
-        <!--<a class="next-arrow" href="#connect">-->
-          <!--<%#= image_tag("arrow-blue.png", :class => 'list_image', :size => '40x40') %>-->
-        <!--</a>-->
-      <!--</div>-->
-    <!--</section>-->
-
-    <!--<section class="background_image_5" id="connect"></section>-->
-
-  <!--<%# end %>-->
-
-  <!--<%# cache("#{@artist.name}-social-media") do %>-->
-
-    <!--<section class="connect">-->
-      <!--<h3>Stay Connected with <%#= @artist.name %>!</h3>-->
-      <!--<h4> </h4>-->
-
-    <!--</section>-->
-
-  <!--<%# end %>-->
-
-<!--<section class="connect-icons">-->
-  <!--<div class="col-1-3">-->
-    <!--&lt;!&ndash;<div class="github-icon">&ndash;&gt;-->
-      <!--<a href="/">-->
-        <!--<%#= image_tag("billy_album_1.jpg", :class => 'list_image', :size => '100x100') %>-->
-        <!--&lt;!&ndash;<img src="assets/images/billy_album_1.jpg" alt="album_cover">&ndash;&gt;-->
-      <!--</a>-->
-    <!--&lt;!&ndash;</div>&ndash;&gt;-->
-  <!--</div>-->
-  <!--&lt;!&ndash; &ndash;&gt;-->
-  <!--<div class="col-1-3">-->
-    <!--<a href="/">-->
-    <!--&lt;!&ndash;<a href="https://www.facebook.com/max.tedford">&ndash;&gt;-->
-      <!--<%#= image_tag("billy_album_2.jpg", :class => 'list_image', :size => '100x100') %>-->
-    <!--</a>-->
-  <!--</div>-->
-  <!--&lt;!&ndash; &ndash;&gt;-->
-  <!--<div class="col-1-3">-->
-    <!--<a href="/">-->
-    <!--&lt;!&ndash;<a href="https://www.linkedin.com/profile/view?id=25531971&amp;trk=nav_responsive_tab_profile">&ndash;&gt;-->
-      <!--<%#= image_tag("billy_album_3.jpg", :class => 'list_image', :size => '100x100') %>-->
-      <!--&lt;!&ndash;<img src="assets/images/billy_album_3.jpg" alt="album_cover">&ndash;&gt;-->
-    <!--</a>-->
-  <!--</div>-->
-<!--</section>-->
-<!--<footer class="copyright">-->
-  <!--<small>© Whithub Company</small>-->
-<!--</footer>-->
-
-
+<% cache("#{@artist.name}-artist-videos") do %>
+  <section class="artist-videos">
+    <header>
+      <h2 class="page-title"><%= @artist.name %> Videos</h2>
+      <%= link_to "Find similiar artists to #{@artist.name}", artist_similar_artists_path(@artist.name), class: 'button search icon' %>
+    </header>
+    <ul class="block-grid">
+      <% @videos.each do |video| %>
+        <li>
+          <%= link_to video.url do %>
+            <%= image_tag video.image_url %>
+            <span><%= video.title %></span>
+          <% end %>
+        </li>
+      <% end %>
+    </ul>
+  </section>
+<% end %>
 
