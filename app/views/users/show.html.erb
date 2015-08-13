@@ -1,6 +1,8 @@
 <h1><%= current_user.name %>'s Profile</h1>
 
 <h3>Liked Artists</h3>
+<p>Find more artists?</p>
+<%= render partial: 'layouts/search' %>
 <ul id='liked-artists'>
   <% current_user.likes.order('artist_name ASC').each do |like| %>
     <li>
