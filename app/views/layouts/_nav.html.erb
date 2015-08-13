@@ -9,8 +9,7 @@
           <li class="nav-link"><%= link_to 'Logout', logout_path %></li>
         <% else %>
           <li class="nav-link">
-            <span><%= "Login with Twitter" %></span>
-            <a href="<%= login_path %>" id="A_10">Twitter</a>
+            <%= link_to 'Login with Twitter', login_path %>
           </li>
         <% end %>
       </ul>
