@@ -6,7 +6,7 @@ module Omniauth
         'provider' => 'twitter',
         'uid' => '12345',
         'info' => {
-          'name' => 'whitney'
+          'name' => 'foo_mockuser'
         },
         'credentials' => {
           'token' => 'mock_token',
@@ -17,12 +17,9 @@ module Omniauth
   end
 
   module SessionHelpers
-    def signin(as_new_user: true, role: 'regular_user')
+    def signin
       visit root_path
-      expect(page).to have_content("Login")
-      unless as_new_user
-        FactoryGirl.create(:user, uid: '12345', provider: 'twitter', role: role)
-      end
+      expect(page).to have_content("Log In")
       auth_mock
       click_link "Log In"
     end

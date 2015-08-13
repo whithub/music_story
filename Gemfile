@@ -23,20 +23,26 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 gem 'paperclip'
 gem 'dalli'
 gem 'sidekiq'
-gem 'factory_girl'
 gem 'webmock'
 gem 'skylight'
 
 group :development, :test do
   gem 'sqlite3'
   gem 'web-console', '~> 2.0'
-  gem 'launchy'
-  gem 'capybara'
   gem 'rspec-rails'
   gem 'pry-rails'
   gem 'coveralls', require: false
   gem 'timecop'
   gem 'simplecov', :require => false
+
+  gem 'factory_girl_rails'
+end
+
+group :test do
+  gem 'launchy'
+  gem 'capybara'
+  # gem 'vcr'
+  # gem 'webmock'
 end
 
 group :production do
